@@ -36,6 +36,10 @@ services:
     state: started
     enabled: true
 
+cron_jobs:
+  - name: Sync google photos
+    job: '/home/mj/.local/bin/gphotos-sync /home/mj/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1'
+
 enable_repositories:
   - name: webapp-manager
     desc: Copr repo for webapp-manager owned by refi64
