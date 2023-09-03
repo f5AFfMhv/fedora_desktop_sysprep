@@ -1,0 +1,92 @@
+- name: Provision Fedora Desktop
+  gather_facts: true
+  hosts: localhost
+  tasks:
+    - name: Add repositories
+      ansible.builtin.yum_repository:
+        name: "{{ item.name }}"
+        description: "{{ item.desc }}"
+        baseurl: "{{ item.url }}"
+        gpgkey: "{{ item.gpgkey }}"
+        file: my_repos
+        gpgcheck: true
+        enabled: true
+      with_items: "{{ enable_repositories }}"
+
+    - name: Disable repositories
+      ansible.builtin.yum_repository:
+        name: "{{ item.name }}"
+        description: "{{ item.desc }}"
+        baseurl: "{{ item.url }}"
+        file: "{{ item.file }}"
+        enabled: false
+      with_items: "{{ disable_repositories }}"
+
+    - name: Update system
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest
+
+    - name: Remove bloat
+      ansible.builtin.dnf:
+        name: "{{ bloat }}"
+        state: absent
+        autoremove: true
+
+    - name: Install rpm packages
+      ansible.builtin.dnf:
+        name: "{{ rpms }}"
+        state: present
+
+    - name: Add flathub repository
+      community.general.flatpak_remote:
+        name: flathub
+        state: present
+        flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+
+    - name: Remove filtered option from flathub repository
+      ansible.builtin.command:
+        cmd: flatpak remote-modify flathub --no-filter
+      register: output
+      changed_when: output.rc == 0
+
+    - name: Install flatpak packages
+      community.general.flatpak:
+        name: "{{ flatpaks }}"
+        state: present
+
+    - name: Install python packages
+      ansible.builtin.pip:
+        name: "{{ python_packages }}"
+
+    - name: Add sudo rules
+      community.general.sudoers:
+        name: "{{ user }}-sudo-rules"
+        state: present
+        user: "{{ user }}"
+        nopassword: true
+        commands: "{{ allow_sudo }}"
+
+    - name: Create a symbolic links
+      ansible.builtin.file:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        state: link
+      with_items: "{{ symlinks }}"
+
+    - name: Enable/disable services
+      ansible.builtin.service:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+        enabled: "{{ item.enabled }}"
+      with_items: "{{ services }}"
+
+    - name: Add DNS configuration
+      ansible.builtin.template:
+        src: resolv.conf.j2
+        dest: /etc/resolv.conf
+        owner: root
+        group: root
+        mode: "0644"

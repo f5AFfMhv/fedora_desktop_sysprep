@@ -1,0 +1,3 @@
+Qucs-S-latest-x86_64.AppImage
+serial_studio.AppImage
+ubports.AppImage
