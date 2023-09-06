@@ -10,6 +10,8 @@ allow_sudo:
   - /usr/bin/dnf
   - /usr/bin/ps
   - /usr/bin/systemctl
+  - /usr/bin/mount
+  - /usr/bin/sshfs
 
 symlinks:
   - src: "/home/{{ user }}/.vimrc"
@@ -38,7 +40,33 @@ services:
 
 cron_jobs:
   - name: Sync google photos
-    job: '/home/mj/.local/bin/gphotos-sync /home/mj/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1'
+    job: '/home/{{ user }}/.local/bin/gphotos-sync /home/{{ user }}/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1'
+
+git_repos:
+  - repo: https://github.com/Coda-Coda/argos.git
+    dest: /home/{{ user }}/github/argos
+  - repo: https://github.com/gohugoio/hugo.git
+    dest: /home/{{ user }}/github/hugo
+  - repo: https://github.com/ventoy/ventoy.git
+    dest: /home/{{ user }}/github/ventoy
+  - repo: https://github.com/b3nj5m1n/xdg-ninja.git
+    dest: /home/{{ user }}/github/xdg-ninja
+  - repo: https://github.com/romkatv/zsh4humans.git
+    dest: /home/{{ user }}/github/zsh4humans
+  - repo: https://github.com/vinceliuice/Graphite-gtk-theme.git
+    dest: /home/{{ user }}/github/Graphite-gtk-theme
+  - repo: https://gitlab.com/VandalByte/darkmatter-grub-theme.git
+    dest: /home/{{ user }}/github/darkmatter-grub-theme
+  - repo: https://github.com/abertsch/Menlo-for-Powerline.git
+    dest: /home/{{ user }}/github/Menlo-for-Powerline
+  - repo: https://github.com/preservim/nerdtree.git
+    dest: /home/{{ user }}/github/nerdtree
+  - repo: https://github.com/sb-ocr/ocreeb-12.git
+    dest: /home/{{ user }}/github/ocreeb-12
+  - repo: https://github.com/refi64/stylepak.git
+    dest: /home/{{ user }}/github/stylepak
+  - repo: https://github.com/vinceliuice/Tela-circle-icon-theme.git
+    dest: /home/{{ user }}/github/Tela-circle-icon-theme
 
 enable_repositories:
   - name: webapp-manager
@@ -173,6 +201,7 @@ rpms:
   - gstreamer1-plugins-good-qt
   - gstreamer1-plugins-ugly-free
   - kubectl
+  - gnome-tweaks
 
 bloat:
   - cheese

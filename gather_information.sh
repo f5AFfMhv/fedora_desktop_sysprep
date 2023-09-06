@@ -2,16 +2,16 @@
 # gnome plugins, enabled repositories, etc.
 
 # DNF repositories
-cat /etc/yum.repos.d/* > package_backup/repo_list.txt
+cat /etc/yum.repos.d/* > backup/repo_list.txt
 # DNF packages
-dnf list installed | awk '{print $1}' | sed '1d' > package_backup/rpm_list.txt
+dnf list installed | awk '{print $1}' | sed '1d' > backup/rpm_list.txt
 # Flatpak packages
-flatpak list --columns=application > package_backup/flatpak_list.txt
+flatpak list --columns=application > backup/flatpak_list.txt
 # Appimages
-find ~ -type f -name '*.AppImage' -printf "%f\n" 2>/dev/null | sort -u > package_backup/appimage_list.txt
+find ~ -type f -name '*.AppImage' -printf "%f\n" 2>/dev/null | sort -u > backup/appimage_list.txt
 # Python modules
-pip list | awk '{print $1}' | sed '1d;2d' > package_backup/python_list.txt
+pip list | awk '{print $1}' | sed '1d;2d' > backup/python_list.txt
 # Gnome extensions
-gnome-extensions list --enabled > package_backup/gnome_extension_list.txt
+gnome-extensions list --enabled > backup/gnome_extension_list.txt
 # User crontab
-crontab -l > package_backup/user_crontab.txt
+crontab -l > backup/user_crontab.txt

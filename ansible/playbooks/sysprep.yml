@@ -133,3 +133,13 @@
       with_items: "{{ cron_jobs }}"
       tags:
         - config
+
+    - name: Sync git repositories
+      ansible.builtin.git:
+        repo: "{{ item.repo }}"
+        dest: "{{ item.dest }}"
+        force: true
+      with_items: "{{ git_repos }}"
+      tags:
+        - config
+        - git
