@@ -4,6 +4,7 @@ domain: home.lab
 dns:
   - 192.168.1.4
   - 1.1.1.1
+git_dir: "/home/{{ user }}/github"
 
 allow_sudo:
   - /bin/kill
@@ -41,32 +42,36 @@ services:
 cron_jobs:
   - name: Sync google photos
     job: '/home/{{ user }}/.local/bin/gphotos-sync /home/{{ user }}/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1'
+  - name: Git backup
+    job: 'cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh'
 
 git_repos:
+  - repo: git@github.com:f5AFfMhv/fedora_desktop_sysprep.git
+    dest: "{{ git_dir }}/fedora_desktop_sysprep"
   - repo: https://github.com/Coda-Coda/argos.git
-    dest: /home/{{ user }}/github/argos
+    dest: "{{ git_dir }}/argos"
   - repo: https://github.com/gohugoio/hugo.git
-    dest: /home/{{ user }}/github/hugo
+    dest: "{{ git_dir }}/hugo"
   - repo: https://github.com/ventoy/ventoy.git
-    dest: /home/{{ user }}/github/ventoy
+    dest: "{{ git_dir }}/ventoy"
   - repo: https://github.com/b3nj5m1n/xdg-ninja.git
-    dest: /home/{{ user }}/github/xdg-ninja
+    dest: "{{ git_dir }}/xdg-ninja"
   - repo: https://github.com/romkatv/zsh4humans.git
-    dest: /home/{{ user }}/github/zsh4humans
+    dest: "{{ git_dir }}/zsh4humans"
   - repo: https://github.com/vinceliuice/Graphite-gtk-theme.git
-    dest: /home/{{ user }}/github/Graphite-gtk-theme
+    dest: "{{ git_dir }}/Graphite-gtk-theme"
   - repo: https://gitlab.com/VandalByte/darkmatter-grub-theme.git
-    dest: /home/{{ user }}/github/darkmatter-grub-theme
+    dest: "{{ git_dir }}/darkmatter-grub-theme"
   - repo: https://github.com/abertsch/Menlo-for-Powerline.git
-    dest: /home/{{ user }}/github/Menlo-for-Powerline
+    dest: "{{ git_dir }}/Menlo-for-Powerline"
   - repo: https://github.com/preservim/nerdtree.git
-    dest: /home/{{ user }}/github/nerdtree
+    dest: "{{ git_dir }}/nerdtree"
   - repo: https://github.com/sb-ocr/ocreeb-12.git
-    dest: /home/{{ user }}/github/ocreeb-12
+    dest: "{{ git_dir }}/ocreeb-12"
   - repo: https://github.com/refi64/stylepak.git
-    dest: /home/{{ user }}/github/stylepak
+    dest: "{{ git_dir }}/stylepak"
   - repo: https://github.com/vinceliuice/Tela-circle-icon-theme.git
-    dest: /home/{{ user }}/github/Tela-circle-icon-theme
+    dest: "{{ git_dir }}/Tela-circle-icon-theme"
 
 enable_repositories:
   - name: webapp-manager

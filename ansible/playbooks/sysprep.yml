@@ -139,7 +139,20 @@
         repo: "{{ item.repo }}"
         dest: "{{ item.dest }}"
         force: true
+        key_file: "/home/{{ user }}/.ssh/id_rsa"
+        accept_hostkey: true
       with_items: "{{ git_repos }}"
+      tags:
+        - config
+        - git
+
+    - name: Change git directory owner
+      ansible.builtin.file:
+        path: "{{ git_dir }}"
+        state: directory
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        recurse: True
       tags:
         - config
         - git

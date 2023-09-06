@@ -15,3 +15,7 @@ pip list | awk '{print $1}' | sed '1d;2d' > backup/python_list.txt
 gnome-extensions list --enabled > backup/gnome_extension_list.txt
 # User crontab
 crontab -l > backup/user_crontab.txt
+
+# Push backup to repo
+git commit -am "backup $(date +%Y-%m-%d)"
+git push -u origin main
