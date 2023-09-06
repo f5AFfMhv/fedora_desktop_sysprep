@@ -1,0 +1,1 @@
+@reboot /home/mj/.local/bin/gphotos-sync /home/mj/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1

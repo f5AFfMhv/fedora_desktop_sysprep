@@ -17,3 +17,13 @@ ansible-playbook playbooks/sysprep.yml
 - Create symbolic links
 - Enable/disable services
 - Configure DNS
+- Create cron jobs
+- Sync git repositories
+
+## Backup
+
+`backup.sh` script gathers list of installed applications, python modules and gnome extensions. These lists are saved to backup directory.
+
+```bash
+./backup.sh
+```

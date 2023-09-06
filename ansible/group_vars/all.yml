@@ -128,7 +128,6 @@ disable_repositories:
     file: rpmfusion-nonfree-steam
     url: http://download1.rpmfusion.org/nonfree/fedora/steam/$releasever/$basearch/
 
-
 rpms:
   - ansible
   - ansible-collection-community-docker
