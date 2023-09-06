@@ -1,6 +1,7 @@
 user-theme@gnome-shell-extensions.gcampax.github.com
 caffeine@patapon.info
 bluetooth-quick-connect@bjarosze.gmail.com
+IP-Finder@linxgem33.com
 gnome-ui-tune@itstime.tech
 rounded-window-corners@yilozt
 panelScroll@sun.wxg@gmail.com
