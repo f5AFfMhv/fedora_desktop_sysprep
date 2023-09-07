@@ -192,6 +192,7 @@ containers-common.noarch
 containers-common-extra.noarch
 coreutils.x86_64
 coreutils-common.x86_64
+cowsay.noarch
 cpio.x86_64
 cpp.x86_64
 cpu-x.x86_64
