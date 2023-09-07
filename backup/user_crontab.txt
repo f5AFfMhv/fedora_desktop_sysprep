@@ -1,4 +1,4 @@
 #Ansible: Sync google photos
 @reboot /home/mj/.local/bin/gphotos-sync /home/mj/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1
 #Ansible: Git backup
-52 21 * * * cd /home/mj/github/fedora_desktop_sysprep && ./backup.sh
+@reboot cd /home/mj/github/fedora_desktop_sysprep && ./backup.sh

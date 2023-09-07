@@ -537,6 +537,7 @@ google-noto-sans-thaana-vf-fonts.noarch
 google-noto-sans-thai-vf-fonts.noarch
 google-noto-sans-vf-fonts.noarch
 google-noto-serif-vf-fonts.noarch
+gparted.x86_64
 gperftools-libs.x86_64
 gpgme.x86_64
 gpm-libs.x86_64

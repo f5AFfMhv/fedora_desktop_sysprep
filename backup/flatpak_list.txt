@@ -2,6 +2,7 @@ cc.arduino.IDE2
 com.getmailspring.Mailspring
 com.github.marktext.marktext
 com.github.tchx84.Flatseal
+com.github.unrud.VideoDownloader
 com.heroicgameslauncher.hgl
 com.jgraph.drawio.desktop
 com.raggesilver.BlackBox
