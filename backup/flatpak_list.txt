@@ -27,6 +27,7 @@ org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.GL32.default
+org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
