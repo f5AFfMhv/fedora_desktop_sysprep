@@ -16,6 +16,13 @@ ls -1 ~/.local/share/gnome-shell/extensions/ > backup/gnome_extension_list.txt
 # User crontab
 crontab -l > backup/user_crontab.txt
 
+# Backup dotfiles
+DOTFILES=".zshrc .zshenv .vimrc .p10k.zsh .p10k-8color.zsh .alias.zsh"
+
+for dfile in $DOTFILES; do
+    cp -f ~/${dfile} dotfiles/
+done
+
 # Push backup to repo
 git commit -am "backup $(date +%Y-%m-%d)"
 git push -u origin main
