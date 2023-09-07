@@ -12,7 +12,7 @@ find ~ -type f -name '*.AppImage' -printf "%f\n" 2>/dev/null | sort -u > backup/
 # Python modules
 pip list | awk '{print $1}' | sed '1d;2d' > backup/python_list.txt
 # Gnome extensions
-gnome-extensions list --enabled > backup/gnome_extension_list.txt
+ls -1 ~/.local/share/gnome-shell/extensions/ > backup/gnome_extension_list.txt
 # User crontab
 crontab -l > backup/user_crontab.txt
 
