@@ -32,6 +32,7 @@ org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
+org.freedesktop.Sdk
 org.gnome.Extensions
 org.gnome.Platform
 org.kde.KStyle.Adwaita
