@@ -615,6 +615,7 @@ gvfs-gphoto2.x86_64
 gvfs-mtp.x86_64
 gvfs-smb.x86_64
 gvisor-tap-vsock.x86_64
+gvisor-tap-vsock-gvforwarder.x86_64
 gvnc.x86_64
 gvncpulse.x86_64
 gzip.x86_64
