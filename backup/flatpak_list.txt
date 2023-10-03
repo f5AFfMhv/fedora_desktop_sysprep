@@ -41,6 +41,7 @@ org.kde.Platform
 org.kde.PlatformTheme.QGnomePlatform
 org.kde.PlatformTheme.QGnomePlatform
 org.kde.PlatformTheme.QtSNI
+org.kde.WaylandDecoration.QAdwaitaDecorations
 org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kicad.KiCad
