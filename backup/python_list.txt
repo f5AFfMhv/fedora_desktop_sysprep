@@ -171,3 +171,4 @@ websocket-client
 Werkzeug
 wheel
 yamllint
+youtube-dl
