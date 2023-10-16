@@ -1950,6 +1950,7 @@ seavgabios-bin.noarch
 sed.x86_64
 selinux-policy.noarch
 selinux-policy-targeted.noarch
+sensible-utils.noarch
 serd.x86_64
 setup.noarch
 setxkbmap.x86_64
