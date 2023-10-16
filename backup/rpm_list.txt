@@ -531,6 +531,7 @@ google-noto-sans-hebrew-vf-fonts.noarch
 google-noto-sans-khmer-vf-fonts.noarch
 google-noto-sans-lao-vf-fonts.noarch
 google-noto-sans-math-fonts.noarch
+google-noto-sans-mono-cjk-vf-fonts.noarch
 google-noto-sans-mono-vf-fonts.noarch
 google-noto-sans-sinhala-vf-fonts.noarch
 google-noto-sans-thaana-vf-fonts.noarch
@@ -1041,6 +1042,7 @@ libnl3-cli.x86_64
 libnma.x86_64
 libnma-gtk4.x86_64
 libnotify.x86_64
+libnsl.x86_64
 libnsl2.x86_64
 libnvme.x86_64
 liboauth.x86_64
@@ -1796,6 +1798,8 @@ python3-wcwidth.noarch
 python3-websocket-client.noarch
 python3-xapps-overrides.x86_64
 python3-xlib.noarch
+qadwaitadecorations-qt5.x86_64
+qadwaitadecorations-qt6.x86_64
 qemu-audio-alsa.x86_64
 qemu-audio-dbus.x86_64
 qemu-audio-jack.x86_64
@@ -2069,6 +2073,7 @@ time.x86_64
 timeshift.x86_64
 tk.x86_64
 tmux.x86_64
+toilet.x86_64
 toolbox.x86_64
 totem-pl-parser.x86_64
 tpm2-tools.x86_64
