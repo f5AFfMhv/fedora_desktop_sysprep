@@ -13,6 +13,7 @@ allow_sudo:
   - /usr/bin/systemctl
   - /usr/bin/mount
   - /usr/bin/sshfs
+  - /usr/bin/docker
 
 symlinks:
   - src: "/home/{{ user }}/.vimrc"
@@ -206,6 +207,7 @@ rpms:
   - gstreamer1-plugins-ugly-free
   - kubectl
   - gnome-tweaks
+  - distrobox
 
 bloat:
   - cheese
@@ -285,3 +287,4 @@ python_packages:
   - virtualenv
   - virtualenv-clone
   - yamllint
+  - youtube-dl
