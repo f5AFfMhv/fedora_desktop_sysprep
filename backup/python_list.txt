@@ -45,7 +45,6 @@ fros
 fs
 google-auth
 google-auth-oauthlib
-gpg
 gphotos-sync
 hid-parser
 humanize

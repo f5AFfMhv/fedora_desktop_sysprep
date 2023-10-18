@@ -252,6 +252,7 @@ diffutils.x86_64
 digilent.adept.runtime.x86_64
 digilent.waveforms.x86_64
 distribution-gpg-keys.noarch
+distrobox.noarch
 djvulibre-libs.x86_64
 dmidecode.x86_64
 dmraid.x86_64
@@ -1042,7 +1043,6 @@ libnl3-cli.x86_64
 libnma.x86_64
 libnma-gtk4.x86_64
 libnotify.x86_64
-libnsl.x86_64
 libnsl2.x86_64
 libnvme.x86_64
 liboauth.x86_64
@@ -1710,7 +1710,6 @@ python3-fs.noarch
 python3-gobject.x86_64
 python3-gobject-base.x86_64
 python3-gobject-base-noarch.noarch
-python3-gpg.x86_64
 python3-hawkey.x86_64
 python3-hid-parser.noarch
 python3-humanize.noarch
