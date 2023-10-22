@@ -16,6 +16,7 @@ io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
 net.cozic.joplin_desktop
+org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
@@ -48,5 +49,6 @@ org.kicad.KiCad.Library.Packages3D
 org.kicad.KiCad.Library.Symbols
 org.kicad.KiCad.Library.Templates
 org.onlyoffice.desktopeditors
+org.remmina.Remmina
 org.videolan.VLC
 tv.plex.PlexDesktop
