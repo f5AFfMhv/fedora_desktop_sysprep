@@ -40,8 +40,10 @@ org.kde.KStyle.Adwaita
 org.kde.Platform
 org.kde.Platform
 org.kde.PlatformTheme.QGnomePlatform
+org.kde.PlatformTheme.QGnomePlatform
 org.kde.WaylandDecoration.QAdwaitaDecorations
 org.kde.WaylandDecoration.QAdwaitaDecorations
+org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kicad.KiCad
 org.kicad.KiCad.Library.Footprints
