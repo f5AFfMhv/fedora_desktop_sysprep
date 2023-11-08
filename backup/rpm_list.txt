@@ -71,6 +71,7 @@ alsa-ucm.noarch
 alsa-utils.x86_64
 alternatives.x86_64
 amd-gpu-firmware.noarch
+amd-ucode-firmware.noarch
 anaconda.x86_64
 anaconda-core.x86_64
 anaconda-gui.x86_64

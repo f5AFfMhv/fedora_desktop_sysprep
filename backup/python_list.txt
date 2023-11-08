@@ -33,6 +33,7 @@ dbus-python
 decorator
 distlib
 distro
+dnf
 evdev
 exif
 fb-re2
@@ -58,6 +59,7 @@ kiwisolver
 kubernetes
 langtable
 libcomps
+libdnf
 libvirt-python
 lxml
 Mako
