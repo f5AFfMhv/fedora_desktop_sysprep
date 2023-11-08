@@ -113,6 +113,7 @@ avahi-glib.x86_64
 avahi-gobject.x86_64
 avahi-libs.x86_64
 avahi-tools.x86_64
+avif-pixbuf-loader.x86_64
 b43-fwcutter.x86_64
 b43-openfwwf.noarch
 baobab.x86_64
@@ -237,6 +238,7 @@ dbus-x11.x86_64
 dconf.x86_64
 dconf-editor.x86_64
 default-editor.noarch
+default-fonts-core-sans.noarch
 dejavu-sans-fonts.noarch
 deltarpm.x86_64
 desktop-backgrounds-gnome.noarch
@@ -277,6 +279,7 @@ dracut-config-rescue.x86_64
 dracut-live.x86_64
 dracut-network.x86_64
 dracut-squash.x86_64
+duktape.i686
 duktape.x86_64
 e2fsprogs.x86_64
 e2fsprogs-libs.x86_64
@@ -314,8 +317,11 @@ exiv2.x86_64
 exiv2-libs.x86_64
 expat.i686
 expat.x86_64
+f2fs-tools.x86_64
 f38-backgrounds-base.noarch
 f38-backgrounds-gnome.noarch
+f39-backgrounds-base.noarch
+f39-backgrounds-gnome.noarch
 faad2-libs.x86_64
 fdk-aac-free.x86_64
 fedora-bookmarks.noarch
@@ -330,7 +336,6 @@ fedora-release-common.noarch
 fedora-release-identity-workstation.noarch
 fedora-release-workstation.noarch
 fedora-repos.noarch
-fedora-repos-modular.noarch
 fedora-third-party.noarch
 fedora-workstation-backgrounds.noarch
 fedora-workstation-repositories.x86_64
@@ -368,8 +373,6 @@ fonts-filesystem.noarch
 fpaste.noarch
 fprintd.x86_64
 fprintd-pam.x86_64
-freecad.x86_64
-freecad-data.noarch
 freeglut.x86_64
 freeipmi.x86_64
 freerdp-libs.x86_64
@@ -417,8 +420,7 @@ gdm.x86_64
 gdouros-symbola-fonts.noarch
 geoclue2.x86_64
 geoclue2-libs.x86_64
-geocode-glib-data.x86_64
-geocode-glib2.x86_64
+geocode-glib.x86_64
 geolite2-city.noarch
 geolite2-country.noarch
 geos.x86_64
@@ -511,6 +513,7 @@ gnutls.i686
 gnutls.x86_64
 gnutls-dane.x86_64
 gnutls-utils.x86_64
+go-filesystem.x86_64
 gobject-introspection.x86_64
 golang.x86_64
 golang-bin.x86_64
@@ -518,7 +521,7 @@ golang-src.noarch
 google-cloud-sdk.x86_64
 google-cloud-sdk-gke-gcloud-auth-plugin.x86_64
 google-droid-sans-fonts.noarch
-google-noto-emoji-color-fonts.noarch
+google-noto-color-emoji-fonts.noarch
 google-noto-fonts-common.noarch
 google-noto-naskh-arabic-vf-fonts.noarch
 google-noto-sans-arabic-vf-fonts.noarch
@@ -579,6 +582,7 @@ gstreamer1-plugin-openh264.x86_64
 gstreamer1-plugins-bad-free.x86_64
 gstreamer1-plugins-bad-free-extras.x86_64
 gstreamer1-plugins-bad-free-fluidsynth.x86_64
+gstreamer1-plugins-bad-free-libs.x86_64
 gstreamer1-plugins-bad-free-wildmidi.x86_64
 gstreamer1-plugins-bad-free-zbar.x86_64
 gstreamer1-plugins-bad-freeworld.x86_64
@@ -731,6 +735,8 @@ keepassxc.x86_64
 kernel.x86_64
 kernel.x86_64
 kernel.x86_64
+kernel.x86_64
+kernel-core.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
@@ -738,9 +744,12 @@ kernel-headers.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
+kernel-modules.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
+kernel-modules-core.x86_64
+kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
@@ -756,12 +765,13 @@ kpartx.x86_64
 krb5-libs.i686
 krb5-libs.x86_64
 kubectl.x86_64
+kyotocabinet-libs.x86_64
 ladspa.x86_64
 lame-libs.i686
 lame-libs.x86_64
 langpacks-core-en.noarch
-langpacks-core-font-en.noarch
 langpacks-en.noarch
+langpacks-fonts-en.noarch
 langtable.noarch
 lasi.x86_64
 lcms2.x86_64
@@ -845,13 +855,13 @@ libblockdev-btrfs.x86_64
 libblockdev-crypto.x86_64
 libblockdev-dm.x86_64
 libblockdev-fs.x86_64
-libblockdev-kbd.x86_64
 libblockdev-loop.x86_64
 libblockdev-lvm.x86_64
 libblockdev-lvm-dbus.x86_64
 libblockdev-mdraid.x86_64
 libblockdev-mpath.x86_64
 libblockdev-nvdimm.x86_64
+libblockdev-nvme.x86_64
 libblockdev-part.x86_64
 libblockdev-plugins-all.x86_64
 libblockdev-swap.x86_64
@@ -900,6 +910,7 @@ libdecor.x86_64
 libdhash.x86_64
 libdmapsharing4.x86_64
 libdnf.x86_64
+libdnf5.x86_64
 libdrm.i686
 libdrm.x86_64
 libdv.x86_64
@@ -908,6 +919,8 @@ libdvdread.x86_64
 libeconf.x86_64
 libedit.i686
 libedit.x86_64
+libei.x86_64
+libeis.x86_64
 libepoxy.x86_64
 liberation-fonts-common.noarch
 liberation-mono-fonts.noarch
@@ -982,6 +995,7 @@ libieee1284.x86_64
 libijs.x86_64
 libimagequant.x86_64
 libimobiledevice.x86_64
+libimobiledevice-glue.x86_64
 libini_config.x86_64
 libinput.x86_64
 libinstpatch.x86_64
@@ -1047,6 +1061,7 @@ libnotify.x86_64
 libnsl2.x86_64
 libnvme.x86_64
 liboauth.x86_64
+liboeffis.x86_64
 libogg.i686
 libogg.x86_64
 libopenmpt.x86_64
@@ -1058,8 +1073,9 @@ libpcap.x86_64
 libpciaccess.i686
 libpciaccess.x86_64
 libpeas.x86_64
-libpeas-gtk.x86_64
-libpeas-loader-python3.x86_64
+libpeas1.x86_64
+libpeas1-gtk.x86_64
+libpeas1-loader-python3.x86_64
 libphodav.x86_64
 libphonenumber.x86_64
 libpinyin.x86_64
@@ -1079,7 +1095,6 @@ libppd.x86_64
 libpq.x86_64
 libproxy.i686
 libproxy.x86_64
-libproxy-duktape.x86_64
 libpskc.x86_64
 libpsl.i686
 libpsl.x86_64
@@ -1204,6 +1219,7 @@ libverto.x86_64
 libverto-libev.x86_64
 libvirt-client.x86_64
 libvirt-daemon.x86_64
+libvirt-daemon-common.x86_64
 libvirt-daemon-config-network.x86_64
 libvirt-daemon-driver-interface.x86_64
 libvirt-daemon-driver-network.x86_64
@@ -1223,6 +1239,10 @@ libvirt-daemon-driver-storage-rbd.x86_64
 libvirt-daemon-driver-storage-scsi.x86_64
 libvirt-daemon-driver-storage-zfs.x86_64
 libvirt-daemon-kvm.x86_64
+libvirt-daemon-lock.x86_64
+libvirt-daemon-log.x86_64
+libvirt-daemon-plugin-lockd.x86_64
+libvirt-daemon-proxy.x86_64
 libvirt-glib.x86_64
 libvirt-libs.x86_64
 libvisual.i686
@@ -1279,6 +1299,8 @@ linux-firmware-whence.noarch
 livesys-scripts.noarch
 llvm-libs.i686
 llvm-libs.x86_64
+llvm16-libs.i686
+llvm16-libs.x86_64
 lm_sensors.x86_64
 lm_sensors-libs.i686
 lm_sensors-libs.x86_64
@@ -1350,6 +1372,7 @@ mesa-libxatracker.x86_64
 mesa-va-drivers.i686
 mesa-va-drivers.x86_64
 mesa-vulkan-drivers.x86_64
+metis.x86_64
 microcode_ctl.x86_64
 minizip-compat.x86_64
 minizip-ng.x86_64
@@ -1364,6 +1387,7 @@ mokutil.x86_64
 moreutils.x86_64
 mozilla-filesystem.x86_64
 mozjs102.x86_64
+mozjs115.x86_64
 mpage.x86_64
 mpdecimal.x86_64
 mpfr.x86_64
@@ -1395,6 +1419,7 @@ nettle.i686
 nettle.x86_64
 nfs-utils.x86_64
 nftables.x86_64
+nilfs-utils.x86_64
 nm-connection-editor.x86_64
 nmap-ncat.x86_64
 nordvpn.x86_64
@@ -1722,6 +1747,7 @@ python3-kiwisolver.x86_64
 python3-langtable.noarch
 python3-libcomps.x86_64
 python3-libdnf.x86_64
+python3-libdnf5.x86_64
 python3-libreport.x86_64
 python3-libs.x86_64
 python3-libselinux.x86_64
@@ -1753,6 +1779,7 @@ python3-pip.noarch
 python3-pivy.x86_64
 python3-ply.noarch
 python3-policycoreutils.noarch
+python3-pooch.noarch
 python3-productmd.noarch
 python3-psutil.x86_64
 python3-ptyprocess.noarch
@@ -1764,12 +1791,12 @@ python3-pycurl.x86_64
 python3-pygit2.x86_64
 python3-pyparsing.noarch
 python3-pyparted.x86_64
-python3-pyside2.x86_64
 python3-pysocks.noarch
 python3-pyte.noarch
 python3-pyudev.noarch
 python3-pyxdg.noarch
 python3-pyyaml.x86_64
+python3-rapidfuzz.x86_64
 python3-regex.x86_64
 python3-requests.noarch
 python3-requests-file.noarch
@@ -1781,7 +1808,6 @@ python3-scipy.x86_64
 python3-setools.x86_64
 python3-setproctitle.x86_64
 python3-setuptools.noarch
-python3-shiboken2.x86_64
 python3-simpleaudio.x86_64
 python3-simpleline.noarch
 python3-six.noarch
@@ -1798,6 +1824,7 @@ python3-wcwidth.noarch
 python3-websocket-client.noarch
 python3-xapps-overrides.x86_64
 python3-xlib.noarch
+python3-zombie-imp.noarch
 qadwaitadecorations-qt5.x86_64
 qadwaitadecorations-qt6.x86_64
 qemu-audio-alsa.x86_64
@@ -1805,6 +1832,7 @@ qemu-audio-dbus.x86_64
 qemu-audio-jack.x86_64
 qemu-audio-oss.x86_64
 qemu-audio-pa.x86_64
+qemu-audio-pipewire.x86_64
 qemu-audio-sdl.x86_64
 qemu-audio-spice.x86_64
 qemu-block-blkio.x86_64
@@ -1863,7 +1891,6 @@ qemu-user-static-sh4.x86_64
 qemu-user-static-sparc.x86_64
 qemu-user-static-x86.x86_64
 qemu-user-static-xtensa.x86_64
-qemu-virtiofsd.x86_64
 qgnomeplatform-qt5.x86_64
 qgnomeplatform-qt6.x86_64
 qpdf-libs.x86_64
@@ -1931,6 +1958,7 @@ rpm-plugin-systemd-inhibit.x86_64
 rpm-sequoia.x86_64
 rpm-sign-libs.x86_64
 rpmfusion-free-release.noarch
+rsvg-pixbuf-loader.x86_64
 rsync.x86_64
 rtkit.x86_64
 rubberband.x86_64
@@ -1955,7 +1983,6 @@ serd.x86_64
 setup.noarch
 setxkbmap.x86_64
 sg3_utils-libs.x86_64
-sgabios-bin.noarch
 sgpio.x86_64
 shadow-utils.x86_64
 shadow-utils-subid.x86_64
@@ -2042,6 +2069,7 @@ tbb.x86_64
 tcl.x86_64
 tcpdump.x86_64
 teamd.x86_64
+tecla.x86_64
 telnet.x86_64
 terraform.x86_64
 tesseract.x86_64
@@ -2068,6 +2096,7 @@ texlive-texlive.infra.noarch
 texlive-unicode-data.noarch
 thefuck.noarch
 thermald.x86_64
+thrift.x86_64
 tigervnc-license.noarch
 tigervnc-server-minimal.x86_64
 time.x86_64
@@ -2090,6 +2119,7 @@ twolame-libs.i686
 twolame-libs.x86_64
 tzdata.noarch
 uchardet.x86_64
+udftools.x86_64
 udisks2.x86_64
 udisks2-iscsi.x86_64
 ulauncher.noarch
@@ -2099,6 +2129,7 @@ unicode-ucd.noarch
 unixODBC.x86_64
 unzip.x86_64
 upower.x86_64
+upower-libs.x86_64
 uresourced.x86_64
 uriparser.x86_64
 urw-base35-bookman-fonts.noarch
@@ -2123,7 +2154,6 @@ userspace-rcu.x86_64
 utf8proc.x86_64
 util-linux.x86_64
 util-linux-core.x86_64
-util-linux-user.x86_64
 vamp-plugin-sdk.x86_64
 vapoursynth-libs.x86_64
 vazirmatn-vf-fonts.noarch
@@ -2138,6 +2168,7 @@ vim-powerline.noarch
 virglrenderer.x86_64
 virt-manager.noarch
 virt-manager-common.noarch
+virtiofsd.x86_64
 virtualbox-guest-additions.x86_64
 vo-amrwbenc.x86_64
 volume_key-libs.x86_64

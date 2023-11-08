@@ -25,42 +25,6 @@ gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=True
 
-[fedora-modular]
-name=Fedora Modular $releasever - $basearch
-#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Modular/$basearch/os/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-modular-$releasever&arch=$basearch
-enabled=1
-countme=1
-metadata_expire=7d
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
-
-[fedora-modular-debuginfo]
-name=Fedora Modular $releasever - $basearch - Debug
-#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Modular/$basearch/debug/tree/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-modular-debug-$releasever&arch=$basearch
-enabled=0
-metadata_expire=7d
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
-
-[fedora-modular-source]
-name=Fedora Modular $releasever - Source
-#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Modular/source/tree/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-modular-source-$releasever&arch=$basearch
-enabled=0
-metadata_expire=7d
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
 [fedora]
 name=Fedora $releasever - $basearch
 #baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/
@@ -97,42 +61,6 @@ type=rpm
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=False
-[updates-modular]
-name=Fedora Modular $releasever - $basearch - Updates
-#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Modular/$basearch/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-f$releasever&arch=$basearch
-enabled=1
-countme=1
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-metadata_expire=6h
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
-
-[updates-modular-debuginfo]
-name=Fedora Modular $releasever - $basearch - Updates - Debug
-#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Modular/$basearch/debug/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-debug-f$releasever&arch=$basearch
-enabled=0
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-metadata_expire=6h
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
-
-[updates-modular-source]
-name=Fedora Modular $releasever - Updates Source
-#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Modular/SRPMS/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-source-f$releasever&arch=$basearch
-enabled=0
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-metadata_expire=6h
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
 [updates]
 name=Fedora $releasever - $basearch - Updates
 #baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/
@@ -162,42 +90,6 @@ skip_if_unavailable=False
 name=Fedora $releasever - Updates Source
 #baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/
 metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&arch=$basearch
-enabled=0
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-metadata_expire=6h
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
-[updates-testing-modular]
-name=Fedora Modular $releasever - $basearch - Test Updates
-#baseurl=http://download.example/pub/fedora/linux/updates/testing/$releasever/Modular/$basearch/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-modular-f$releasever&arch=$basearch
-enabled=0
-countme=1
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-metadata_expire=6h
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
-
-[updates-testing-modular-debuginfo]
-name=Fedora Modular $releasever - $basearch - Test Updates Debug
-#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Modular/$basearch/debug/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-modular-debug-f$releasever&arch=$basearch
-enabled=0
-repo_gpgcheck=0
-type=rpm
-gpgcheck=1
-metadata_expire=6h
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
-skip_if_unavailable=False
-
-[updates-testing-modular-source]
-name=Fedora Modular $releasever - Test Updates Source
-#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Modular/SRPMS/
-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-modular-source-f$releasever&arch=$basearch
 enabled=0
 repo_gpgcheck=0
 type=rpm
@@ -315,6 +207,101 @@ enabled = 1
 gpgcheck = 1
 gpgkey = https://pkgs.k8s.io/core:/stable:/v1.28/rpm/repodata/repomd.xml.key
 name = Kubernetes
+
+[rpmfusion-free]
+name=RPM Fusion for Fedora $releasever - Free
+#baseurl=http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-$releasever&arch=$basearch
+enabled=1
+metadata_expire=14d
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-debuginfo]
+name=RPM Fusion for Fedora $releasever - Free - Debug
+#baseurl=http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/debug/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-debug-$releasever&arch=$basearch
+enabled=0
+metadata_expire=7d
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-source]
+name=RPM Fusion for Fedora $releasever - Free - Source
+#baseurl=http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/source/SRPMS/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-source-$releasever&arch=$basearch
+enabled=0
+metadata_expire=7d
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-updates]
+name=RPM Fusion for Fedora $releasever - Free - Updates
+#baseurl=http://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-released-$releasever&arch=$basearch
+enabled=1
+enabled_metadata=1
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-updates-debuginfo]
+name=RPM Fusion for Fedora $releasever - Free - Updates Debug
+#baseurl=http://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/debug/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-released-debug-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-updates-source]
+name=RPM Fusion for Fedora $releasever - Free - Updates Source
+#baseurl=http://download1.rpmfusion.org/free/fedora/updates/$releasever/SRPMS/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-released-source-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-updates-testing]
+name=RPM Fusion for Fedora $releasever - Free - Test Updates
+#baseurl=http://download1.rpmfusion.org/free/fedora/updates/testing/$releasever/$basearch/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-testing-$releasever&arch=$basearch
+enabled=0
+enabled_metadata=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-updates-testing-debuginfo]
+name=RPM Fusion for Fedora $releasever - Free - Test Updates Debug
+#baseurl=http://download1.rpmfusion.org/free/fedora/updates/testing/$releasever/$basearch/debug/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-testing-debug-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+
+[rpmfusion-free-updates-testing-source]
+name=RPM Fusion for Fedora $releasever - Free - Test Updates Source
+#baseurl=http://download1.rpmfusion.org/free/fedora/updates/testing/$releasever/SRPMS/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-testing-source-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
 
 [rpmfusion-nonfree-nvidia-driver]
 baseurl = http://download1.rpmfusion.org/nonfree/fedora/nvidia-driver/$releasever/$basearch/
