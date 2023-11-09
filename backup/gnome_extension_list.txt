@@ -1,6 +1,7 @@
 argos@pew.worldwidemann.com
 auto-move-windows@gnome-shell-extensions.gcampax.github.com
 blur-my-shell@aunetx
+burn-my-windows@schneegans.github.com
 caffeine@patapon.info
 ControlBlurEffectOnLockScreen@pratap.fastmail.fm
 dash-to-panel@jderose9.github.com
