@@ -578,7 +578,6 @@ gst-editing-services.x86_64
 gstreamer1.i686
 gstreamer1.x86_64
 gstreamer1-plugin-libav.x86_64
-gstreamer1-plugin-openh264.x86_64
 gstreamer1-plugins-bad-free.x86_64
 gstreamer1-plugins-bad-free-extras.x86_64
 gstreamer1-plugins-bad-free-fluidsynth.x86_64
@@ -591,10 +590,8 @@ gstreamer1-plugins-base.x86_64
 gstreamer1-plugins-good.i686
 gstreamer1-plugins-good.x86_64
 gstreamer1-plugins-good-extras.x86_64
-gstreamer1-plugins-good-gtk.x86_64
 gstreamer1-plugins-good-qt.x86_64
 gstreamer1-plugins-good-qt6.x86_64
-gstreamer1-plugins-ugly-free.x86_64
 gtk-update-icon-cache.x86_64
 gtk-vnc2.x86_64
 gtk3.x86_64
@@ -616,7 +613,6 @@ gvfs-afc.x86_64
 gvfs-afp.x86_64
 gvfs-archive.x86_64
 gvfs-client.x86_64
-gvfs-fuse.x86_64
 gvfs-goa.x86_64
 gvfs-gphoto2.x86_64
 gvfs-mtp.x86_64
@@ -818,7 +814,6 @@ libXvMC.x86_64
 libXxf86dga.x86_64
 libXxf86vm.i686
 libXxf86vm.x86_64
-liba52.x86_64
 libacl.x86_64
 libadwaita.x86_64
 libadwaita-qt5.x86_64
@@ -1039,7 +1034,6 @@ libmount.i686
 libmount.x86_64
 libmpc.x86_64
 libmpcdec.x86_64
-libmpeg2.x86_64
 libmspack.x86_64
 libmtp.x86_64
 libmysofa.x86_64
