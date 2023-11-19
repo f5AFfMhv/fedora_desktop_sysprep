@@ -73,6 +73,8 @@ git_repos:
     dest: "{{ git_dir }}/stylepak"
   - repo: https://github.com/vinceliuice/Tela-circle-icon-theme.git
     dest: "{{ git_dir }}/Tela-circle-icon-theme"
+  - repo: https://github.com/yilozt/rounded-window-corners.git
+    dest: "{{ git_dir }}/rounded-window-corners"
 
 enable_repositories:
   - name: webapp-manager
@@ -147,7 +149,6 @@ rpms:
   - docker-ce
   - docker-compose-plugin
   - feh
-  - freecad
   - fuse-sshfs
   - google-cloud-sdk
   - google-cloud-sdk-gke-gcloud-auth-plugin
@@ -208,6 +209,7 @@ rpms:
   - kubectl
   - gnome-tweaks
   - distrobox
+  - clapper
 
 bloat:
   - cheese
@@ -243,7 +245,6 @@ bloat:
 flatpaks:
   - cc.arduino.IDE2
   - com.getmailspring.Mailspring
-  - com.github.marktext.marktext
   - com.github.tchx84.Flatseal
   - com.heroicgameslauncher.hgl
   - com.jgraph.drawio.desktop
@@ -256,13 +257,14 @@ flatpaks:
   - io.github.jonmagon.kdiskmark
   - io.github.prateekmedia.appimagepool
   - io.github.realmazharhussain.GdmSettings
-  - net.cozic.joplin_desktop
   - org.gnome.Extensions
   - org.kicad.KiCad
   - org.onlyoffice.desktopeditors
   - org.videolan.VLC
   - tv.plex.PlexDesktop
   - com.visualstudio.code
+  - org.freedesktop.Platform.VulkanLayer.MangoHud
+  - org.remmina.Remmina
 
 python_packages:
   - autopep8
