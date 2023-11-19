@@ -15,7 +15,6 @@ io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
 net.cozic.joplin_desktop
-org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
@@ -29,6 +28,7 @@ org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.GL32.default
+org.freedesktop.Platform.VulkanLayer.MangoHud
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
