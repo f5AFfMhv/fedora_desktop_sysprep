@@ -47,7 +47,7 @@ cron_jobs:
     job: 'cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh'
 
 git_repos:
-  - repo: git@github.com:f5AFfMhv/fedora_desktop_sysprep.git
+  - repo: https://github.com/f5AFfMhv/fedora_desktop_sysprep.git
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
   - repo: https://github.com/Coda-Coda/argos.git
     dest: "{{ git_dir }}/argos"
@@ -221,6 +221,8 @@ bloat:
   - gnome-contacts
   - gnome-tour
   - gnome-photos
+  - gnome-maps
+  - gnome-characters
   - libreoffice-calc
   - libreoffice-core
   - libreoffice-data
@@ -263,7 +265,6 @@ flatpaks:
   - org.videolan.VLC
   - tv.plex.PlexDesktop
   - com.visualstudio.code
-  - org.freedesktop.Platform.VulkanLayer.MangoHud
   - org.remmina.Remmina
 
 python_packages:
@@ -271,7 +272,6 @@ python_packages:
   - certifi
   - exif
   - Flask
-  - gpg
   - google-auth
   - google-auth-oauthlib
   - gphotos-sync
