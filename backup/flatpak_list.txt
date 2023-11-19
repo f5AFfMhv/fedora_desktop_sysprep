@@ -1,6 +1,5 @@
 cc.arduino.IDE2
 com.getmailspring.Mailspring
-com.github.marktext.marktext
 com.github.tchx84.Flatseal
 com.heroicgameslauncher.hgl
 com.jgraph.drawio.desktop
@@ -14,8 +13,6 @@ io.github.hakandundar34coding.system-monitoring-center
 io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
-net.cozic.joplin_desktop
-org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
@@ -25,16 +22,18 @@ org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
-org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.VulkanLayer.MangoHud
+org.freedesktop.Platform.ffmpeg-full
+org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
 org.freedesktop.Sdk
 org.gnome.Extensions
+org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
 org.kde.KStyle.Adwaita
@@ -48,7 +47,6 @@ org.kicad.KiCad.Library.Packages3D
 org.kicad.KiCad.Library.Symbols
 org.kicad.KiCad.Library.Templates
 org.onlyoffice.desktopeditors
+org.remmina.Remmina
 org.videolan.VLC
-org.videolan.VLC
-tv.plex.PlexDesktop
 tv.plex.PlexDesktop

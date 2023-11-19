@@ -67,7 +67,6 @@ alsa-ucm.noarch
 alsa-utils.x86_64
 alternatives.x86_64
 amd-gpu-firmware.noarch
-amd-ucode-firmware.noarch
 anaconda.x86_64
 anaconda-core.x86_64
 anaconda-gui.x86_64
@@ -131,6 +130,7 @@ boost-regex.x86_64
 boost-system.x86_64
 boost-thread.x86_64
 botan2.x86_64
+bpytop.noarch
 braille-printer-app.x86_64
 brasero-libs.x86_64
 brcmfmac-firmware.noarch
@@ -439,7 +439,6 @@ gnome-bluetooth-libs.x86_64
 gnome-browser-connector.x86_64
 gnome-calculator.x86_64
 gnome-calendar.x86_64
-gnome-characters.x86_64
 gnome-classic-session.noarch
 gnome-clocks.x86_64
 gnome-color-manager.x86_64
@@ -454,7 +453,6 @@ gnome-initial-setup.x86_64
 gnome-keyring.x86_64
 gnome-keyring-pam.x86_64
 gnome-logs.x86_64
-gnome-maps.x86_64
 gnome-menus.x86_64
 gnome-online-accounts.x86_64
 gnome-remote-desktop.x86_64
@@ -1095,7 +1093,6 @@ libserf.x86_64
 libshaderc.x86_64
 libshout.i686
 libshout.x86_64
-libshumate.x86_64
 libsigc++20.x86_64
 libsigsegv.x86_64
 libslirp.x86_64
