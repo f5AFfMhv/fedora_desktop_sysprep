@@ -14,9 +14,11 @@ colorama
 configobj
 cryptography
 cupshelpers
+Cython
 dasbus
 dbus-python
 decorator
+distlib
 distro
 dnf
 evdev
@@ -41,12 +43,15 @@ MarkupSafe
 mercurial
 nftables
 olefile
+p5py
 packaging
 Paste
+pep517
 pexpect
 pid
 Pillow
 pip
+platformdirs
 ply
 powerline-status
 productmd
@@ -99,6 +104,8 @@ thefuck
 tldextract
 ulauncher
 urllib3
+virtualenv
 wcwidth
 websocket-client
+wheel
 zombie-imp
