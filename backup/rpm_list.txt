@@ -1689,6 +1689,7 @@ python3-xlib.noarch
 python3-zombie-imp.noarch
 qadwaitadecorations-qt5.x86_64
 qadwaitadecorations-qt6.x86_64
+qcustomplot-qt5.x86_64
 qemu-audio-alsa.x86_64
 qemu-audio-dbus.x86_64
 qemu-audio-jack.x86_64
@@ -1754,8 +1755,10 @@ qemu-user-static-sparc.x86_64
 qemu-user-static-x86.x86_64
 qemu-user-static-xtensa.x86_64
 qgnomeplatform-qt5.x86_64
+qhexedit2-qt5-libs.x86_64
 qpdf-libs.x86_64
 qrencode-libs.x86_64
+qscintilla-qt5.x86_64
 qt-settings.noarch
 qt5-qtbase.x86_64
 qt5-qtbase-common.noarch
@@ -1857,9 +1860,11 @@ spice-server.x86_64
 spice-vdagent.x86_64
 spice-webdavd.x86_64
 spirv-tools-libs.x86_64
+sqlcipher.x86_64
 sqlite.x86_64
 sqlite-libs.i686
 sqlite-libs.x86_64
+sqlitebrowser.x86_64
 squashfs-tools.x86_64
 sratom.x86_64
 srt-libs.x86_64
