@@ -1571,6 +1571,7 @@ pulseaudio-libs.i686
 pulseaudio-libs.x86_64
 pulseaudio-libs-glib2.x86_64
 python-pip-wheel.noarch
+python-setuptools-wheel.noarch
 python-systemd-doc.x86_64
 python-unversioned-command.noarch
 python3.x86_64
@@ -1684,9 +1685,13 @@ python3-urllib3.noarch
 python3-urllib3+socks.noarch
 python3-wcwidth.noarch
 python3-websocket-client.noarch
+python3-wheel.noarch
 python3-xapps-overrides.x86_64
 python3-xlib.noarch
 python3-zombie-imp.noarch
+python3.10.x86_64
+python3.10-libs.x86_64
+python3.10-tkinter.x86_64
 qadwaitadecorations-qt5.x86_64
 qadwaitadecorations-qt6.x86_64
 qcustomplot-qt5.x86_64
