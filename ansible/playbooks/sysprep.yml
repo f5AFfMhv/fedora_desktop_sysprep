@@ -1,6 +1,6 @@
 - name: Provision Fedora Desktop
   gather_facts: true
-  hosts: localhost
+  hosts: prd
   tasks:
     - name: Add repositories
       ansible.builtin.yum_repository:
@@ -77,9 +77,41 @@
         - flatpak
         - install
 
+    - name: Download get-pip.py script
+      ansible.builtin.get_url:
+        url: https://bootstrap.pypa.io/get-pip.py
+        dest: /tmp/get-pip.py
+        mode: "0770"
+      tags:
+        - python
+        - install
+
+    - name: Install pip3.10
+      ansible.builtin.command: python3.10 /tmp/get-pip.py
+      register: out
+      changed_when: out.rc == 0
+      tags:
+        - python
+        - install
+
+    - name: Upgrade pip
+      ansible.builtin.pip:
+        name:
+          - pip
+          - setuptools
+          - wheel
+          - virtualenv
+        extra_args: --upgrade
+      tags:
+        - python
+        - install
+
     - name: Install python packages
       ansible.builtin.pip:
-        name: "{{ python_packages }}"
+        name: "{{ item.name }}"
+        extra_args: --no-cache-dir
+        executable: "{{ item.pip }}"
+      with_items: "{{ python_packages }}"
       tags:
         - python
         - install
@@ -91,17 +123,6 @@
         user: "{{ user }}"
         nopassword: true
         commands: "{{ allow_sudo }}"
-      tags:
-        - config
-
-    - name: Create a symbolic links
-      ansible.builtin.file:
-        src: "{{ item.src }}"
-        dest: "{{ item.dest }}"
-        owner: "{{ user }}"
-        group: "{{ user }}"
-        state: link
-      with_items: "{{ symlinks }}"
       tags:
         - config
 
@@ -156,3 +177,36 @@
       tags:
         - config
         - git
+
+    - name: Create gnome extensions directory
+      ansible.builtin.file:
+        path: "/home/{{ user }}/.local/share/gnome-shell/extensions"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        mode: "0755"
+        state: directory
+      tags:
+        - config
+
+    - name: Create a symbolic links
+      ansible.builtin.file:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        state: link
+      with_items: "{{ symlinks }}"
+      tags:
+        - config
+
+    - name: Deploy dotfiles
+      ansible.builtin.copy:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        mode: "0664"
+        remote_src: true
+      with_items: "{{ dotfiles }}"
+      tags:
+        - config
