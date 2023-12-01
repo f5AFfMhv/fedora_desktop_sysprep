@@ -1885,6 +1885,7 @@ sane-backends-drivers-scanners.x86_64
 sane-backends-libs.x86_64
 satyr.x86_64
 seabios-bin.noarch
+seahorse.x86_64
 seavgabios-bin.noarch
 sed.x86_64
 selinux-policy.noarch
