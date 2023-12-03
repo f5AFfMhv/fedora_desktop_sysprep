@@ -121,6 +121,12 @@ disable_repositories:
     file: rpmfusion-nonfree-steam
     url: http://download1.rpmfusion.org/nonfree/fedora/steam/$releasever/$basearch/
 
+fonts:
+  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
 bloat:
   - cheese
   - nvidia-gpu-firmware

@@ -211,15 +211,31 @@
       tags:
         - config
 
+    - name: Create system fonts directory
+      ansible.builtin.file:
+        path: "/usr/local/share/fonts"
+        state: directory
+      tags:
+        - config
+        - fonts
+
+    - name: Download Nerd Fonts
+      ansible.builtin.get_url:
+        url: "{{ item }}"
+        dest: "/usr/local/share/fonts/"
+      with_items: "{{ fonts }}"
+      tags:
+        - config
+        - fonts
+
+    - name: Update font cache
+      ansible.builtin.command: fc-cache
+      tags:
+        - config
+        - fonts
+
     - name: Install Gnome Extensions
       ansible.builtin.raw: "sudo -H -u {{ user }} bash -c '{{ git_dir }}/gnome-shell-extension-installer/gnome-shell-extension-installer --yes {{ item.id }}'"
       with_items: "{{ extensions }}"
       tags:
         - extensions
-
-    # For dbus configuration load to work, at least one gnome session needs to exist. Also DBUS_SESSION_BUS_ADDRESS env variable needs to be set. Leaving this task as reference, but it probably will not be implemented.
-
-    # - name: Restore Gnome extensions settings from backup
-    #   ansible.builtin.raw: "sudo -H -u {{ user }} bash -c 'dconf load /org/gnome/shell/extensions/ < {{ git_dir }}/fedora_desktop_sysprep/backup/extensions_settings.txt'"
-    #   tags:
-    #     - extensions

@@ -14,8 +14,6 @@ git_repos:
     dest: "{{ git_dir }}/Graphite-gtk-theme"
   - repo: https://gitlab.com/VandalByte/darkmatter-grub-theme.git
     dest: "{{ git_dir }}/darkmatter-grub-theme"
-  - repo: https://github.com/abertsch/Menlo-for-Powerline.git
-    dest: "{{ git_dir }}/Menlo-for-Powerline"
   - repo: https://github.com/vinceliuice/Tela-circle-icon-theme.git
     dest: "{{ git_dir }}/Tela-circle-icon-theme"
   - repo: https://github.com/brunelli/gnome-shell-extension-installer.git

@@ -42,8 +42,8 @@ Dot files specified in `DOTFILES` variable are backed up to dotfiles directory. 
 
 ## Manual work
 
-Restore gnome extension configuration:
+Restore Fedora/Gnome settings from file. This is manual step as it requires gnome session to be present.
 
 ```bash
-dconf load /org/gnome/shell/extensions/ < extensions_settings.txt
+dconf load -f / < backup/fedora_settings.conf
 ```
