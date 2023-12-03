@@ -1,9 +1,4 @@
 ansible
-<<<<<<< HEAD
-=======
-ansible-cmdb
->>>>>>> da5917d (add extensions installation/backup)
-ansible-core
 appdirs
 argcomplete
 asciinema
@@ -22,7 +17,6 @@ cffi
 charset-normalizer
 click
 colorama
-<<<<<<< HEAD
 configobj
 contourpy
 cryptography
@@ -31,9 +25,7 @@ cycler
 Cython
 dasbus
 dbus-python
-=======
 cryptography
->>>>>>> da5917d (add extensions installation/backup)
 decorator
 distlib
 distro
@@ -52,7 +44,6 @@ google-auth-oauthlib
 hid-parser
 humanize
 idna
-<<<<<<< HEAD
 itsdangerous
 Jinja2
 jmespath
@@ -88,7 +79,6 @@ pexpect
 pid
 Pillow
 Pinion
-=======
 Jinja2
 jsonxs
 MarkupSafe
@@ -96,7 +86,6 @@ meson
 ninja
 oauthlib
 packaging
->>>>>>> da5917d (add extensions installation/backup)
 pip
 platformdirs
 ply
@@ -108,7 +97,6 @@ ptyprocess
 pwquality
 pyasn1
 pyasn1-modules
-<<<<<<< HEAD
 pybars3
 pycairo
 pycodestyle
@@ -127,9 +115,7 @@ pyOpenSSL
 pyparsing
 pyparted
 PySocks
-=======
 pycparser
->>>>>>> da5917d (add extensions installation/backup)
 pyte
 python-augeas
 python-dateutil
@@ -148,12 +134,9 @@ requests-file
 requests-ftp
 requests-oauthlib
 resolvelib
-<<<<<<< HEAD
 rpds-py
 rpm
-=======
 rich
->>>>>>> da5917d (add extensions installation/backup)
 rsa
 ruamel.yaml
 ruamel.yaml.clib
