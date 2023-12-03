@@ -181,12 +181,11 @@ last-prefs-version=39
 preview-effect=''
 
 [caffeine]
-indicator-position-max=-1
+indicator-position-max=1
 nightlight-control='never'
 restore-state=true
 show-indicator=false
 show-notifications=false
-toggle-state=false
 
 [dash-to-panel]
 animate-appicon-hover=false
