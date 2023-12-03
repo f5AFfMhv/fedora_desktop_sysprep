@@ -15,6 +15,8 @@ pip list | awk '{print $1}' | sed '1d;2d' > backup/python_list.txt
 ls -1 ~/.local/share/gnome-shell/extensions/ > backup/gnome_extension_list.txt
 # User crontab
 crontab -l > backup/user_crontab.txt
+# Gnome extensions configuration
+dconf load /org/gnome/shell/extensions/ > backup/extensions_settings.txt
 
 # Backup dotfiles
 DOTFILES=".zshrc .zshenv .vimrc .p10k.zsh .p10k-8color.zsh .alias.zsh"

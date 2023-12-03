@@ -10,7 +10,7 @@ git_repos:
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
   - repo: git@github.com:f5AFfMhv/argos_extensions.git
     dest: "{{ git_dir }}/argos_extensions"
-  - repo: https://github.com/Coda-Coda/argos.git
+  - repo: hhttps://github.com/p-e-w/argos.git
     dest: "{{ git_dir }}/argos"
   - repo: https://github.com/gohugoio/hugo.git
     dest: "{{ git_dir }}/hugo"
@@ -36,6 +36,8 @@ git_repos:
     dest: "{{ git_dir }}/Tela-circle-icon-theme"
   - repo: https://github.com/yilozt/rounded-window-corners.git
     dest: "{{ git_dir }}/rounded-window-corners"
+  - repo: https://github.com/brunelli/gnome-shell-extension-installer.git
+    dest: "{{ git_dir }}/gnome-shell-extension-installer"
 
 rpms:
   - python3.10
