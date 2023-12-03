@@ -13,7 +13,5 @@ no-overview@fthx
 panel-date-format@keiii.github.com
 panelScroll@sun.wxg@gmail.com
 rounded-window-corners@yilozt
-uptime-indicator@gniourfgniourf.gmail.com
 user-theme@gnome-shell-extensions.gcampax.github.com
-widgets@aylur
 workspace-indicator@gnome-shell-extensions.gcampax.github.com
