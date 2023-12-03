@@ -186,7 +186,7 @@ nightlight-control='never'
 restore-state=true
 show-indicator=false
 show-notifications=false
-toggle-state=true
+toggle-state=false
 
 [dash-to-panel]
 animate-appicon-hover=false
