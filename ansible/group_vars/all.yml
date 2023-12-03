@@ -157,3 +157,34 @@ bloat:
   - libreoffice-writer
   - libreoffice-x11
   - libreoffice-xsltfilter
+
+# Extensions IDs from https://extensions.gnome.org/
+extensions:
+  - name: "Auto Move Windows"
+    id: 16
+  - name: "Blur my Shell"
+    id: 3193
+  - name: "Burn My Windows"
+    id: 4679
+  - name: "Caffeine"
+    id: 517
+  - name: "Dash to Panel"
+    id: 1160
+  - name: "Extension List"
+    id: 3088
+  - name: "Forge"
+    id: 4481
+  - name: "Gnome 4x UI Improvements"
+    id: 4158
+  - name: "IP Finder"
+    id: 2983
+  - name: "No overview at start-up"
+    id: 4099
+  - name: "Panel Date Format"
+    id: 1462
+  - name: "panel scroll"
+    id: 1616
+  - name: "Rounded Window Corners"
+    id: 5237
+  - name: "User Themes"
+    id: 19

@@ -1,6 +1,6 @@
 - name: Provision Fedora Desktop
   gather_facts: true
-  hosts: prd
+  hosts: dev
   tasks:
     - name: Add repositories
       ansible.builtin.yum_repository:
@@ -210,3 +210,14 @@
       with_items: "{{ dotfiles }}"
       tags:
         - config
+
+    - name: Install Gnome Extensions
+      ansible.builtin.raw: "sudo -H -u {{ user }} bash -c '{{ git_dir }}/gnome-shell-extension-installer/gnome-shell-extension-installer --yes {{ item.id }}'"
+      with_items: "{{ extensions }}"
+      tags:
+        - extensions
+
+    - name: Restore Gnome extensions settings from backup
+      ansible.builtin.raw: "sudo -H -u {{ user }} bash -c 'dconf load /org/gnome/shell/extensions/ < {{ git_dir }}/fedora_desktop_sysprep/backup/extensions_settings.txt'"
+      tags:
+        - extensions
