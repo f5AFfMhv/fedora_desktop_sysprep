@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Collects information about installed packages,
 # gnome plugins, enabled repositories, etc.
 
