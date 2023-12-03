@@ -29,6 +29,7 @@ ansible-playbook playbooks/sysprep.yml
 - installed applications and flatpaks
 - present python modules
 - gnome extensions
+- gnome extension configuration
 - user crontab
 
 These lists are saved to backup directory.
@@ -37,4 +38,12 @@ Dot files specified in `DOTFILES` variable are backed up to dotfiles directory. 
 
 ```bash
 ./backup.sh
+```
+
+## Manual work
+
+Restore gnome extension configuration:
+
+```bash
+dconf load /org/gnome/shell/extensions/ < extensions_settings.txt
 ```

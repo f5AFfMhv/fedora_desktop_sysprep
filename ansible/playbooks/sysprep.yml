@@ -217,7 +217,9 @@
       tags:
         - extensions
 
-    - name: Restore Gnome extensions settings from backup
-      ansible.builtin.raw: "sudo -H -u {{ user }} bash -c 'dconf load /org/gnome/shell/extensions/ < {{ git_dir }}/fedora_desktop_sysprep/backup/extensions_settings.txt'"
-      tags:
-        - extensions
+    # For dbus configuration load to work, at least one gnome session needs to exist. Also DBUS_SESSION_BUS_ADDRESS env variable needs to be set. Leaving this task as reference, but it probably will not be implemented.
+
+    # - name: Restore Gnome extensions settings from backup
+    #   ansible.builtin.raw: "sudo -H -u {{ user }} bash -c 'dconf load /org/gnome/shell/extensions/ < {{ git_dir }}/fedora_desktop_sysprep/backup/extensions_settings.txt'"
+    #   tags:
+    #     - extensions
