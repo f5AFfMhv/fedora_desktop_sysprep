@@ -2,6 +2,7 @@ cc.arduino.IDE2
 com.github.tchx84.Flatseal
 com.heroicgameslauncher.hgl
 com.jgraph.drawio.desktop
+com.mattjakeman.ExtensionManager
 com.raggesilver.BlackBox
 com.spotify.Client
 com.transmissionbt.Transmission
@@ -31,7 +32,6 @@ org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
 org.freedesktop.Sdk
-org.gnome.Extensions
 org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
