@@ -92,7 +92,7 @@ flatpaks:
   - com.github.tchx84.Flatseal
   - com.raggesilver.BlackBox
   - io.github.realmazharhussain.GdmSettings
-  - org.gnome.Extensions
+  - com.mattjakeman.ExtensionManager
   - com.visualstudio.code
 
 python_packages:

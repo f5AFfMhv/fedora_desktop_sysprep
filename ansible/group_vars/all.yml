@@ -194,3 +194,5 @@ extensions:
     id: 5237
   - name: "User Themes"
     id: 19
+  - name: "Bing Wallpaper"
+    id: 1262

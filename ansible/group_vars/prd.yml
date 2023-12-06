@@ -146,7 +146,7 @@ flatpaks:
   - io.github.jonmagon.kdiskmark
   - io.github.prateekmedia.appimagepool
   - io.github.realmazharhussain.GdmSettings
-  - org.gnome.Extensions
+  - com.mattjakeman.ExtensionManager
   - org.kicad.KiCad
   - org.onlyoffice.desktopeditors
   - org.videolan.VLC
