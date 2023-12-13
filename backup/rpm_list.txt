@@ -873,6 +873,7 @@ libdhash.x86_64
 libdmapsharing4.x86_64
 libdnf.x86_64
 libdnf5.x86_64
+libdovi.x86_64
 libdrm.i686
 libdrm.x86_64
 libdv.x86_64
@@ -2021,6 +2022,7 @@ toolbox.x86_64
 totem-pl-parser.x86_64
 tpm2-tools.x86_64
 tpm2-tss.x86_64
+tpm2-tss-fapi.x86_64
 traceroute.x86_64
 tracker.x86_64
 tracker-miners.x86_64
