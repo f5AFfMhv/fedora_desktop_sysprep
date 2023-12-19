@@ -541,6 +541,7 @@ grub2-tools-extra.x86_64
 grub2-tools-minimal.x86_64
 grubby.x86_64
 gsettings-desktop-schemas.x86_64
+gsl.x86_64
 gsm.i686
 gsm.x86_64
 gsound.x86_64
@@ -640,6 +641,7 @@ ibus-libzhuyin.x86_64
 ibus-m17n.x86_64
 ibus-setup.noarch
 ibus-typing-booster.noarch
+igt-gpu-tools.x86_64
 iio-sensor-proxy.x86_64
 ilbc.x86_64
 ima-evm-utils.x86_64
@@ -1024,6 +1026,7 @@ liboeffis.x86_64
 libogg.i686
 libogg.x86_64
 libopenmpt.x86_64
+liboping.x86_64
 libosinfo.x86_64
 libpaper.x86_64
 libpasswdqc.x86_64
