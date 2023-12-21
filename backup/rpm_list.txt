@@ -68,6 +68,7 @@ alsa-ucm.noarch
 alsa-utils.x86_64
 alternatives.x86_64
 amd-gpu-firmware.noarch
+amd-ucode-firmware.noarch
 anaconda.x86_64
 anaconda-core.x86_64
 anaconda-gui.x86_64
@@ -652,6 +653,7 @@ iniparser.x86_64
 initscripts.x86_64
 initscripts-rename-device.x86_64
 initscripts-service.noarch
+insync.x86_64
 insync.x86_64
 intel-gpu-firmware.noarch
 intel-mediasdk.x86_64
@@ -1250,6 +1252,8 @@ linux-atm-libs.x86_64
 linux-firmware.noarch
 linux-firmware-whence.noarch
 livesys-scripts.noarch
+llvm-libs.i686
+llvm-libs.x86_64
 llvm16-libs.i686
 llvm16-libs.x86_64
 lm_sensors.x86_64
