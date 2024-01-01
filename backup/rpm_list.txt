@@ -656,7 +656,6 @@ initscripts.x86_64
 initscripts-rename-device.x86_64
 initscripts-service.noarch
 insync.x86_64
-insync.x86_64
 intel-gpu-firmware.noarch
 intel-mediasdk.x86_64
 inxi.noarch
@@ -1911,6 +1910,7 @@ qt6-qtwebsockets.x86_64
 qt6-qtwebview.x86_64
 quota.x86_64
 quota-nls.noarch
+radeontop.x86_64
 ranger.noarch
 raptor2.x86_64
 rav1e-libs.x86_64
