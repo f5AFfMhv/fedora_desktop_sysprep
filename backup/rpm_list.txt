@@ -807,6 +807,7 @@ libavdevice-free.x86_64
 libavfilter-free.x86_64
 libavformat-free.x86_64
 libavif.x86_64
+libavtp.x86_64
 libavutil-free.x86_64
 libb2.x86_64
 libbabeltrace.x86_64
