@@ -20,6 +20,7 @@ alias sshmount='sudo sshfs -o allow_other,default_permissions,idmap=user,uid=100
 alias lsblkk='lsblk -e7 -o name,fstype,fssize,fsuse%,mountpoint'
 alias grepall='sudo grep -rnwls / -e'
 alias psgrep='ps -ef | grep'
+alias dc='docker compose'
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
 alias exifrm='exiftool -all= -overwrite_original -ext jpg'
