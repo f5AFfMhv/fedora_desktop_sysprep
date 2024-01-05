@@ -79,6 +79,7 @@ rpms:
   - gstreamer1-plugins-good-qt
   - gstreamer1-plugins-ugly-free
   - gcc
+  - openssl
   - crontabs
   - openssh-askpass
   - vim
