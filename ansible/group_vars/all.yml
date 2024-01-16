@@ -168,6 +168,8 @@ bloat:
 extensions:
   - name: "Auto Move Windows"
     id: 16
+  - name: "Bluetooth battery indicator"
+    id: 3991
   - name: "Blur my Shell"
     id: 3193
   - name: "Burn My Windows"

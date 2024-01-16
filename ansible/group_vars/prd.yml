@@ -143,7 +143,6 @@ flatpaks:
   - com.jgraph.drawio.desktop
   - com.raggesilver.BlackBox
   - com.spotify.Client
-  - com.transmissionbt.Transmission
   - com.valvesoftware.Steam
   - com.valvesoftware.Steam.CompatibilityTool.Proton-GE
   - io.github.hakandundar34coding.system-monitoring-center
