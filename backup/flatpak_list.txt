@@ -1,5 +1,4 @@
 cc.arduino.IDE2
-com.emqx.MQTTX
 com.github.marktext.marktext
 com.github.tchx84.Flatseal
 com.heroicgameslauncher.hgl
@@ -19,9 +18,7 @@ io.github.realmazharhussain.GdmSettings
 net.cozic.joplin_desktop
 org.freedesktop.Platform
 org.freedesktop.Platform
-org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386
-org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
