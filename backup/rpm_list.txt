@@ -624,6 +624,7 @@ hunspell-en-GB.noarch
 hunspell-en-US.noarch
 hunspell-filesystem.x86_64
 hwdata.noarch
+hwloc-libs.x86_64
 hyperv-daemons.x86_64
 hyperv-daemons-license.noarch
 hypervfcopyd.x86_64
