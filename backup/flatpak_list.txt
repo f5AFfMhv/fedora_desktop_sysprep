@@ -15,6 +15,7 @@ io.github.hakandundar34coding.system-monitoring-center
 io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
+me.kozec.syncthingtk
 net.cozic.joplin_desktop
 org.freedesktop.Platform
 org.freedesktop.Platform
@@ -31,6 +32,7 @@ org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
 org.freedesktop.Sdk
+org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
 org.kde.KStyle.Adwaita
