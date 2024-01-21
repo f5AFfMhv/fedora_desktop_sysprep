@@ -1915,6 +1915,7 @@ shim-x64.x86_64
 sil-mingzat-fonts.noarch
 sil-nuosu-fonts.noarch
 sil-padauk-fonts.noarch
+skopeo.x86_64
 slang.x86_64
 slirp4netns.x86_64
 snappy.x86_64
