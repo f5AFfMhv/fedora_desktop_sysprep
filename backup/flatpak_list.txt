@@ -6,7 +6,6 @@ com.jgraph.drawio.desktop
 com.mattjakeman.ExtensionManager
 com.raggesilver.BlackBox
 com.spotify.Client
-com.transmissionbt.Transmission
 com.valvesoftware.Steam
 com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 com.visualstudio.code
@@ -49,4 +48,3 @@ org.mozilla.Thunderbird
 org.onlyoffice.desktopeditors
 org.remmina.Remmina
 org.videolan.VLC
-tv.plex.PlexDesktop

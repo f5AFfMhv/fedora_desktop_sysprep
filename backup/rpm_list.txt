@@ -1995,6 +1995,7 @@ tcl.x86_64
 tcpdump.x86_64
 teamd.x86_64
 tecla.x86_64
+telegraf.x86_64
 telnet.x86_64
 terraform.x86_64
 tesseract.x86_64

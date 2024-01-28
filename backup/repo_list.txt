@@ -138,6 +138,12 @@ baseurl = http://dl.google.com/linux/chrome/rpm/stable/x86_64
 enabled = 0
 name = google-chrome
 
+[influxdb]
+name = InfluxData Repository - Stable
+baseurl = https://repos.influxdata.com/stable/$basearch/main
+enabled = 1
+gpgcheck = 1
+gpgkey = https://repos.influxdata.com/influxdata-archive_compat.key
 [webapp-manager]
 baseurl = https://download.copr.fedorainfracloud.org/results/refi64/webapp-manager/fedora-$releasever-$basearch/
 enabled = 1
