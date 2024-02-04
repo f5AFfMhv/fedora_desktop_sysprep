@@ -1,6 +1,8 @@
 - name: Provision Fedora Desktop
   gather_facts: true
   hosts: dev
+  roles:
+    - prometheus.prometheus.node_exporter
   tasks:
     - name: Add repositories
       ansible.builtin.yum_repository:
