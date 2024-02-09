@@ -1379,6 +1379,7 @@ nss-mdns.x86_64
 nss-softokn.x86_64
 nss-softokn-freebl.x86_64
 nss-sysinit.x86_64
+nss-tools.x86_64
 nss-util.x86_64
 ntfs-3g.x86_64
 ntfs-3g-libs.x86_64
