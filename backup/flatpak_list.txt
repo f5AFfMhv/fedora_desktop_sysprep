@@ -1,4 +1,5 @@
 cc.arduino.IDE2
+com.github.iwalton3.jellyfin-media-player
 com.github.marktext.marktext
 com.github.tchx84.Flatseal
 com.heroicgameslauncher.hgl
@@ -35,8 +36,12 @@ org.gnome.Platform
 org.gnome.Platform
 org.kde.KStyle.Adwaita
 org.kde.Platform
+org.kde.Platform
+org.kde.PlatformTheme.QGnomePlatform
 org.kde.PlatformTheme.QGnomePlatform
 org.kde.WaylandDecoration.QAdwaitaDecorations
+org.kde.WaylandDecoration.QAdwaitaDecorations
+org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kicad.KiCad
 org.kicad.KiCad.Library.Footprints
