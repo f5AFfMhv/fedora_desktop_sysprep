@@ -64,6 +64,7 @@ path=(~/bin $path)
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="$PATH:/home/mj/github/flutter/bin"
 export PATH="$PATH:/opt/cmdline-tools/latest/bin"
+export PATH="$PATH:/opt/platform-tools"
 
 # Export environment variables.
 export GPG_TTY=$TTY

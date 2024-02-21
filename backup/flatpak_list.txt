@@ -35,6 +35,7 @@ org.freedesktop.Sdk
 org.gnome.Platform
 org.gnome.Platform
 org.kde.KStyle.Adwaita
+org.kde.KStyle.Adwaita
 org.kde.Platform
 org.kde.Platform
 org.kde.PlatformTheme.QGnomePlatform
