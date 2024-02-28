@@ -163,6 +163,7 @@ chromium-common.x86_64
 chrony.x86_64
 cifs-utils.x86_64
 cifs-utils-info.x86_64
+cirrus-audio-firmware.noarch
 cjson.x86_64
 clapper.x86_64
 cldr-emoji-annotation.noarch
@@ -494,6 +495,7 @@ golang-bin.x86_64
 golang-src.noarch
 google-cloud-sdk.x86_64
 google-cloud-sdk-gke-gcloud-auth-plugin.x86_64
+google-crc32c.x86_64
 google-droid-sans-fonts.noarch
 google-noto-color-emoji-fonts.noarch
 google-noto-fonts-common.noarch
@@ -655,6 +657,7 @@ initscripts.x86_64
 initscripts-rename-device.x86_64
 initscripts-service.noarch
 insync.x86_64
+intel-audio-firmware.noarch
 intel-gpu-firmware.noarch
 intel-mediasdk.x86_64
 inxi.noarch
@@ -751,6 +754,7 @@ libX11.x86_64
 libX11-common.noarch
 libX11-xcb.i686
 libX11-xcb.x86_64
+libXNVCtrl.x86_64
 libXScrnSaver.x86_64
 libXau.i686
 libXau.x86_64
@@ -1207,6 +1211,7 @@ libvmaf.x86_64
 libvncserver.x86_64
 libvorbis.i686
 libvorbis.x86_64
+libvpl.x86_64
 libvpx.i686
 libvpx.x86_64
 libwacom.x86_64
@@ -1355,6 +1360,7 @@ nautilus.x86_64
 nautilus-extensions.x86_64
 ncurses.x86_64
 ncurses-base.noarch
+ncurses-compat-libs.x86_64
 ncurses-libs.i686
 ncurses-libs.x86_64
 ndctl.x86_64
@@ -1388,8 +1394,8 @@ ntfsprogs.x86_64
 numactl-libs.x86_64
 numad.x86_64
 nvme-cli.x86_64
+nxpwireless-firmware.noarch
 ocl-icd.x86_64
-oneVPL.x86_64
 oneVPL-intel-gpu.x86_64
 oniguruma.x86_64
 open-sans-fonts.noarch
@@ -1474,6 +1480,7 @@ perl-Error.noarch
 perl-Exporter.noarch
 perl-Fcntl.x86_64
 perl-File-Basename.noarch
+perl-File-Copy.noarch
 perl-File-Find.noarch
 perl-File-Path.noarch
 perl-File-Temp.noarch
@@ -1512,6 +1519,7 @@ perl-SelectSaver.noarch
 perl-Socket.x86_64
 perl-Storable.x86_64
 perl-Symbol.noarch
+perl-Sys-Hostname.x86_64
 perl-Term-ANSIColor.noarch
 perl-Term-Cap.noarch
 perl-TermReadKey.x86_64
@@ -1846,6 +1854,7 @@ qt5-qtmultimedia.x86_64
 qt5-qtquickcontrols2.x86_64
 qt5-qtscript.x86_64
 qt5-qtsvg.x86_64
+qt5-qttranslations.noarch
 qt5-qtwayland.x86_64
 qt5-qtx11extras.x86_64
 qt5-qtxmlpatterns.x86_64
@@ -1854,6 +1863,7 @@ qt6-qtbase-common.noarch
 qt6-qtbase-gui.x86_64
 qt6-qtdeclarative.x86_64
 qt6-qtsvg.x86_64
+qt6-qttranslations.noarch
 qt6-qtwayland.x86_64
 quota.x86_64
 quota-nls.noarch
@@ -1865,6 +1875,7 @@ re2.x86_64
 readline.x86_64
 realmd.x86_64
 realtek-firmware.noarch
+redhat-lsb.x86_64
 redhat-lsb-core.x86_64
 redhat-menus.noarch
 rest.x86_64
@@ -2027,6 +2038,7 @@ tigervnc-license.noarch
 tigervnc-server-minimal.x86_64
 time.x86_64
 timeshift.x86_64
+tiwilink-firmware.noarch
 tk.x86_64
 tmux.x86_64
 toilet.x86_64
