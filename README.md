@@ -21,7 +21,7 @@ ansible-playbook playbooks/sysprep.yml
 - Create cron jobs
 - Sync git repositories
 - Deploy dotfiles
-- Install nerdfonts
+- Install fonts
 - Install Gnome extensions
 - Install prometheus node exporter (prometheus.prometheus.node_exporter ansible role)
 

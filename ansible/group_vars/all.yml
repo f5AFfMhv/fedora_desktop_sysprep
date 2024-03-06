@@ -2,8 +2,7 @@
 user: mj
 domain: home.lab
 dns:
-  - 192.168.1.4
-  - 1.1.1.1
+  - 192.168.1.40
 git_dir: "/home/{{ user }}/github"
 
 allow_sudo:

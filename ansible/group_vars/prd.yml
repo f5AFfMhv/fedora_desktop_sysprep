@@ -153,9 +153,7 @@ flatpaks:
   - org.kicad.KiCad
   - org.onlyoffice.desktopeditors
   - org.videolan.VLC
-  - tv.plex.PlexDesktop
   - com.visualstudio.code
-  - org.remmina.Remmina
   - io.github.giantpinkrobots.flatsweep
   - org.mozilla.Thunderbird
   - net.cozic.joplin_desktop
