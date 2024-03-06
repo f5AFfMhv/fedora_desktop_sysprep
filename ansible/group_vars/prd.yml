@@ -107,8 +107,8 @@ rpms:
   - ansible-collection-community-docker
   - docker-ce
   - docker-compose-plugin
-  - google-cloud-sdk
-  - google-cloud-sdk-gke-gcloud-auth-plugin
+  # - google-cloud-sdk
+  # - google-cloud-sdk-gke-gcloud-auth-plugin
   - hugo
   - iperf
   - jq
@@ -159,6 +159,8 @@ flatpaks:
   - io.github.giantpinkrobots.flatsweep
   - org.mozilla.Thunderbird
   - net.cozic.joplin_desktop
+  - me.kozec.syncthingtk
+  - com.github.iwalton3.jellyfin-media-player
 
 python_packages:
   - name: PcbDraw

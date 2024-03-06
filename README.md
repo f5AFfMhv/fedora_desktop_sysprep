@@ -20,6 +20,10 @@ ansible-playbook playbooks/sysprep.yml
 - Configure DNS (use dnsmasq instead of systemd-networkd)
 - Create cron jobs
 - Sync git repositories
+- Deploy dotfiles
+- Install nerdfonts
+- Install Gnome extensions
+- Install prometheus node exporter (prometheus.prometheus.node_exporter ansible role)
 
 ## Backup
 
@@ -29,7 +33,7 @@ ansible-playbook playbooks/sysprep.yml
 - installed applications and flatpaks
 - present python modules
 - gnome extensions
-- gnome extension configuration
+- fedora configuration
 - user crontab
 
 These lists are saved to backup directory.
