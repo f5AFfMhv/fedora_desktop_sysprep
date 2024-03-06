@@ -1,6 +1,6 @@
 - name: Provision Fedora Desktop
   gather_facts: true
-  hosts: dev
+  hosts: 192.168.1.122
   roles:
     - prometheus.prometheus.node_exporter
   tasks:
@@ -197,6 +197,7 @@
         owner: "{{ user }}"
         group: "{{ user }}"
         state: link
+        force: true
       with_items: "{{ symlinks }}"
       tags:
         - config

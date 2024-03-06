@@ -10,7 +10,7 @@ git_repos:
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
   - repo: git@github.com:f5AFfMhv/argos_extensions.git
     dest: "{{ git_dir }}/argos_extensions"
-  - repo: hhttps://github.com/p-e-w/argos.git
+  - repo: https://github.com/p-e-w/argos.git
     dest: "{{ git_dir }}/argos"
   - repo: https://github.com/gohugoio/hugo.git
     dest: "{{ git_dir }}/hugo"
