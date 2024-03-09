@@ -72,19 +72,11 @@
         - flatpak
         - install
 
-    - name: Gather the package facts
-      ansible.builtin.package_facts:
-        manager: auto
-      tags:
-        - python
-        - install
-
     - name: Download get-pip.py script
       ansible.builtin.get_url:
         url: https://bootstrap.pypa.io/get-pip.py
         dest: /tmp/get-pip.py
         mode: "0770"
-      when: "'python3.10' not in ansible_facts.packages"
       tags:
         - python
         - install
@@ -93,7 +85,6 @@
       ansible.builtin.command: python3.10 /tmp/get-pip.py
       register: out
       changed_when: out.rc == 0
-      when: "'python3.10' not in ansible_facts.packages"
       tags:
         - python
         - install
