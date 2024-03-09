@@ -3,6 +3,7 @@
   hosts: 192.168.1.122
   roles:
     - prometheus.prometheus.node_exporter
+    - petermosmans.customize-gnome
   tasks:
     - name: Add repositories
       ansible.builtin.yum_repository:
@@ -58,15 +59,7 @@
         name: flathub
         state: present
         flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
-      tags:
-        - flatpak
-        - install
-
-    - name: Remove filtered option from flathub repository
-      ansible.builtin.command:
-        cmd: flatpak remote-modify flathub --no-filter
-      register: output
-      changed_when: output.rc == 0
+      notify: Remove filtered option from flathub repository
       tags:
         - flatpak
         - install
@@ -79,11 +72,19 @@
         - flatpak
         - install
 
+    - name: Gather the package facts
+      ansible.builtin.package_facts:
+        manager: auto
+      tags:
+        - python
+        - install
+
     - name: Download get-pip.py script
       ansible.builtin.get_url:
         url: https://bootstrap.pypa.io/get-pip.py
         dest: /tmp/get-pip.py
         mode: "0770"
+      when: "'python3.10' not in ansible_facts.packages"
       tags:
         - python
         - install
@@ -92,6 +93,7 @@
       ansible.builtin.command: python3.10 /tmp/get-pip.py
       register: out
       changed_when: out.rc == 0
+      when: "'python3.10' not in ansible_facts.packages"
       tags:
         - python
         - install
@@ -134,16 +136,6 @@
         state: "{{ item.state }}"
         enabled: "{{ item.enabled }}"
       with_items: "{{ services }}"
-      tags:
-        - config
-
-    - name: Add DNS configuration
-      ansible.builtin.template:
-        src: resolv.conf.j2
-        dest: /etc/resolv.conf
-        owner: root
-        group: root
-        mode: "0644"
       tags:
         - config
 
@@ -214,6 +206,16 @@
       tags:
         - config
 
+    - name: Add DNS configuration
+      ansible.builtin.template:
+        src: resolv.conf.j2
+        dest: /etc/resolv.conf
+        owner: root
+        group: root
+        mode: "0644"
+      tags:
+        - config
+
     - name: Create system fonts directory
       ansible.builtin.file:
         path: "/usr/local/share/fonts"
@@ -222,23 +224,29 @@
         - config
         - fonts
 
-    - name: Download Nerd Fonts
+    - name: Download fonts
       ansible.builtin.get_url:
         url: "{{ item }}"
         dest: "/usr/local/share/fonts/"
       with_items: "{{ fonts }}"
+      notify: Update font cache
       tags:
         - config
         - fonts
+
+    - name: Set zsh as shell for user
+      ansible.builtin.user:
+        name: "{{ user }}"
+        shell: /usr/bin/zsh
+      tags:
+        - config
+
+  handlers:
+    - name: Remove filtered option from flathub repository
+      ansible.builtin.command:
+        cmd: flatpak remote-modify flathub --no-filter
+      register: output
+      changed_when: output.rc == 0
 
     - name: Update font cache
       ansible.builtin.command: fc-cache
-      tags:
-        - config
-        - fonts
-
-    - name: Install Gnome Extensions
-      ansible.builtin.raw: "sudo -H -u {{ user }} bash -c '{{ git_dir }}/gnome-shell-extension-installer/gnome-shell-extension-installer --yes {{ item.id }}'"
-      with_items: "{{ extensions }}"
-      tags:
-        - extensions

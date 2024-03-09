@@ -164,34 +164,35 @@ bloat:
   - libreoffice-xsltfilter
 
 # Extensions IDs from https://extensions.gnome.org/
-extensions:
-  - name: "Auto Move Windows"
-    id: 16
-  - name: "Bluetooth battery indicator"
-    id: 3991
-  - name: "Blur my Shell"
-    id: 3193
-  - name: "Burn My Windows"
-    id: 4679
-  - name: "Caffeine"
-    id: 517
-  - name: "Dash to Panel"
-    id: 1160
-  - name: "Extension List"
-    id: 3088
-  - name: "Forge"
-    id: 4481
-  - name: "Gnome 4x UI Improvements"
-    id: 4158
-  - name: "IP Finder"
-    id: 2983
-  - name: "No overview at start-up"
-    id: 4099
-  - name: "Panel Date Format"
-    id: 1462
-  - name: "panel scroll"
-    id: 1616
-  - name: "Rounded Window Corners"
-    id: 5237
-  - name: "User Themes"
-    id: 19
+gnome_user: "{{ user }}"
+gnome_extensions:
+  - id: 16 # Auto Move Windows
+    enable: true
+  - id: 3991 # Bluetooth battery indicator
+    enable: true
+  - id: 3193 # Blur my Shell
+    enable: true
+  - id: 4679 # Burn My Windows
+    enable: true
+  - id: 517 # Caffeine
+    enable: true
+  - id: 1160 # Dash to Panel
+    enable: true
+  - id: 3088 # Extension List
+    enable: true
+  - id: 4481 # Forge
+    enable: true
+  - id: 4158 # Gnome 4x UI Improvements
+    enable: true
+  - id: 2983 # IP Finder
+    enable: false
+  - id: 4099 # No overview at start-up
+    enable: true
+  - id: 1462 # Panel Date Format
+    enable: true
+  - id: 1616 # panel scroll
+    enable: true
+  - id: 5237 # Rounded Window Corners
+    enable: true
+  - id: 19 # User Themes
+    enable: true

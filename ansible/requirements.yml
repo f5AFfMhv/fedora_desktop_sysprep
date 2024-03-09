@@ -1,0 +1,6 @@
+---
+collections:
+  - community.general
+  - prometheus.prometheus
+roles:
+  - petermosmans.customize-gnome

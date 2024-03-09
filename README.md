@@ -2,13 +2,30 @@
 
 Ansible playbook for preparing Fedora desktop system with Gnome DE.
 
+## Pre-install
+
+Remote host:
+
+1. [Install Fedora](https://fedoraproject.org/workstation/download).
+2. Create user and update `user` in ansible/group_vars/all.yml and `remote_user` in ansible/ansible.cfg.
+3. Start sshd service `sudo systemctl start sshd`
+4. Make sure automatic suspend is disabled.
+
+Local host:
+
+1. Install requirements `ansible-galaxy install -r requirements.yml`
+2. Add remote host ip or hostname to inventory file.
+3. Configure ssh access `ssh-copy-id user@hostname`.
+4. For prod add ssh key to remote host `~/.ssh` directory.
+
+## Install
+
 ```bash
 cd ansible
-# Update ansible.cfg with correct user
 ansible-playbook playbooks/sysprep.yml
 ```
 
-## Performed tasks:
+Ansible playbook will:
 
 - Add/remove RPM repositories
 - Install/remove RPM packages
@@ -23,9 +40,21 @@ ansible-playbook playbooks/sysprep.yml
 - Deploy dotfiles
 - Install fonts
 - Install Gnome extensions
-- Install prometheus node exporter (prometheus.prometheus.node_exporter ansible role)
+- Install prometheus node exporter
 
-## Backup
+## Post-install
+
+1. Restore Fedora/Gnome settings from file. This is a manual step as it requires gnome session to be present.
+
+```bash
+dconf load -f / < backup/fedora_settings.conf
+```
+
+2. [Install themes](https://www.gnome-look.org/browse/).
+3. Enable firefox, google-drive, vscode, gphotos sync.
+4. Configure Timeshift backups.
+
+## System Backup
 
 `backup.sh` script gathers lists of:
 
@@ -42,12 +71,4 @@ Dot files specified in `DOTFILES` variable are backed up to dotfiles directory. 
 
 ```bash
 ./backup.sh
-```
-
-## Manual work
-
-Restore Fedora/Gnome settings from file. This is manual step as it requires gnome session to be present.
-
-```bash
-dconf load -f / < backup/fedora_settings.conf
 ```

@@ -1,21 +1,19 @@
 ---
 cron_jobs:
   - name: Sync google photos
-    job: "/home/{{ user }}/.local/bin/gphotos-sync /home/{{ user }}/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1"
+    job: "/usr/local/bin/gphotos-sync /home/{{ user }}/google/photos/jankunasmartynas"
   - name: Git backup
-    job: "cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
+    job: "#cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
 
 git_repos:
   - repo: git@github.com:f5AFfMhv/fedora_desktop_sysprep.git
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
   - repo: git@github.com:f5AFfMhv/argos_extensions.git
     dest: "{{ git_dir }}/argos_extensions"
-  - repo: https://github.com/p-e-w/argos.git
+  - repo: https://github.com/Coda-Coda/argos.git
     dest: "{{ git_dir }}/argos"
   - repo: https://github.com/gohugoio/hugo.git
     dest: "{{ git_dir }}/hugo"
-  - repo: https://github.com/ventoy/ventoy.git
-    dest: "{{ git_dir }}/ventoy"
   - repo: https://github.com/b3nj5m1n/xdg-ninja.git
     dest: "{{ git_dir }}/xdg-ninja"
   - repo: https://github.com/romkatv/zsh4humans.git
@@ -36,10 +34,10 @@ git_repos:
     dest: "{{ git_dir }}/Tela-circle-icon-theme"
   - repo: https://github.com/yilozt/rounded-window-corners.git
     dest: "{{ git_dir }}/rounded-window-corners"
-  - repo: https://github.com/brunelli/gnome-shell-extension-installer.git
-    dest: "{{ git_dir }}/gnome-shell-extension-installer"
   - repo: https://github.com/comfyanonymous/ComfyUI.git
     dest: "{{ git_dir }}/ComfyUI"
+  - repo: https://github.com/imarkoff/Marble-shell-theme.git
+    dest: "{{ git_dir }}/Marble-shell-theme"
 
 rpms:
   - python3.10
@@ -47,8 +45,6 @@ rpms:
   - python3-devel
   - python3-autopep8
   - python3-certifi
-  - python3-google-auth
-  - python3-google-auth-oauthlib
   - python3-kubernetes
   - python3-jmespath
   - python3-jsonschema
@@ -107,8 +103,7 @@ rpms:
   - ansible-collection-community-docker
   - docker-ce
   - docker-compose-plugin
-  # - google-cloud-sdk
-  # - google-cloud-sdk-gke-gcloud-auth-plugin
+  - google-cloud-cli
   - hugo
   - iperf
   - jq
