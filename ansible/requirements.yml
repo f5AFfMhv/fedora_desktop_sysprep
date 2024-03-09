@@ -1,6 +1,6 @@
 ---
 collections:
-  - community.general
-  - prometheus.prometheus
+  - name: community.general
+  - name: prometheus.prometheus
 roles:
-  - petermosmans.customize-gnome
+  - name: customize-gnome
