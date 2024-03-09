@@ -1906,6 +1906,7 @@ sane-backends.x86_64
 sane-backends-drivers-cameras.x86_64
 sane-backends-drivers-scanners.x86_64
 sane-backends-libs.x86_64
+sassc.x86_64
 satyr.x86_64
 seabios-bin.noarch
 seahorse.x86_64

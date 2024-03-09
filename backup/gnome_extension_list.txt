@@ -4,7 +4,6 @@ bluetooth-battery@michalw.github.com
 blur-my-shell@aunetx
 burn-my-windows@schneegans.github.com
 caffeine@patapon.info
-ControlBlurEffectOnLockScreen@pratap.fastmail.fm
 dash-to-panel@jderose9.github.com
 extension-list@tu.berry
 forge@jmmaranan.com
@@ -15,4 +14,3 @@ panel-date-format@keiii.github.com
 panelScroll@sun.wxg@gmail.com
 rounded-window-corners@yilozt
 user-theme@gnome-shell-extensions.gcampax.github.com
-workspace-indicator@gnome-shell-extensions.gcampax.github.com
