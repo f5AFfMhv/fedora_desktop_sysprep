@@ -174,6 +174,8 @@ color-filesystem.noarch
 colord.x86_64
 colord-gtk4.x86_64
 colord-libs.x86_64
+composefs.x86_64
+composefs-libs.x86_64
 compsize.x86_64
 conmon.x86_64
 container-selinux.noarch
@@ -1430,6 +1432,7 @@ orca.noarch
 os-prober.x86_64
 osinfo-db.noarch
 osinfo-db-tools.x86_64
+ostree.x86_64
 ostree-libs.x86_64
 p11-kit.i686
 p11-kit.x86_64
