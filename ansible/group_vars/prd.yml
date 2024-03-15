@@ -130,6 +130,7 @@ rpms:
   - chromium
   - cpu-x
   - radeontop
+  - ostree
 
 flatpaks:
   - cc.arduino.IDE2
@@ -151,9 +152,9 @@ flatpaks:
   - com.visualstudio.code
   - io.github.giantpinkrobots.flatsweep
   - org.mozilla.Thunderbird
-  - net.cozic.joplin_desktop
   - me.kozec.syncthingtk
   - com.github.iwalton3.jellyfin-media-player
+  - md.obsidian.Obsidian
 
 python_packages:
   - name: PcbDraw
