@@ -30,8 +30,10 @@ org.freedesktop.Platform.VulkanLayer.MangoHud
 org.freedesktop.Platform.ffmpeg-full
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
+org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
 org.freedesktop.Sdk
+org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
 org.gtk.Gtk3theme.Orchis-Green-Dark-Compact
