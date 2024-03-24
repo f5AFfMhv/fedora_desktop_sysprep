@@ -36,6 +36,7 @@ org.freedesktop.Sdk
 org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
+org.gnome.World.PikaBackup
 org.gtk.Gtk3theme.Orchis-Green-Dark-Compact
 org.kde.KStyle.Adwaita
 org.kde.KStyle.Adwaita
