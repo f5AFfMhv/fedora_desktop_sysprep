@@ -6,15 +6,14 @@ BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm
 burn-my-windows@schneegans.github.com
 caffeine@patapon.info
 dash-to-panel@jderose9.github.com
-easy_docker_containers@red.software.systems
 extension-list@tu.berry
 forge@jmmaranan.com
 gnome-ui-tune@itstime.tech
 IP-Finder@linxgem33.com
 no-overview@fthx
-openbar@neuromorph
 panel-date-format@keiii.github.com
 panelScroll@sun.wxg@gmail.com
 rounded-window-corners@yilozt
+update-extension@purejava.org
 user-theme@gnome-shell-extensions.gcampax.github.com
 Vitals@CoreCoding.com
