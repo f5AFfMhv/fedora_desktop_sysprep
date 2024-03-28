@@ -13,6 +13,7 @@ allow_sudo:
   - /usr/bin/mount
   - /usr/bin/sshfs
   - /usr/bin/docker
+  - /home/mj/.local/bin/fedora_update.sh
 
 dotfiles:
   - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.vimrc"
@@ -171,14 +172,18 @@ gnome_extensions:
   - id: 3991 # Bluetooth battery indicator
     enable: true
   - id: 3193 # Blur my Shell
+    enable: false
+  - id: 2917 # Bring Out Submenu Of Power Off Button
     enable: true
   - id: 4679 # Burn My Windows
     enable: true
   - id: 517 # Caffeine
-    enable: true
+    enable: false
   - id: 1160 # Dash to Panel
     enable: true
   - id: 3088 # Extension List
+    enable: false
+  - id: 6406 # Fedora Linux Update Indicator
     enable: true
   - id: 4481 # Forge
     enable: true
@@ -189,10 +194,12 @@ gnome_extensions:
   - id: 4099 # No overview at start-up
     enable: true
   - id: 1462 # Panel Date Format
-    enable: true
+    enable: false
   - id: 1616 # panel scroll
     enable: true
   - id: 5237 # Rounded Window Corners
-    enable: true
+    enable: false
   - id: 19 # User Themes
+    enable: true
+  - id: 1460 # Vitals
     enable: true

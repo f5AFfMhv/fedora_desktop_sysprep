@@ -38,6 +38,8 @@ git_repos:
     dest: "{{ git_dir }}/ComfyUI"
   - repo: https://github.com/imarkoff/Marble-shell-theme.git
     dest: "{{ git_dir }}/Marble-shell-theme"
+  - repo: https://github.com/vinceliuice/Fluent-gtk-theme.git
+    dest: "{{ git_dir }}/Fluent-gtk-theme"
 
 rpms:
   - python3.10
