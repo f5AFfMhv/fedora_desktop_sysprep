@@ -3,4 +3,4 @@ collections:
   - name: community.general
   - name: prometheus.prometheus
 roles:
-  - name: customize-gnome
+  - name: petermosmans.customize-gnome
