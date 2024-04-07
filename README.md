@@ -15,8 +15,9 @@ Local host:
 
 1. Install requirements `ansible-galaxy install -r requirements.yml`
 2. Add remote host ip or hostname to inventory file.
-3. Configure ssh access `ssh-copy-id user@hostname`.
-4. For prod add ssh key to remote host `~/.ssh` directory.
+3. Update sysprep.yaml playbook host if needed.
+4. Configure ssh access `ssh-copy-id user@hostname`.
+5. For prod add ssh key to remote host `~/.ssh` directory.
 
 ## Install
 
@@ -53,6 +54,10 @@ dconf load -f / < backup/fedora_settings.conf
 2. [Install themes](https://www.gnome-look.org/browse/).
 3. Enable firefox, google-drive, vscode, gphotos sync.
 4. Configure Timeshift backups.
+
+### Issue with extensions
+
+Some extensions shows missing file error after installation. To resolve this remove extension using `Extensions Manager` and install it again manually.
 
 ## System Backup
 
