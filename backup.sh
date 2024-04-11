@@ -1,7 +1,15 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Collects information about installed packages,
 # gnome plugins, enabled repositories, etc.
+
+function hc_ping {
+    # Send ping with exit status to healthchecks service
+    curl --retry 3 https://hc-ping.com/$HC_FEDORA/$?
+}
+
+# Send ping to healthchecks service on exit
+trap hc_ping EXIT
 
 # DNF repositories
 cat /etc/yum.repos.d/* > backup/repo_list.txt
@@ -16,7 +24,7 @@ pip list | awk '{print $1}' | sed '1d;2d' > backup/python_list.txt
 # Gnome extensions
 ls -1 ~/.local/share/gnome-shell/extensions/ > backup/gnome_extension_list.txt
 # User crontab
-crontab -l > backup/user_crontab.txt
+# crontab -l > backup/user_crontab.txt
 # Dump fedora settings to file
 dconf dump / > backup/fedora_settings.conf
 
