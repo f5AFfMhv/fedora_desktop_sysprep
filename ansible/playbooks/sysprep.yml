@@ -1,6 +1,6 @@
 - name: Provision Fedora Desktop
   gather_facts: true
-  hosts: 192.168.1.122
+  hosts: prd
   roles:
     - prometheus.prometheus.node_exporter
     - petermosmans.customize-gnome
@@ -120,6 +120,7 @@
         commands: "{{ allow_sudo }}"
       tags:
         - config
+        - sudo
 
     - name: Enable/disable services
       ansible.builtin.service:
@@ -129,6 +130,17 @@
       with_items: "{{ services }}"
       tags:
         - config
+        - service
+
+    - name: Create env vars in crontab
+      ansible.builtin.cron:
+        name: "{{ item.var }}"
+        env: true
+        job: "{{ item.val }}"
+      with_items: "{{ cron_env }}"
+      tags:
+        - config
+        - cron
 
     - name: Create cron jobs
       ansible.builtin.cron:
@@ -139,6 +151,7 @@
       with_items: "{{ cron_jobs }}"
       tags:
         - config
+        - cron
 
     - name: Sync git repositories
       ansible.builtin.git:
@@ -172,6 +185,7 @@
         state: directory
       tags:
         - config
+        - extensions
 
     - name: Create a symbolic links
       ansible.builtin.file:
@@ -184,6 +198,7 @@
       with_items: "{{ symlinks }}"
       tags:
         - config
+        - symlinks
 
     - name: Deploy dotfiles
       ansible.builtin.copy:
@@ -196,6 +211,7 @@
       with_items: "{{ dotfiles }}"
       tags:
         - config
+        - dotfiles
 
     - name: Add DNS configuration
       ansible.builtin.template:
@@ -206,6 +222,7 @@
         mode: "0644"
       tags:
         - config
+        - dns
 
     - name: Create system fonts directory
       ansible.builtin.file:
@@ -231,6 +248,7 @@
         shell: /usr/bin/zsh
       tags:
         - config
+        - zsh
 
   handlers:
     - name: Remove filtered option from flathub repository

@@ -3,6 +3,10 @@ cron_jobs:
   - name: Test job
     job: "echo test"
 
+cron_env:
+  - var: dummy
+    val: var
+
 git_repos:
   - repo: https://github.com/f5AFfMhv/fedora_desktop_sysprep.git
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
