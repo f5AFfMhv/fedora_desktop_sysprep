@@ -17,6 +17,7 @@ io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
 md.obsidian.Obsidian
 me.kozec.syncthingtk
+org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386
