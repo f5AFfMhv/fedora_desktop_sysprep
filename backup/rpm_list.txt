@@ -73,7 +73,7 @@ anaconda.x86_64
 anaconda-core.x86_64
 anaconda-gui.x86_64
 anaconda-install-env-deps.x86_64
-anaconda-live.x86_64
+anaconda-live.noarch
 anaconda-tui.x86_64
 anaconda-user-help.noarch
 anaconda-widgets.x86_64
@@ -86,7 +86,7 @@ appstream.x86_64
 appstream-data.noarch
 apr.x86_64
 apr-util.x86_64
-apr-util-bdb.x86_64
+apr-util-lmdb.x86_64
 apr-util-openssl.x86_64
 asciinema.noarch
 at.x86_64
@@ -98,7 +98,9 @@ atkmm.x86_64
 atmel-firmware.noarch
 attr.x86_64
 audit.x86_64
+audit-libs.i686
 audit-libs.x86_64
+audit-rules.x86_64
 augeas-libs.x86_64
 authselect.x86_64
 authselect-libs.x86_64
@@ -206,6 +208,7 @@ cups-browsed.x86_64
 cups-client.x86_64
 cups-filesystem.noarch
 cups-filters.x86_64
+cups-filters-driverless.x86_64
 cups-ipptool.x86_64
 cups-libs.x86_64
 cups-pk-helper.x86_64
@@ -310,6 +313,8 @@ expat.x86_64
 f2fs-tools.x86_64
 f39-backgrounds-base.noarch
 f39-backgrounds-gnome.noarch
+f40-backgrounds-base.noarch
+f40-backgrounds-gnome.noarch
 faad2-libs.x86_64
 fdk-aac-free.x86_64
 fedora-bookmarks.noarch
@@ -395,6 +400,7 @@ gcr3-base.x86_64
 gd.x86_64
 gdb.x86_64
 gdb-headless.x86_64
+gdbm.x86_64
 gdbm-libs.x86_64
 gdk-pixbuf2.i686
 gdk-pixbuf2.x86_64
@@ -412,8 +418,8 @@ gettext-envsubst.x86_64
 gettext-libs.x86_64
 gettext-runtime.x86_64
 ghostscript.x86_64
-ghostscript-tools-fonts.x86_64
-ghostscript-tools-printing.x86_64
+ghostscript-tools-fonts.noarch
+ghostscript-tools-printing.noarch
 giflib.x86_64
 git.x86_64
 git-core.x86_64
@@ -478,6 +484,7 @@ gnome-shell-extension-launch-new-instance.noarch
 gnome-shell-extension-places-menu.noarch
 gnome-shell-extension-window-list.noarch
 gnome-software.x86_64
+gnome-software-fedora-langpacks.x86_64
 gnome-text-editor.x86_64
 gnome-themes-extra.x86_64
 gnome-tweaks.noarch
@@ -524,6 +531,7 @@ google-noto-serif-vf-fonts.noarch
 gparted.x86_64
 gperftools-libs.x86_64
 gpgme.x86_64
+gpgmepp.x86_64
 gpm-libs.x86_64
 graphene.i686
 graphene.x86_64
@@ -583,6 +591,7 @@ gtksourceview4.x86_64
 gtksourceview5.x86_64
 gts.x86_64
 guile22.x86_64
+guile30.x86_64
 gupnp.x86_64
 gupnp-av.x86_64
 gupnp-dlna.x86_64
@@ -711,6 +720,8 @@ keepassxc.x86_64
 kernel.x86_64
 kernel.x86_64
 kernel.x86_64
+kernel.x86_64
+kernel-core.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
@@ -718,9 +729,12 @@ kernel-headers.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
+kernel-modules.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
+kernel-modules-core.x86_64
+kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
@@ -852,6 +866,7 @@ libcanberra.x86_64
 libcanberra-gtk3.x86_64
 libcap.i686
 libcap.x86_64
+libcap-ng.i686
 libcap-ng.x86_64
 libcap-ng-python3.x86_64
 libcbor.x86_64
@@ -881,6 +896,7 @@ libdca.x86_64
 libde265.x86_64
 libdecor.x86_64
 libdhash.x86_64
+libdisplay-info.x86_64
 libdmapsharing4.x86_64
 libdnf.x86_64
 libdnf5.x86_64
@@ -890,6 +906,7 @@ libdrm.x86_64
 libdv.x86_64
 libdvdnav.x86_64
 libdvdread.x86_64
+libeconf.i686
 libeconf.x86_64
 libedit.i686
 libedit.x86_64
@@ -949,7 +966,7 @@ libgtop2.x86_64
 libgudev.i686
 libgudev.x86_64
 libgusb.x86_64
-libgweather4.x86_64
+libgweather.x86_64
 libgxps.x86_64
 libhandy.x86_64
 libhangul.x86_64
@@ -990,6 +1007,7 @@ libldb.x86_64
 liblerc.x86_64
 liblockfile.x86_64
 liblouis.x86_64
+liblouis-tables.noarch
 liblouisutdml.x86_64
 liblouisutdml-utils.x86_64
 liblqr-1.x86_64
@@ -1013,6 +1031,7 @@ libmpeg2.x86_64
 libmspack.x86_64
 libmtp.x86_64
 libmysofa.x86_64
+libnbd.x86_64
 libndp.x86_64
 libnet.x86_64
 libnetfilter_conntrack.x86_64
@@ -1240,6 +1259,7 @@ libxcrypt-compat.x86_64
 libxcrypt-devel.x86_64
 libxcvt.x86_64
 libxdo.x86_64
+libxdp.x86_64
 libxkbcommon.x86_64
 libxkbcommon-x11.x86_64
 libxkbfile.x86_64
@@ -1299,7 +1319,6 @@ m17n-lib.x86_64
 m4.x86_64
 mactel-boot.x86_64
 mailcap.noarch
-mailx.x86_64
 make.x86_64
 malcontent.x86_64
 malcontent-control.x86_64
@@ -1333,8 +1352,8 @@ mesa-va-drivers.i686
 mesa-va-drivers.x86_64
 mesa-vulkan-drivers.x86_64
 microcode_ctl.x86_64
-minizip-compat.x86_64
 minizip-ng.x86_64
+minizip-ng-compat.x86_64
 mjpegtools-libs.x86_64
 mkpasswd.x86_64
 mobile-broadband-provider-info.noarch
@@ -1350,6 +1369,7 @@ mpdecimal.x86_64
 mpfr.x86_64
 mpg123-libs.i686
 mpg123-libs.x86_64
+msgraph.x86_64
 mt7xxx-firmware.noarch
 mtdev.x86_64
 mtools.x86_64
@@ -1360,6 +1380,13 @@ nano.x86_64
 nano-default-editor.noarch
 nautilus.x86_64
 nautilus-extensions.x86_64
+nbdkit.x86_64
+nbdkit-basic-filters.x86_64
+nbdkit-basic-plugins.x86_64
+nbdkit-curl-plugin.x86_64
+nbdkit-selinux.noarch
+nbdkit-server.x86_64
+nbdkit-ssh-plugin.x86_64
 ncurses.x86_64
 ncurses-base.noarch
 ncurses-compat-libs.x86_64
@@ -1440,6 +1467,7 @@ p11-kit-server.x86_64
 p11-kit-trust.x86_64
 paktype-naskh-basic-fonts.noarch
 pam.x86_64
+pam-libs.i686
 pam-libs.x86_64
 pam_afs_session.x86_64
 pam_passwdqc.x86_64
@@ -1448,9 +1476,10 @@ pango.x86_64
 pangomm.x86_64
 paps.x86_64
 parted.x86_64
+passim.x86_64
+passim-libs.x86_64
 passt.x86_64
 passt-selinux.noarch
-passwd.x86_64
 passwdqc.x86_64
 passwdqc-utils.x86_64
 patch.x86_64
@@ -1470,14 +1499,19 @@ perl-AutoLoader.noarch
 perl-B.x86_64
 perl-Carp.noarch
 perl-Class-Struct.noarch
+perl-Clone.x86_64
 perl-Compress-Raw-Bzip2.x86_64
 perl-Compress-Raw-Zlib.x86_64
 perl-Cpanel-JSON-XS.x86_64
+perl-Data-Dump.noarch
 perl-Data-Dumper.x86_64
 perl-Digest.noarch
+perl-Digest-HMAC.noarch
 perl-Digest-MD5.x86_64
+perl-Digest-SHA.x86_64
 perl-DynaLoader.x86_64
 perl-Encode.x86_64
+perl-Encode-Locale.noarch
 perl-Errno.x86_64
 perl-Error.noarch
 perl-Exporter.noarch
@@ -1485,7 +1519,9 @@ perl-Fcntl.x86_64
 perl-File-Basename.noarch
 perl-File-Copy.noarch
 perl-File-Find.noarch
+perl-File-Listing.noarch
 perl-File-Path.noarch
+perl-File-Slurper.noarch
 perl-File-Temp.noarch
 perl-File-stat.noarch
 perl-FileHandle.noarch
@@ -1493,26 +1529,38 @@ perl-Filter.x86_64
 perl-Getopt-Long.noarch
 perl-Getopt-Std.noarch
 perl-Git.noarch
+perl-HTML-Parser.x86_64
+perl-HTML-Tagset.noarch
+perl-HTTP-Cookies.noarch
+perl-HTTP-Date.noarch
+perl-HTTP-Message.noarch
+perl-HTTP-Negotiate.noarch
 perl-HTTP-Tiny.noarch
 perl-I18N-Langinfo.x86_64
 perl-IO.x86_64
 perl-IO-Compress.noarch
+perl-IO-Compress-Brotli.x86_64
+perl-IO-HTML.noarch
 perl-IO-Socket-IP.noarch
 perl-IO-Socket-SSL.noarch
 perl-IO-Tty.x86_64
 perl-IPC-Open3.noarch
 perl-IPC-Run.noarch
 perl-JSON-XS.x86_64
+perl-LWP-MediaTypes.noarch
 perl-MIME-Base64.x86_64
 perl-Math-BigInt.noarch
-perl-Math-BigRat.noarch
 perl-Math-Complex.noarch
+perl-Module-Load.noarch
 perl-Mozilla-CA.noarch
 perl-NDBM_File.x86_64
 perl-NKF.x86_64
+perl-NTLM.noarch
+perl-Net-HTTP.noarch
 perl-Net-SSLeay.x86_64
 perl-POSIX.x86_64
 perl-PathTools.x86_64
+perl-PerlIO-utf8_strict.x86_64
 perl-Pod-Escapes.noarch
 perl-Pod-Perldoc.noarch
 perl-Pod-Simple.noarch
@@ -1533,8 +1581,10 @@ perl-Time-Duration.noarch
 perl-Time-HiRes.x86_64
 perl-Time-Local.noarch
 perl-TimeDate.noarch
+perl-Try-Tiny.noarch
 perl-Types-Serialiser.noarch
 perl-URI.noarch
+perl-WWW-RobotRules.noarch
 perl-XML-Dumper.noarch
 perl-XML-Parser.x86_64
 perl-XML-XPath.noarch
@@ -1547,6 +1597,7 @@ perl-interpreter.x86_64
 perl-lib.x86_64
 perl-libnet.noarch
 perl-libs.x86_64
+perl-libwww-perl.noarch
 perl-locale.noarch
 perl-mro.x86_64
 perl-open.noarch
@@ -1554,6 +1605,7 @@ perl-overload.noarch
 perl-overloading.noarch
 perl-parent.noarch
 perl-podlators.noarch
+perl-subs.noarch
 perl-vars.noarch
 pigz.x86_64
 pinentry.x86_64
@@ -1570,6 +1622,7 @@ pipewire-utils.x86_64
 pixman.i686
 pixman.x86_64
 pkcs11-helper.x86_64
+pkcs11-provider.x86_64
 pkgconf.x86_64
 pkgconf-m4.noarch
 pkgconf-pkg-config.x86_64
@@ -1625,8 +1678,11 @@ python3-autopep8.noarch
 python3-bcrypt.x86_64
 python3-beaker.noarch
 python3-beautifulsoup4.noarch
+python3-blinker.noarch
 python3-blivet.noarch
 python3-blockdev.x86_64
+python3-boto3.noarch
+python3-botocore.noarch
 python3-brlapi.x86_64
 python3-brotli.x86_64
 python3-bytesize.x86_64
@@ -1662,7 +1718,6 @@ python3-fonttools.x86_64
 python3-fs.noarch
 python3-gobject.x86_64
 python3-gobject-base.x86_64
-python3-gobject-base-noarch.noarch
 python3-google-auth.noarch
 python3-google-auth-oauthlib.noarch
 python3-hawkey.x86_64
@@ -1670,6 +1725,7 @@ python3-hid-parser.noarch
 python3-humanize.noarch
 python3-idna.noarch
 python3-inotify.noarch
+python3-iso639.noarch
 python3-itsdangerous.noarch
 python3-jinja2.noarch
 python3-jmespath.noarch
@@ -1682,6 +1738,7 @@ python3-langtable.noarch
 python3-libcomps.x86_64
 python3-libdnf.x86_64
 python3-libdnf5.x86_64
+python3-libmount.x86_64
 python3-libreport.x86_64
 python3-libs.x86_64
 python3-libselinux.x86_64
@@ -1704,6 +1761,7 @@ python3-numpy-f2py.x86_64
 python3-oauthlib.noarch
 python3-olefile.noarch
 python3-packaging.noarch
+python3-pam.noarch
 python3-paramiko.noarch
 python3-paste.noarch
 python3-pathspec.noarch
@@ -1747,6 +1805,7 @@ python3-resolvelib.noarch
 python3-rpds-py.x86_64
 python3-rpm.x86_64
 python3-rsa.noarch
+python3-s3transfer.noarch
 python3-satyr.x86_64
 python3-scipy.x86_64
 python3-setools.x86_64
@@ -1770,6 +1829,7 @@ python3-websocket-client.noarch
 python3-werkzeug.noarch
 python3-wheel.noarch
 python3-xapps-overrides.x86_64
+python3-xkbregistry.x86_64
 python3-xlib.noarch
 python3-zombie-imp.noarch
 python3.10.x86_64
@@ -1804,8 +1864,11 @@ qemu-device-display-virtio-gpu-ccw.x86_64
 qemu-device-display-virtio-gpu-gl.x86_64
 qemu-device-display-virtio-gpu-pci.x86_64
 qemu-device-display-virtio-gpu-pci-gl.x86_64
+qemu-device-display-virtio-gpu-pci-rutabaga.x86_64
+qemu-device-display-virtio-gpu-rutabaga.x86_64
 qemu-device-display-virtio-vga.x86_64
 qemu-device-display-virtio-vga-gl.x86_64
+qemu-device-display-virtio-vga-rutabaga.x86_64
 qemu-device-usb-host.x86_64
 qemu-device-usb-redirect.x86_64
 qemu-device-usb-smartcard.x86_64
@@ -1890,6 +1953,7 @@ rpi-imager.x86_64
 rpm.x86_64
 rpm-build-libs.x86_64
 rpm-libs.x86_64
+rpm-plugin-audit.x86_64
 rpm-plugin-selinux.x86_64
 rpm-plugin-systemd-inhibit.x86_64
 rpm-sequoia.x86_64
@@ -1899,7 +1963,9 @@ rsvg-pixbuf-loader.x86_64
 rsync.x86_64
 rtkit.x86_64
 rubberband.x86_64
+rutabaga-gfx-ffi.x86_64
 rygel.x86_64
+s-nail.x86_64
 samba-client.x86_64
 samba-client-libs.x86_64
 samba-common.noarch
@@ -1911,6 +1977,7 @@ sane-backends-drivers-scanners.x86_64
 sane-backends-libs.x86_64
 sassc.x86_64
 satyr.x86_64
+scrub.x86_64
 seabios-bin.noarch
 seahorse.x86_64
 seavgabios-bin.noarch
@@ -2073,6 +2140,7 @@ unzip.x86_64
 upower.x86_64
 upower-libs.x86_64
 uresourced.x86_64
+uriparser.x86_64
 urw-base35-bookman-fonts.noarch
 urw-base35-c059-fonts.noarch
 urw-base35-d050000l-fonts.noarch
@@ -2129,7 +2197,10 @@ webkit2gtk4.1.x86_64
 webkitgtk6.0.x86_64
 webp-pixbuf-loader.x86_64
 webrtc-audio-processing.x86_64
-wget.x86_64
+webrtc-audio-processing0.3.x86_64
+wget2.x86_64
+wget2-libs.x86_64
+wget2-wget.x86_64
 which.x86_64
 whois.x86_64
 whois-nls.noarch
@@ -2142,6 +2213,7 @@ woff2.x86_64
 words.noarch
 wpa_supplicant.x86_64
 wpebackend-fdo.x86_64
+wsdd.noarch
 x265-libs.x86_64
 xapps.x86_64
 xcb-util.x86_64
@@ -2159,6 +2231,7 @@ xdg-user-dirs-gtk.x86_64
 xdg-utils.noarch
 xdotool.x86_64
 xdpyinfo.x86_64
+xdriinfo.x86_64
 xen-libs.x86_64
 xen-licenses.x86_64
 xfsprogs.x86_64
@@ -2216,9 +2289,10 @@ zeromq.x86_64
 zfs-fuse.x86_64
 zimg.x86_64
 zip.x86_64
-zlib.i686
-zlib.x86_64
-zlib-devel.x86_64
+zlib-ng.x86_64
+zlib-ng-compat.i686
+zlib-ng-compat.x86_64
+zlib-ng-compat-devel.x86_64
 zram-generator.x86_64
 zram-generator-defaults.noarch
 zsh.x86_64

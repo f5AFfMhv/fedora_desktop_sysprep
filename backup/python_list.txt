@@ -8,8 +8,11 @@ autopep8
 bcrypt
 Beaker
 beautifulsoup4
+blinker
 blivet
 blivet-gui
+boto3
+botocore
 Brlapi
 Brotli
 cachetools
@@ -44,6 +47,7 @@ google-auth-oauthlib
 hid-parser
 humanize
 idna
+iso639
 itsdangerous
 Jinja2
 jmespath
@@ -57,6 +61,7 @@ libcomps
 libdnf
 libdnf5
 libvirt-python
+louis
 lxml
 Mako
 MarkupSafe
@@ -112,6 +117,7 @@ pyte
 python-augeas
 python-dateutil
 python-meh
+python-pam
 python-xlib
 pyudev
 PyVirtualDisplay
@@ -131,6 +137,7 @@ rpm
 rsa
 ruamel.yaml
 ruamel.yaml.clib
+s3transfer
 SciPy
 selinux
 sepolicy
@@ -157,6 +164,7 @@ wcwidth
 websocket-client
 Werkzeug
 wheel
+xkbregistry
 yamllint
 youtube-dl
 zombie-imp
