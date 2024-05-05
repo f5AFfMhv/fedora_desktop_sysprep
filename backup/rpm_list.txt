@@ -720,8 +720,6 @@ keepassxc.x86_64
 kernel.x86_64
 kernel.x86_64
 kernel.x86_64
-kernel.x86_64
-kernel-core.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
@@ -729,12 +727,9 @@ kernel-headers.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
-kernel-modules.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
-kernel-modules-core.x86_64
-kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
