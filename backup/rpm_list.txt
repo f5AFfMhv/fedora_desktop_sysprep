@@ -503,6 +503,7 @@ golang.x86_64
 golang-bin.x86_64
 golang-src.noarch
 google-cloud-cli.x86_64
+google-cloud-cli-anthoscli.x86_64
 google-cloud-cli-gke-gcloud-auth-plugin.x86_64
 google-crc32c.x86_64
 google-droid-sans-fonts.noarch
