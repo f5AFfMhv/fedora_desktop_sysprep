@@ -184,6 +184,7 @@ container-selinux.noarch
 containerd.io.x86_64
 containers-common.noarch
 containers-common-extra.noarch
+copy-jdk-configs.noarch
 coreutils.x86_64
 coreutils-common.x86_64
 cpio.x86_64
@@ -697,6 +698,8 @@ iwlwifi-dvm-firmware.noarch
 iwlwifi-mvm-firmware.noarch
 jansson.x86_64
 jasper-libs.x86_64
+java-21-openjdk-headless.x86_64
+javapackages-filesystem.noarch
 javascriptcoregtk4.0.x86_64
 javascriptcoregtk4.1.x86_64
 javascriptcoregtk6.0.x86_64
@@ -1276,6 +1279,7 @@ linux-atm-libs.x86_64
 linux-firmware.noarch
 linux-firmware-whence.noarch
 livesys-scripts.noarch
+lksctp-tools.x86_64
 llvm-libs.i686
 llvm-libs.x86_64
 llvm16-libs.i686
@@ -1301,7 +1305,9 @@ lrzsz.x86_64
 lsd.x86_64
 lsof.x86_64
 lttng-ust.x86_64
+lua.x86_64
 lua-libs.x86_64
+lua-posix.x86_64
 lv2.x86_64
 lvm2.x86_64
 lvm2-dbusd.noarch
@@ -2124,6 +2130,7 @@ tslib.x86_64
 twolame-libs.i686
 twolame-libs.x86_64
 tzdata.noarch
+tzdata-java.noarch
 uchardet.x86_64
 udftools.x86_64
 udisks2.x86_64
