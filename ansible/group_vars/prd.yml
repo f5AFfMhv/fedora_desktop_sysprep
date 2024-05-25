@@ -22,6 +22,8 @@ git_repos:
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
   - repo: git@github.com:f5AFfMhv/argos_extensions.git
     dest: "{{ git_dir }}/argos_extensions"
+  - repo: git@github.com:f5AFfMhv/my-kicad-libraries.git
+    dest: "{{ git_dir }}/my-kicad-libraries"
   - repo: https://github.com/p-e-w/argos.git
     dest: "{{ git_dir }}/argos"
   - repo: https://github.com/gohugoio/hugo.git
