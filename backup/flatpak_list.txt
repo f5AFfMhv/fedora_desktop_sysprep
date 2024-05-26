@@ -17,6 +17,7 @@ io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
 md.obsidian.Obsidian
 me.kozec.syncthingtk
+org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386
@@ -35,6 +36,7 @@ org.freedesktop.Sdk
 org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
+org.gnome.gThumb
 org.gtk.Gtk3theme.Orchis-Green-Dark-Compact
 org.kde.KStyle.Adwaita
 org.kde.Platform
