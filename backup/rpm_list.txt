@@ -1,4 +1,3 @@
-Installed
 AtomicParsley.x86_64
 ImageMagick.x86_64
 ImageMagick-libs.x86_64
