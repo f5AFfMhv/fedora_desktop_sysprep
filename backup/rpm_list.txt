@@ -1,3 +1,4 @@
+Installed
 AtomicParsley.x86_64
 ImageMagick.x86_64
 ImageMagick-libs.x86_64
@@ -1407,6 +1408,7 @@ nfs-utils.x86_64
 nftables.x86_64
 nilfs-utils.x86_64
 nm-connection-editor.x86_64
+nmap.x86_64
 nmap-ncat.x86_64
 nordvpn.x86_64
 npth.x86_64
@@ -1773,6 +1775,7 @@ python3-pillow.x86_64
 python3-pillow-devel.x86_64
 python3-pillow-tk.x86_64
 python3-pip.noarch
+python3-platformdirs.noarch
 python3-ply.noarch
 python3-policycoreutils.noarch
 python3-pooch.noarch
@@ -1907,6 +1910,7 @@ qemu-user-static-sh4.x86_64
 qemu-user-static-sparc.x86_64
 qemu-user-static-x86.x86_64
 qemu-user-static-xtensa.x86_64
+qgnomeplatform-common.noarch
 qgnomeplatform-qt5.x86_64
 qhexedit2-qt5-libs.x86_64
 qpdf-libs.x86_64
