@@ -60,6 +60,7 @@ adobe-mappings-pdf.noarch
 adobe-source-code-pro-fonts.noarch
 adwaita-cursor-theme.noarch
 adwaita-icon-theme.noarch
+adwaita-icon-theme-legacy.noarch
 adwaita-qt5.x86_64
 alsa-lib.i686
 alsa-lib.x86_64
