@@ -796,6 +796,7 @@ libXrender.i686
 libXrender.x86_64
 libXres.x86_64
 libXt.x86_64
+libXtst.i686
 libXtst.x86_64
 libXv.i686
 libXv.x86_64

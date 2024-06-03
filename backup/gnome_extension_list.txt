@@ -10,6 +10,7 @@ extension-list@tu.berry
 forge@jmmaranan.com
 gnome-ui-tune@itstime.tech
 IP-Finder@linxgem33.com
+miniview@thesecretaryofwar.com
 no-overview@fthx
 panel-date-format@keiii.github.com
 panelScroll@sun.wxg@gmail.com
