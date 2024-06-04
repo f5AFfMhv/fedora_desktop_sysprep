@@ -171,6 +171,8 @@ flatpaks:
   - me.kozec.syncthingtk
   - com.github.iwalton3.jellyfin-media-player
   - md.obsidian.Obsidian
+  - org.gimp.GIMP
+  - io.github.flattool.Warehouse
 
 python_packages:
   - name: PcbDraw
