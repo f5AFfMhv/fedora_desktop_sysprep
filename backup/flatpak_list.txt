@@ -37,7 +37,6 @@ org.freedesktop.Sdk
 org.gimp.GIMP
 org.gnome.Platform
 org.gnome.Platform
-org.gnome.Platform
 org.gnome.gThumb
 org.gtk.Gtk3theme.Orchis-Green-Dark-Compact
 org.kde.KStyle.Adwaita
