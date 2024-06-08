@@ -1655,7 +1655,6 @@ popt.x86_64
 power-profiles-daemon.x86_64
 powerline.x86_64
 powerline-fonts.noarch
-powerpanel.x86_64
 ppp.x86_64
 pptp.x86_64
 procps-ng.x86_64
