@@ -674,6 +674,7 @@ insync.x86_64
 intel-audio-firmware.noarch
 intel-gpu-firmware.noarch
 intel-mediasdk.x86_64
+intel-vpl-gpu-rt.x86_64
 inxi.noarch
 ipcalc.x86_64
 iperf.x86_64
@@ -1430,7 +1431,6 @@ numad.x86_64
 nvme-cli.x86_64
 nxpwireless-firmware.noarch
 ocl-icd.x86_64
-oneVPL-intel-gpu.x86_64
 oniguruma.x86_64
 open-sans-fonts.noarch
 open-vm-tools.x86_64
