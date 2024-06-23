@@ -2222,6 +2222,7 @@ words.noarch
 wpa_supplicant.x86_64
 wpebackend-fdo.x86_64
 wsdd.noarch
+x265.x86_64
 x265-libs.x86_64
 xapps.x86_64
 xcb-util.x86_64

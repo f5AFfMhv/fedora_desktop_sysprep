@@ -18,6 +18,7 @@ io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
 md.obsidian.Obsidian
 me.kozec.syncthingtk
+org.fedoraproject.KDE6Platform
 org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
@@ -44,6 +45,7 @@ org.kde.Platform
 org.kde.PlatformTheme.QGnomePlatform
 org.kde.WaylandDecoration.QAdwaitaDecorations
 org.kde.WaylandDecoration.QGnomePlatform-decoration
+org.kde.kdenlive
 org.kicad.KiCad
 org.kicad.KiCad.Library.Footprints
 org.kicad.KiCad.Library.Packages3D
