@@ -166,5 +166,5 @@ Werkzeug
 wheel
 xkbregistry
 yamllint
-youtube-dl
+youtube_dl
 zombie-imp
