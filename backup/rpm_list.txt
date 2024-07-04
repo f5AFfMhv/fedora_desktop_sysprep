@@ -722,6 +722,7 @@ kbd-legacy.noarch
 kbd-misc.noarch
 kde-filesystem.x86_64
 kdump-anaconda-addon.noarch
+kdump-utils.x86_64
 keepassxc.x86_64
 kernel.x86_64
 kernel.x86_64
@@ -1325,6 +1326,7 @@ m4.x86_64
 mactel-boot.x86_64
 mailcap.noarch
 make.x86_64
+makedumpfile.x86_64
 malcontent.x86_64
 malcontent-control.x86_64
 malcontent-libs.x86_64
