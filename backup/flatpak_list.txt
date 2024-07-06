@@ -1,4 +1,5 @@
 cc.arduino.IDE2
+com.emqx.MQTTX
 com.github.iwalton3.jellyfin-media-player
 com.github.marktext.marktext
 com.github.tchx84.Flatseal
@@ -22,7 +23,9 @@ org.fedoraproject.KDE6Platform
 org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
+org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386
+org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
@@ -31,6 +34,7 @@ org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.VulkanLayer.MangoHud
 org.freedesktop.Platform.ffmpeg-full
+org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
