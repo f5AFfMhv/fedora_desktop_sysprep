@@ -1920,6 +1920,7 @@ qpdf-libs.x86_64
 qrencode-libs.x86_64
 qscintilla-qt5.x86_64
 qt-settings.noarch
+qt5-filesystem.x86_64
 qt5-qtbase.x86_64
 qt5-qtbase-common.noarch
 qt5-qtbase-gui.x86_64
@@ -1933,6 +1934,7 @@ qt5-qttranslations.noarch
 qt5-qtwayland.x86_64
 qt5-qtx11extras.x86_64
 qt5-qtxmlpatterns.x86_64
+qt6-filesystem.x86_64
 qt6-qtbase.x86_64
 qt6-qtbase-common.noarch
 qt6-qtbase-gui.x86_64
