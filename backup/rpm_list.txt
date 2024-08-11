@@ -120,7 +120,6 @@ bash-completion.noarch
 bat.x86_64
 bc.x86_64
 bind-libs.x86_64
-bind-license.noarch
 bind-utils.x86_64
 binutils.x86_64
 binutils-gold.x86_64
@@ -995,6 +994,7 @@ libiptcdata.x86_64
 libiscsi.x86_64
 libisoburn.x86_64
 libisofs.x86_64
+libjaylink.x86_64
 libjcat.x86_64
 libjpeg-turbo.i686
 libjpeg-turbo.x86_64
@@ -1168,6 +1168,7 @@ libtasn1.x86_64
 libtdb.x86_64
 libteam.x86_64
 libtevent.x86_64
+libtextstyle.x86_64
 libthai.i686
 libthai.x86_64
 libtheora.i686
