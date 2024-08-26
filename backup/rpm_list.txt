@@ -1371,6 +1371,7 @@ mod_lua.x86_64
 mokutil.x86_64
 moreutils.x86_64
 mozilla-filesystem.x86_64
+mozilla-openh264.x86_64
 mozjs115.x86_64
 mpage.x86_64
 mpdecimal.x86_64
