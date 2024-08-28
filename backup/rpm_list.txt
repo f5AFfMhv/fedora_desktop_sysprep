@@ -618,6 +618,7 @@ harfbuzz.i686
 harfbuzz.x86_64
 harfbuzz-icu.x86_64
 hddtemp.x86_64
+heif-pixbuf-loader.x86_64
 hfsplus-tools.x86_64
 hicolor-icon-theme.noarch
 highcontrast-icon-theme.noarch
