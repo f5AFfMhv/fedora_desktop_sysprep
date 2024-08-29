@@ -1286,6 +1286,7 @@ linux-firmware.noarch
 linux-firmware-whence.noarch
 livesys-scripts.noarch
 lksctp-tools.x86_64
+llhttp.x86_64
 llvm-libs.i686
 llvm-libs.x86_64
 llvm16-libs.i686
