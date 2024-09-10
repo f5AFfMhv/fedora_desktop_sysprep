@@ -1003,6 +1003,7 @@ libjpeg-turbo-devel.x86_64
 libjxl.x86_64
 libkate.x86_64
 libkcapi.x86_64
+libkcapi-hasher.x86_64
 libkcapi-hmaccalc.x86_64
 libksba.x86_64
 liblc3.x86_64
@@ -1672,6 +1673,7 @@ publicsuffix-list-dafsa.noarch
 pulseaudio-libs.i686
 pulseaudio-libs.x86_64
 pulseaudio-libs-glib2.x86_64
+pulseaudio-utils.x86_64
 python-pip-wheel.noarch
 python-setuptools-wheel.noarch
 python-systemd-doc.x86_64
@@ -2029,6 +2031,8 @@ spandsp.x86_64
 spax.x86_64
 speech-dispatcher.x86_64
 speech-dispatcher-espeak-ng.x86_64
+speech-dispatcher-libs.x86_64
+speech-dispatcher-utils.x86_64
 speex.i686
 speex.x86_64
 spice-glib.x86_64
