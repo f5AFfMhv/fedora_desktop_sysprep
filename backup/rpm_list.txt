@@ -140,6 +140,8 @@ brasero-libs.x86_64
 brcmfmac-firmware.noarch
 brlapi.x86_64
 brltty.x86_64
+brotli.x86_64
+brotli-devel.x86_64
 btrfs-progs.x86_64
 bubblewrap.x86_64
 bzip2.x86_64
@@ -446,6 +448,7 @@ glusterfs-cli.x86_64
 glusterfs-client-xlators.x86_64
 glusterfs-fuse.x86_64
 glx-utils.x86_64
+gmock.x86_64
 gmp.i686
 gmp.x86_64
 gnome-abrt.x86_64
@@ -584,6 +587,8 @@ gstreamer1-plugins-good-gtk.x86_64
 gstreamer1-plugins-good-qt.x86_64
 gstreamer1-plugins-good-qt6.x86_64
 gstreamer1-plugins-ugly-free.x86_64
+gtest.x86_64
+gtest-devel.x86_64
 gtk-update-icon-cache.x86_64
 gtk-vnc2.x86_64
 gtk3.x86_64
@@ -623,6 +628,7 @@ hfsplus-tools.x86_64
 hicolor-icon-theme.noarch
 highcontrast-icon-theme.noarch
 highway.x86_64
+highway-devel.x86_64
 hostname.x86_64
 hplip.x86_64
 hplip-common.x86_64
@@ -814,6 +820,7 @@ libadwaita-qt6.x86_64
 libaio.x86_64
 libao.x86_64
 libaom.x86_64
+libaom-devel.x86_64
 libappindicator-gtk3.x86_64
 libappstream-glib.x86_64
 libarchive.x86_64
@@ -891,6 +898,7 @@ libdaemon.x86_64
 libdatrie.i686
 libdatrie.x86_64
 libdav1d.x86_64
+libdav1d-devel.x86_64
 libdb.x86_64
 libdbusmenu.x86_64
 libdbusmenu-gtk3.x86_64
@@ -974,6 +982,9 @@ libgxps.x86_64
 libhandy.x86_64
 libhangul.x86_64
 libheif.x86_64
+libheif-devel.x86_64
+libheif-freeworld.x86_64
+libheif-tools.x86_64
 libibverbs.x86_64
 libical.x86_64
 libical-glib.x86_64
@@ -1001,6 +1012,7 @@ libjpeg-turbo.i686
 libjpeg-turbo.x86_64
 libjpeg-turbo-devel.x86_64
 libjxl.x86_64
+libjxl-devel.x86_64
 libkate.x86_64
 libkcapi.x86_64
 libkcapi-hasher.x86_64
@@ -1235,6 +1247,7 @@ libvirt-libs.x86_64
 libvisual.i686
 libvisual.x86_64
 libvmaf.x86_64
+libvmaf-devel.x86_64
 libvncserver.x86_64
 libvorbis.i686
 libvorbis.x86_64
@@ -1253,6 +1266,7 @@ libwayland-server.i686
 libwayland-server.x86_64
 libwbclient.x86_64
 libwebp.x86_64
+libwebp-devel.x86_64
 libwinpr.x86_64
 libwmf-lite.x86_64
 libwnck3.x86_64
@@ -1450,6 +1464,8 @@ opencore-amr.x86_64
 openexr-libs.x86_64
 openh264.x86_64
 openjpeg2.x86_64
+openjpeg2-devel.x86_64
+openjpeg2-tools.x86_64
 openldap.x86_64
 openpgm.x86_64
 opensc.x86_64
