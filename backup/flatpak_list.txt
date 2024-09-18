@@ -24,7 +24,10 @@ org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
+org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386
+org.freedesktop.Platform.GL.default
+org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
