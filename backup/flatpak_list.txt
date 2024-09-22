@@ -42,6 +42,7 @@ org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
 org.freedesktop.Sdk
+org.freedesktop.Sdk
 org.gimp.GIMP
 org.gnome.Maps
 org.gnome.Platform
