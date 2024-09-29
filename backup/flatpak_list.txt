@@ -7,7 +7,6 @@ com.heroicgameslauncher.hgl
 com.jgraph.drawio.desktop
 com.mattjakeman.ExtensionManager
 com.raggesilver.BlackBox
-com.spotify.Client
 com.valvesoftware.Steam
 com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 com.visualstudio.code
