@@ -5,6 +5,7 @@ blur-my-shell@aunetx
 BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm
 burn-my-windows@schneegans.github.com
 caffeine@patapon.info
+color-picker@tuberry
 dash-to-panel@jderose9.github.com
 extension-list@tu.berry
 forge@jmmaranan.com
