@@ -16,6 +16,7 @@ io.github.hakandundar34coding.system-monitoring-center
 io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
+io.github.zen_browser.zen
 md.obsidian.Obsidian
 me.kozec.syncthingtk
 org.fedoraproject.KDE6Platform
@@ -35,6 +36,7 @@ org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.VulkanLayer.MangoHud
+org.freedesktop.Platform.ffmpeg-full
 org.freedesktop.Platform.ffmpeg-full
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
