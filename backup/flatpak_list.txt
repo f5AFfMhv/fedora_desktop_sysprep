@@ -21,6 +21,7 @@ md.obsidian.Obsidian
 me.kozec.syncthingtk
 org.fedoraproject.KDE6Platform
 org.fedoraproject.Platform
+org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
