@@ -717,6 +717,7 @@ jemalloc.x86_64
 jomolhari-fonts.noarch
 jq.x86_64
 js-jquery.noarch
+json-c.i686
 json-c.x86_64
 json-glib.x86_64
 julietaula-montserrat-fonts.noarch
