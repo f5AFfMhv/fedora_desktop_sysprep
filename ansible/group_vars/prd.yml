@@ -175,6 +175,7 @@ flatpaks:
   - md.obsidian.Obsidian
   - org.gimp.GIMP
   - io.github.flattool.Warehouse
+  - io.github.zen_browser.zen
 
 python_packages:
   - name: PcbDraw
