@@ -25,10 +25,7 @@ org.fedoraproject.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
-org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386
-org.freedesktop.Platform.GL.default
-org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
@@ -42,7 +39,6 @@ org.freedesktop.Platform.ffmpeg-full
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
-org.freedesktop.Sdk
 org.freedesktop.Sdk
 org.freedesktop.Sdk
 org.gimp.GIMP
