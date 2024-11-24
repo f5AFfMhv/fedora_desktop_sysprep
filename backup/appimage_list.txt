@@ -1,3 +1,4 @@
+deskthing-linux-0.9.3-setup.AppImage
 qFlipper-x86_64-1.3.3.AppImage
 Qucs-S-latest-x86_64.AppImage
 serial_studio.AppImage
