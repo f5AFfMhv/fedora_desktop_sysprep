@@ -184,7 +184,7 @@ name = Hashicorp Stable - $basearch
 
 [insync]
 baseurl = http://yum.insync.io/fedora/$releasever/
-enabled = 1
+enabled = 0
 gpgcheck = 1
 gpgkey = https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 name = insync repo
