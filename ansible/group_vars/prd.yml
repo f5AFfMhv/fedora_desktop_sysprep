@@ -8,6 +8,8 @@ cron_jobs:
     job: "#cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
   - name: Note sync
     job: "cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
+  - name: SRV backup
+    job: "$BASE_DIR/srv_backup.sh"
 
 cron_env:
   - var: BASE_DIR
