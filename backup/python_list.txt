@@ -146,6 +146,7 @@ Tempita
 thefuck
 tldextract
 toml
+typing_extensions
 ulauncher
 urllib3
 wcwidth
