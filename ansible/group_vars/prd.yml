@@ -124,7 +124,6 @@ rpms:
   - docker-ce
   - docker-compose-plugin
   - google-cloud-cli
-  - hugo
   - iperf
   - jq
   - lsd
@@ -133,9 +132,6 @@ rpms:
   - zsh
   - telnet
   - distrobox
-  - youtube-dl
-  - nordvpn
-  - neofetch
   - virt-manager
   - insync
   - keepassxc
@@ -155,8 +151,6 @@ rpms:
 flatpaks:
   - cc.arduino.IDE2
   - com.github.tchx84.Flatseal
-  - com.heroicgameslauncher.hgl
-  - com.jgraph.drawio.desktop
   - com.raggesilver.BlackBox
   - com.spotify.Client
   - com.valvesoftware.Steam
@@ -173,20 +167,16 @@ flatpaks:
   - io.github.giantpinkrobots.flatsweep
   - org.mozilla.Thunderbird
   - me.kozec.syncthingtk
-  - com.github.iwalton3.jellyfin-media-player
   - md.obsidian.Obsidian
-  - org.gimp.GIMP
   - io.github.flattool.Warehouse
   - io.github.zen_browser.zen
 
 python_packages:
   - name: PcbDraw
-    pip: pip3.12
+    pip: pip3.10
   - name: pcbnewTransition
-    pip: pip3.12
+    pip: pip3.13
   - name: Pinion
-    pip: pip3.12
-  - name: thefuck
     pip: pip3.10
   - name: git+https://github.com/gilesknap/gphotos-sync.git
     pip: pip3.10

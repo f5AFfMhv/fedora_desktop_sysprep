@@ -128,21 +128,17 @@ fonts:
   - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
 bloat:
-  - cheese
   - nvidia-gpu-firmware
   - totem
   - simple-scan
-  - gedit
   - gnome-boxes
-  - gnome-help
   - gnome-contacts
   - gnome-tour
-  - gnome-photos
   - gnome-maps
   - gnome-characters
   - gnome-connections
   - gnome-system-monitor
-  - gnome-terminal
+  - unoconv
   - libreoffice-calc
   - libreoffice-core
   - libreoffice-data
@@ -161,7 +157,6 @@ bloat:
   - libreoffice-ure
   - libreoffice-ure-common
   - libreoffice-writer
-  - libreoffice-x11
   - libreoffice-xsltfilter
 
 # Extensions IDs from https://extensions.gnome.org/
