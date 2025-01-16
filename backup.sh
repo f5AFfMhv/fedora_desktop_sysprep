@@ -14,7 +14,7 @@ trap hc_ping EXIT
 # DNF repositories
 cat /etc/yum.repos.d/* > backup/repo_list.txt
 # DNF packages
-dnf list installed | awk '{print $1}' | sed '1d' > backup/rpm_list.txt
+dnf list --installed | awk '{print $1}' | sed '1d' > backup/rpm_list.txt
 # Flatpak packages
 flatpak list --columns=application > backup/flatpak_list.txt
 # Appimages
