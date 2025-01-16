@@ -1,3 +1,4 @@
+app.zen_browser.zen
 cc.arduino.IDE2
 com.emqx.MQTTX
 com.github.iwalton3.jellyfin-media-player
@@ -17,7 +18,6 @@ io.github.hakandundar34coding.system-monitoring-center
 io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
-io.github.zen_browser.zen
 md.obsidian.Obsidian
 me.kozec.syncthingtk
 org.fedoraproject.KDE6Platform
