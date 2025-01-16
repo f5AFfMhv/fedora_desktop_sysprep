@@ -1,4 +1,15 @@
+BASE_DIR=/home/mj/google/drive/jankunasmartynas/Programming/scripts
+HC_GPHOTOS=74e5d015-6d9c-4b63-8912-5f70491aff55
+HC_FEDORA=8f2ded5b-8697-4899-8b68-759f7c46745f
+HC_TIMESHIFT=a346a6d0-6203-4520-b8f2-343da27a37bf
+
 #Ansible: Sync google photos
-@reboot /usr/local/bin/gphotos-sync /home/mj/google/photos/jankunasmartynas >> /var/log/gphotos-sync.log 2>&1
+@reboot $BASE_DIR/gphotos_sync.sh
+#Ansible: Timeshift backup verification
+@reboot $BASE_DIR/timeshift_backup_verify.sh
 #Ansible: Git backup
 @reboot cd /home/mj/github/fedora_desktop_sysprep && ./backup.sh
+#Ansible: Note sync
+@reboot cd /home/mj/Documents/Others/Notes/Notes && ./sync_notes.sh
+#Ansible: SRV backup
+@reboot $BASE_DIR/srv_backup.sh >> /mnt/Archive/srv_sync.log
