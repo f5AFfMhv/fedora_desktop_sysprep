@@ -49,7 +49,10 @@ org.gnome.gThumb
 org.gtk.Gtk3theme.Orchis-Green-Dark-Compact
 org.kde.KStyle.Adwaita
 org.kde.Platform
+org.kde.Platform
 org.kde.PlatformTheme.QGnomePlatform
+org.kde.PlatformTheme.QGnomePlatform
+org.kde.WaylandDecoration.QAdwaitaDecorations
 org.kde.WaylandDecoration.QAdwaitaDecorations
 org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kde.kdenlive
