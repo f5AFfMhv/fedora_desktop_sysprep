@@ -5,7 +5,7 @@ cron_jobs:
   # - name: Timeshift backup verification
   #   job: "$BASE_DIR/timeshift_backup_verify.sh"
   - name: Git backup
-    job: "cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
+    job: "#cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
   - name: Note sync
     job: "cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
   # - name: SRV backup
