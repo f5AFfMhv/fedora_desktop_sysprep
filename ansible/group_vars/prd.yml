@@ -2,14 +2,14 @@
 cron_jobs:
   - name: Sync google photos
     job: "$BASE_DIR/gphotos_sync.sh"
-  - name: Timeshift backup verification
-    job: "$BASE_DIR/timeshift_backup_verify.sh"
+  # - name: Timeshift backup verification
+  #   job: "$BASE_DIR/timeshift_backup_verify.sh"
   - name: Git backup
-    job: "#cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
+    job: "cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
   - name: Note sync
     job: "cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
-  - name: SRV backup
-    job: "$BASE_DIR/srv_backup.sh"
+  # - name: SRV backup
+  #   job: "$BASE_DIR/srv_backup.sh"
 
 cron_env:
   - var: BASE_DIR
@@ -135,7 +135,6 @@ rpms:
   - virt-manager
   - insync
   - keepassxc
-  - lens
   - solaar
   - timeshift
   - webapp-manager
@@ -152,7 +151,6 @@ flatpaks:
   - cc.arduino.IDE2
   - com.github.tchx84.Flatseal
   - com.raggesilver.BlackBox
-  - com.spotify.Client
   - com.valvesoftware.Steam
   - com.valvesoftware.Steam.CompatibilityTool.Proton-GE
   - io.github.hakandundar34coding.system-monitoring-center

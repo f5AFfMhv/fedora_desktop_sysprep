@@ -136,6 +136,7 @@
       ansible.builtin.cron:
         name: "{{ item.var }}"
         env: true
+        user: "{{ user }}"
         job: "{{ item.val }}"
       with_items: "{{ cron_env }}"
       tags:
