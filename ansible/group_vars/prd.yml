@@ -168,6 +168,7 @@ flatpaks:
   - md.obsidian.Obsidian
   - io.github.flattool.Warehouse
   - io.github.zen_browser.zen
+  - io.bassi.Amberol
 
 python_packages:
   - name: PcbDraw
