@@ -1858,6 +1858,7 @@ python3-xlib.noarch
 python3.10.x86_64
 python3.10-libs.x86_64
 python3.10-tkinter.x86_64
+python3.8.x86_64
 qadwaitadecorations-qt5.x86_64
 qemu-audio-alsa.x86_64
 qemu-audio-dbus.x86_64

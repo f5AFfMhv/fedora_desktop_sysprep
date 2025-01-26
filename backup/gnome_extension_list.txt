@@ -16,7 +16,9 @@ miniview@thesecretaryofwar.com
 no-overview@fthx
 panel-date-format@keiii.github.com
 panelScroll@sun.wxg@gmail.com
+pip-on-top@rafostar.github.com
 rounded-window-corners@yilozt
+smart-auto-move@khimaros.com
 update-extension@purejava.org
 user-theme@gnome-shell-extensions.gcampax.github.com
 Vitals@CoreCoding.com

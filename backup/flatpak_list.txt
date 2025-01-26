@@ -34,6 +34,7 @@ org.freedesktop.Sdk
 org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
+org.gnome.SoundRecorder
 org.kde.KStyle.Adwaita
 org.kde.KStyle.Adwaita
 org.kde.Platform
