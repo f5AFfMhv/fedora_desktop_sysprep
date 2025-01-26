@@ -134,7 +134,9 @@ brasero-libs.x86_64
 brcmfmac-firmware.noarch
 brlapi.x86_64
 brltty.x86_64
+btrfs-assistant.x86_64
 btrfs-progs.x86_64
+btrfsmaintenance.noarch
 bubblewrap.x86_64
 bzip2.x86_64
 bzip2-libs.i686
@@ -909,6 +911,8 @@ libbrotli.i686
 libbrotli.x86_64
 libbs2b.x86_64
 libbsd.x86_64
+libbtrfs.x86_64
+libbtrfsutil.x86_64
 libburn.x86_64
 libbytesize.x86_64
 libcacard.x86_64
@@ -2008,6 +2012,8 @@ slang.x86_64
 slirp4netns.x86_64
 smartmontools.x86_64
 smartmontools-selinux.noarch
+snapper.x86_64
+snapper-libs.x86_64
 snappy.x86_64
 snapshot.x86_64
 solaar.noarch
