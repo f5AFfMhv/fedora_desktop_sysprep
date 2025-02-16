@@ -18,6 +18,8 @@ io.github.realmazharhussain.GdmSettings
 md.obsidian.Obsidian
 me.kozec.syncthingtk
 org.fedoraproject.Platform
+org.fedoraproject.Platform.GL.default
+org.fedoraproject.Platform.Locale
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386

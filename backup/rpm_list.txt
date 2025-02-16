@@ -182,6 +182,7 @@ cpio.x86_64
 cpp.x86_64
 cpu-x.x86_64
 cpu-x-data.noarch
+cpuinfo.x86_64
 cracklib.x86_64
 cracklib-dicts.x86_64
 criu.x86_64
@@ -1327,6 +1328,7 @@ libxshmfence.i686
 libxshmfence.x86_64
 libxslt.x86_64
 libyaml.x86_64
+libyuv.x86_64
 libzip.x86_64
 libzstd.i686
 libzstd.x86_64
