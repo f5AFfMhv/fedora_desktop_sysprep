@@ -125,6 +125,7 @@ bluez-cups.x86_64
 bluez-libs.x86_64
 bluez-obexd.x86_64
 bolt.x86_64
+boost-iostreams.x86_64
 boost-regex.x86_64
 boost-system.x86_64
 boost-thread.x86_64
@@ -1391,8 +1392,6 @@ mesa-libGL.i686
 mesa-libGL.x86_64
 mesa-libgbm.i686
 mesa-libgbm.x86_64
-mesa-libglapi.i686
-mesa-libglapi.x86_64
 mesa-va-drivers.i686
 mesa-va-drivers.x86_64
 mesa-vulkan-drivers.x86_64
