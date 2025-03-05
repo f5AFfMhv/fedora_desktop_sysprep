@@ -29,6 +29,7 @@ PackageKit-gstreamer-plugin.x86_64
 PackageKit-gtk3-module.x86_64
 SDL2.x86_64
 SDL2_image.x86_64
+WoeUSB.x86_64
 aajohan-comfortaa-fonts.noarch
 aardvark-dns.x86_64
 abattis-cantarell-fonts.noarch
@@ -2199,6 +2200,8 @@ which.x86_64
 whois.x86_64
 whois-nls.noarch
 wildmidi-libs.x86_64
+wimlib.x86_64
+wimlib-utils.x86_64
 wireless-regdb.noarch
 wireplumber.x86_64
 wireplumber-libs.x86_64
