@@ -1,3 +1,23 @@
+[copr:copr.fedorainfracloud.org:ilyaz:LACT]
+name=Copr repo for LACT owned by ilyaz
+baseurl=https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+[copr:copr.fedorainfracloud.org:kraxarn:spotify-qt]
+name=Copr repo for spotify-qt owned by kraxarn
+baseurl=https://download.copr.fedorainfracloud.org/results/kraxarn/spotify-qt/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/kraxarn/spotify-qt/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
 [copr:copr.fedorainfracloud.org:phracek:PyCharm]
 baseurl = https://download.copr.fedorainfracloud.org/results/phracek/PyCharm/fedora-$releasever-$basearch/
 enabled = 0

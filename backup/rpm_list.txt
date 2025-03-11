@@ -811,6 +811,7 @@ krb5-libs.i686
 krb5-libs.x86_64
 kubectl.x86_64
 kyotocabinet-libs.x86_64
+lact.x86_64
 ladspa.x86_64
 lame-libs.i686
 lame-libs.x86_64
@@ -2039,6 +2040,7 @@ spice-vdagent.x86_64
 spice-webdavd.x86_64
 spirv-tools-libs.i686
 spirv-tools-libs.x86_64
+spotify-qt.x86_64
 sqlite-libs.i686
 sqlite-libs.x86_64
 squashfs-tools.x86_64
