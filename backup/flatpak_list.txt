@@ -16,6 +16,7 @@ io.github.hakandundar34coding.system-monitoring-center
 io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
+io.github.ungoogled_software.ungoogled_chromium
 md.obsidian.Obsidian
 me.kozec.syncthingtk
 org.fedoraproject.Platform
