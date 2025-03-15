@@ -17,6 +17,7 @@ NetworkManager-pptp.x86_64
 NetworkManager-pptp-gnome.x86_64
 NetworkManager-ssh.x86_64
 NetworkManager-ssh-gnome.x86_64
+NetworkManager-ssh-selinux.x86_64
 NetworkManager-team.x86_64
 NetworkManager-vpnc.x86_64
 NetworkManager-vpnc-gnome.x86_64
