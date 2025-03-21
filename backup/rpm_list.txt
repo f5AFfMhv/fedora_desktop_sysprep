@@ -1649,6 +1649,8 @@ pinfo.x86_64
 pipewire.x86_64
 pipewire-alsa.x86_64
 pipewire-gstreamer.x86_64
+pipewire-jack-audio-connection-kit.x86_64
+pipewire-jack-audio-connection-kit-libs.x86_64
 pipewire-libs.x86_64
 pipewire-plugin-libcamera.x86_64
 pipewire-pulseaudio.x86_64
@@ -2189,6 +2191,7 @@ vpnc-script.noarch
 vte-profile.x86_64
 vte291.x86_64
 vulkan-loader.x86_64
+vulkan-tools.x86_64
 wavpack.i686
 wavpack.x86_64
 webapp-manager.noarch
