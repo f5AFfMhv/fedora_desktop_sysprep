@@ -1114,6 +1114,7 @@ liboauth.x86_64
 liboeffis.x86_64
 libogg.i686
 libogg.x86_64
+libopenjph.x86_64
 libopenmpt.x86_64
 libosinfo.x86_64
 libpaper.x86_64
