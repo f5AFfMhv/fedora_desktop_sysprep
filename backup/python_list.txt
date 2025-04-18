@@ -15,6 +15,7 @@ Brotli
 cachetools
 certifi
 cffi
+chardet
 charset-normalizer
 click
 configobj
@@ -24,6 +25,7 @@ cryptography
 cupshelpers
 cycler
 dasbus
+dbus_next
 dbus-python
 distlib
 distro
@@ -98,6 +100,8 @@ PyNaCl
 pyOpenSSL
 pyparsing
 pyparted
+PyQt5
+PyQt5_sip
 PySocks
 python-augeas
 python-dateutil
@@ -108,9 +112,11 @@ python-xlib
 pyudev
 pyxdg
 PyYAML
-rapidfuzz
+pyynl
+RapidFuzz
 referencing
 regex
+reportlab
 requests
 requests-file
 requests-ftp
@@ -119,7 +125,7 @@ resolvelib
 rpds-py
 rpm
 rsa
-SciPy
+scipy
 selinux
 sepolicy
 setools
