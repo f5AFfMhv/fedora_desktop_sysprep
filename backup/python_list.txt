@@ -124,6 +124,7 @@ requests-oauthlib
 resolvelib
 rpds-py
 rpm
+rpmconf
 rsa
 scipy
 selinux

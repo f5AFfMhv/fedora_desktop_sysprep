@@ -30,7 +30,6 @@ PackageKit-gstreamer-plugin.x86_64
 PackageKit-gtk3-module.x86_64
 SDL2_image.x86_64
 SDL3.x86_64
-WoeUSB.x86_64
 aajohan-comfortaa-fonts.noarch
 aardvark-dns.x86_64
 abattis-cantarell-fonts.noarch
@@ -1872,6 +1871,7 @@ python3-requests-oauthlib.noarch
 python3-resolvelib.noarch
 python3-rpds-py.x86_64
 python3-rpm.x86_64
+python3-rpmconf.noarch
 python3-rsa.noarch
 python3-satyr.x86_64
 python3-scipy.x86_64
@@ -2014,6 +2014,7 @@ readline.x86_64
 realmd.x86_64
 realtek-firmware.noarch
 redhat-menus.noarch
+remove-retired-packages.noarch
 rest.x86_64
 rhythmbox.x86_64
 rit-meera-new-fonts.noarch
@@ -2029,6 +2030,8 @@ rpm-plugin-selinux.x86_64
 rpm-plugin-systemd-inhibit.x86_64
 rpm-sequoia.x86_64
 rpm-sign-libs.x86_64
+rpmconf.noarch
+rpmconf-base.noarch
 rsvg-pixbuf-loader.x86_64
 rsync.x86_64
 rtkit.x86_64
@@ -2095,7 +2098,6 @@ spice-vdagent.x86_64
 spice-webdavd.x86_64
 spirv-tools-libs.i686
 spirv-tools-libs.x86_64
-spotify-qt.x86_64
 sqlite-libs.i686
 sqlite-libs.x86_64
 squashfs-tools.x86_64
@@ -2262,8 +2264,6 @@ which.x86_64
 whois.x86_64
 whois-nls.noarch
 wildmidi-libs.x86_64
-wimlib.x86_64
-wimlib-utils.x86_64
 wireless-regdb.noarch
 wireplumber.x86_64
 wireplumber-libs.x86_64
