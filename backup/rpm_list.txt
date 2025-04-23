@@ -522,6 +522,7 @@ gnome-keyring-pam.x86_64
 gnome-logs.x86_64
 gnome-menus.x86_64
 gnome-online-accounts.x86_64
+gnome-online-accounts-libs.x86_64
 gnome-remote-desktop.x86_64
 gnome-session.x86_64
 gnome-session-wayland-session.x86_64
