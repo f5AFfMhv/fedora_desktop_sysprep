@@ -389,6 +389,7 @@ fedora-repos.noarch
 fedora-third-party.noarch
 fedora-workstation-backgrounds.noarch
 fedora-workstation-repositories.x86_64
+ffmpeg-free.x86_64
 fftw-libs-double.x86_64
 fftw-libs-single.x86_64
 file.x86_64
@@ -419,6 +420,7 @@ fonts-filesystem.noarch
 fpaste.noarch
 fprintd.x86_64
 fprintd-pam.x86_64
+freeglut.x86_64
 freeipmi.x86_64
 freerdp-libs.x86_64
 freetype.i686
@@ -901,6 +903,7 @@ libatomic.x86_64
 libattr.x86_64
 libavc1394.x86_64
 libavcodec-free.x86_64
+libavdevice-free.x86_64
 libavfilter-free.x86_64
 libavformat-free.x86_64
 libavif.x86_64
@@ -941,6 +944,7 @@ libbtrfs.x86_64
 libbtrfsutil.x86_64
 libburn.x86_64
 libbytesize.x86_64
+libcaca.x86_64
 libcacard.x86_64
 libcamera.x86_64
 libcamera-ipa.x86_64
@@ -975,6 +979,7 @@ libdav1d.x86_64
 libdb.x86_64
 libdbusmenu.x86_64
 libdbusmenu-gtk3.x86_64
+libdc1394.x86_64
 libdca.x86_64
 libde265.x86_64
 libdecor.x86_64
@@ -1422,6 +1427,7 @@ mesa-libEGL.i686
 mesa-libEGL.x86_64
 mesa-libGL.i686
 mesa-libGL.x86_64
+mesa-libGLU.x86_64
 mesa-libgbm.i686
 mesa-libgbm.x86_64
 mesa-va-drivers.i686
