@@ -12,11 +12,11 @@ com.visualstudio.code
 io.bassi.Amberol
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
-io.github.hakandundar34coding.system-monitoring-center
 io.github.jonmagon.kdiskmark
 io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
 io.github.ungoogled_software.ungoogled_chromium
+io.missioncenter.MissionCenter
 md.obsidian.Obsidian
 me.kozec.syncthingtk
 org.fedoraproject.Platform
@@ -43,14 +43,9 @@ org.gnome.Platform
 org.gnome.Platform
 org.gnome.SoundRecorder
 org.kde.KStyle.Adwaita
-org.kde.KStyle.Adwaita
-org.kde.Platform
 org.kde.Platform
 org.kde.PlatformTheme.QGnomePlatform
-org.kde.PlatformTheme.QGnomePlatform
 org.kde.WaylandDecoration.QAdwaitaDecorations
-org.kde.WaylandDecoration.QAdwaitaDecorations
-org.kde.WaylandDecoration.QGnomePlatform-decoration
 org.kicad.KiCad
 org.kicad.KiCad.Library.Footprints
 org.kicad.KiCad.Library.Packages3D

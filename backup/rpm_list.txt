@@ -790,6 +790,7 @@ json-c.x86_64
 json-glib.x86_64
 julietaula-montserrat-fonts.noarch
 jxl-pixbuf-loader.x86_64
+jxrlib.x86_64
 kasumi-common.noarch
 kasumi-unicode.x86_64
 kbd.x86_64
@@ -1151,6 +1152,7 @@ libpath_utils.x86_64
 libpcap.x86_64
 libpciaccess.i686
 libpciaccess.x86_64
+libpeas.x86_64
 libpeas1.x86_64
 libpeas1-gtk.x86_64
 libpeas1-loader-python3.x86_64
@@ -1500,6 +1502,7 @@ numactl-libs.x86_64
 numad.x86_64
 nvme-cli.x86_64
 nxpwireless-firmware.noarch
+ocl-icd.i686
 ocl-icd.x86_64
 oniguruma.x86_64
 open-sans-fonts.noarch
