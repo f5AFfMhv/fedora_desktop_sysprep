@@ -826,6 +826,7 @@ keyutils-libs.x86_64
 kf5-filesystem.x86_64
 kf6-filesystem.x86_64
 kf6-karchive.x86_64
+kf6-kguiaddons.x86_64
 kf6-kimageformats.x86_64
 kmod.x86_64
 kmod-libs.x86_64
@@ -1463,6 +1464,7 @@ nano.x86_64
 nano-default-editor.noarch
 nautilus.x86_64
 nautilus-extensions.x86_64
+nautilus-python.x86_64
 nbdkit.x86_64
 nbdkit-basic-filters.x86_64
 nbdkit-basic-plugins.x86_64
@@ -1481,6 +1483,9 @@ net-tools.x86_64
 netavark.x86_64
 nettle.i686
 nettle.x86_64
+nextcloud-client.x86_64
+nextcloud-client-libs.x86_64
+nextcloud-client-nautilus.x86_64
 nfs-utils.x86_64
 nftables.x86_64
 nilfs-utils.x86_64
@@ -1529,6 +1534,7 @@ openssh-server.x86_64
 openssl.x86_64
 openssl-libs.i686
 openssl-libs.x86_64
+openssl-pkcs11.x86_64
 openvpn.x86_64
 opus.i686
 opus.x86_64
@@ -2008,13 +2014,22 @@ qt5-qtwebsockets.x86_64
 qt5-qtx11extras.x86_64
 qt5-qtxmlpatterns.x86_64
 qt6-filesystem.x86_64
+qt6-qt5compat.x86_64
 qt6-qtbase.x86_64
 qt6-qtbase-common.noarch
 qt6-qtbase-gui.x86_64
 qt6-qtdeclarative.x86_64
+qt6-qtpdf.x86_64
+qt6-qtpositioning.x86_64
+qt6-qtserialport.x86_64
+qt6-qtshadertools.x86_64
 qt6-qtsvg.x86_64
 qt6-qttranslations.noarch
 qt6-qtwayland.x86_64
+qt6-qtwebchannel.x86_64
+qt6-qtwebengine.x86_64
+qt6-qtwebsockets.x86_64
+qtkeychain-qt6.x86_64
 quota.x86_64
 quota-nls.noarch
 radeontop.x86_64
