@@ -2036,6 +2036,7 @@ radeontop.x86_64
 raptor2.x86_64
 rav1e-libs.x86_64
 rclone.x86_64
+re2.x86_64
 readline.x86_64
 realmd.x86_64
 realtek-firmware.noarch
