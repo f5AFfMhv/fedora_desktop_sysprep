@@ -1,13 +1,3 @@
-[copr:copr.fedorainfracloud.org:ilyaz:LACT]
-name=Copr repo for LACT owned by ilyaz
-baseurl=https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/fedora-$releasever-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
 [fedora-cisco-openh264]
 name=Fedora $releasever openh264 (From Cisco) - $basearch
 metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-cisco-openh264-$releasever&arch=$basearch
@@ -148,33 +138,12 @@ gpgcheck=1
 metadata_expire=6h
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=False
-[webapp-manager]
-baseurl = https://download.copr.fedorainfracloud.org/results/refi64/webapp-manager/fedora-$releasever-$basearch/
-enabled = 1
-gpgcheck = 1
-gpgkey = https://download.copr.fedorainfracloud.org/results/refi64/webapp-manager/pubkey.gpg
-name = Copr repo for webapp-manager owned by refi64
-
 [docker-ce-stable]
 baseurl = https://download.docker.com/linux/fedora/$releasever/$basearch/stable
 enabled = 1
 gpgcheck = 1
 gpgkey = https://download.docker.com/linux/fedora/gpg
 name = Docker CE Stable - $basearch
-
-[google-cloud-cli]
-baseurl = https://packages.cloud.google.com/yum/repos/cloud-sdk-el8-x86_64
-enabled = 1
-gpgcheck = 1
-gpgkey = https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-name = Google Cloud CLI
-
-[hashicorp]
-baseurl = https://rpm.releases.hashicorp.com/fedora/$releasever/$basearch/stable
-enabled = 0
-gpgcheck = 1
-gpgkey = https://rpm.releases.hashicorp.com/gpg
-name = Hashicorp Stable - $basearch
 
 [insync]
 baseurl = http://yum.insync.io/fedora/$releasever/
@@ -183,19 +152,19 @@ gpgcheck = 1
 gpgkey = https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 name = insync repo
 
-[k8slens]
-baseurl = https://downloads.k8slens.dev/rpm/packages
-enabled = 0
+[kubernetes]
+baseurl = https://pkgs.k8s.io/core:/stable:/v1.33/rpm/
+enabled = 1
 gpgcheck = 1
-gpgkey = https://downloads.k8slens.dev/keys/gpg
-name = Lens
+gpgkey = https://pkgs.k8s.io/core:/stable:/v1.33/rpm/repodata/repomd.xml.key
+name = Kubernetes
 
-[nordvpn]
-baseurl = https://repo.nordvpn.com/yum/nordvpn/centos/$basearch
-enabled = 0
+[LACT]
+baseurl = https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/fedora-$releasever-$basearch/
+enabled = 1
 gpgcheck = 1
-gpgkey = https://repo.nordvpn.com/gpg/nordvpn_public.asc
-name = NordVPN YUM repository - $basearch
+gpgkey = https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/pubkey.gpg
+name = Copr repo for LACT owned by ilyaz
 
 [rpmfusion-free]
 baseurl = http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
@@ -210,36 +179,4 @@ enabled = 1
 gpgcheck = 1
 gpgkey = https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
 name = RPM Fusion for Fedora $releasever - Free - Updates
-
-[kubernetes]
-baseurl = https://pkgs.k8s.io/core:/stable:/v1.28/rpm/
-enabled = 1
-gpgcheck = 1
-gpgkey = https://pkgs.k8s.io/core:/stable:/v1.28/rpm/repodata/repomd.xml.key
-name = Kubernetes
-
-[rpmfusion-nonfree-steam-debuginfo]
-name = RPM Fusion for Fedora $releasever - Nonfree - Steam Debug
-metalink = https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-steam-debug-$releasever&arch=$basearch
-enabled = 0
-type = rpm-md
-gpgcheck = 1
-repo_gpgcheck = 0
-gpgkey = file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
-skip_if_unavailable = True
-
-[rpmfusion-nonfree-steam-source]
-name = RPM Fusion for Fedora $releasever - Nonfree - Steam Source
-metalink = https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-steam-source-$releasever&arch=$basearch
-enabled = 0
-type = rpm-md
-gpgcheck = 1
-repo_gpgcheck = 0
-gpgkey = file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
-skip_if_unavailable = True
-
-[rpmfusion-nonfree-steam]
-baseurl = http://download1.rpmfusion.org/nonfree/fedora/steam/$releasever/$basearch/
-enabled = 0
-name = RPM Fusion for Fedora $releasever - Nonfree - Steam
 
