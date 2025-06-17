@@ -87,7 +87,7 @@ enable_repositories:
     url: https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/fedora-$releasever-$basearch/
     gpgkey: https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/pubkey.gpg
 
-disable_repositories:
+disable_repositories: []
 
 fonts:
   - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Regular.ttf
