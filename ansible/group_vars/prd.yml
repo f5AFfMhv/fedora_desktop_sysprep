@@ -1,29 +1,21 @@
 ---
 cron_jobs:
-  - name: Sync google photos
-    job: "$BASE_DIR/gphotos_sync.sh"
-  # - name: Timeshift backup verification
-  #   job: "$BASE_DIR/timeshift_backup_verify.sh"
   - name: Git backup
     job: "#cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
   - name: Note sync
     job: "cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
-  # - name: SRV backup
-  #   job: "$BASE_DIR/srv_backup.sh"
+  - name: SRV docker config sync
+    job: "/usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1"
 
 cron_env:
   - var: BASE_DIR
     val: /home/mj/google/drive/jankunasmartynas/Programming/scripts
-  - var: HC_GPHOTOS
-    val: 74e5d015-6d9c-4b63-8912-5f70491aff55
   - var: HC_FEDORA
     val: 8f2ded5b-8697-4899-8b68-759f7c46745f
-  - var: HC_TIMESHIFT
-    val: a346a6d0-6203-4520-b8f2-343da27a37bf
 
 git_repos:
-  - repo: git@github.com:f5AFfMhv/fedora_desktop_sysprep.git
-    dest: "{{ git_dir }}/fedora_desktop_sysprep"
+  # - repo: git@github.com:f5AFfMhv/fedora_desktop_sysprep.git
+  #   dest: "{{ git_dir }}/fedora_desktop_sysprep"
   - repo: git@github.com:f5AFfMhv/argos_extensions.git
     dest: "{{ git_dir }}/argos_extensions"
   - repo: git@github.com:f5AFfMhv/my-kicad-libraries.git
@@ -50,8 +42,6 @@ git_repos:
     dest: "{{ git_dir }}/stylepak"
   - repo: https://github.com/vinceliuice/Tela-circle-icon-theme.git
     dest: "{{ git_dir }}/Tela-circle-icon-theme"
-  - repo: https://github.com/yilozt/rounded-window-corners.git
-    dest: "{{ git_dir }}/rounded-window-corners"
   - repo: https://github.com/comfyanonymous/ComfyUI.git
     dest: "{{ git_dir }}/ComfyUI"
   - repo: https://github.com/imarkoff/Marble-shell-theme.git
@@ -114,16 +104,13 @@ rpms:
   - net-tools
   - nfs-utils
   - lm_sensors
-  - xdotool
   - yamllint
   - kubectl
-  - terraform
   - ansible
   - ansible-core
   - ansible-collection-community-docker
   - docker-ce
   - docker-compose-plugin
-  - google-cloud-cli
   - iperf
   - jq
   - lsd
@@ -131,29 +118,23 @@ rpms:
   - htop
   - zsh
   - telnet
-  - distrobox
   - virt-manager
   - insync
   - keepassxc
   - solaar
-  - timeshift
-  - webapp-manager
   - ulauncher
   - rpi-imager
   - gnome-tweaks
   - clapper
-  - chromium
   - cpu-x
   - radeontop
   - ostree
+  - lact
+  - alacritty
 
 flatpaks:
   - cc.arduino.IDE2
   - com.github.tchx84.Flatseal
-  - com.raggesilver.BlackBox
-  - com.valvesoftware.Steam
-  - com.valvesoftware.Steam.CompatibilityTool.Proton-GE
-  - io.github.hakandundar34coding.system-monitoring-center
   - io.github.jonmagon.kdiskmark
   - io.github.prateekmedia.appimagepool
   - io.github.realmazharhussain.GdmSettings
@@ -169,6 +150,11 @@ flatpaks:
   - io.github.flattool.Warehouse
   - io.github.zen_browser.zen
   - io.bassi.Amberol
+  - com.github.KRTirtho.Spotube
+  - com.github.maoschanz.drawing
+  - io.github.ungoogled_software.ungoogled_chromium
+  - io.missioncenter.MissionCenter
+  - org.gnome.SoundRecorder
 
 python_packages:
   - name: PcbDraw
@@ -176,6 +162,4 @@ python_packages:
   - name: pcbnewTransition
     pip: pip3.13
   - name: Pinion
-    pip: pip3.10
-  - name: git+https://github.com/gilesknap/gphotos-sync.git
     pip: pip3.10

@@ -62,34 +62,14 @@ services:
     enabled: true
 
 enable_repositories:
-  - name: webapp-manager
-    desc: Copr repo for webapp-manager owned by refi64
-    url: https://download.copr.fedorainfracloud.org/results/refi64/webapp-manager/fedora-$releasever-$basearch/
-    gpgkey: https://download.copr.fedorainfracloud.org/results/refi64/webapp-manager/pubkey.gpg
   - name: docker-ce-stable
     desc: Docker CE Stable - $basearch
     url: https://download.docker.com/linux/fedora/$releasever/$basearch/stable
     gpgkey: https://download.docker.com/linux/fedora/gpg
-  - name: google-cloud-cli
-    desc: Google Cloud CLI
-    url: https://packages.cloud.google.com/yum/repos/cloud-sdk-el8-x86_64
-    gpgkey: https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-  - name: hashicorp
-    desc: Hashicorp Stable - $basearch
-    url: https://rpm.releases.hashicorp.com/fedora/$releasever/$basearch/stable
-    gpgkey: https://rpm.releases.hashicorp.com/gpg
   - name: insync
     desc: insync repo
     url: http://yum.insync.io/fedora/$releasever/
     gpgkey: https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
-  - name: k8slens
-    desc: Lens
-    url: https://downloads.k8slens.dev/rpm/packages
-    gpgkey: https://downloads.k8slens.dev/keys/gpg
-  - name: nordvpn
-    desc: NordVPN YUM repository - $basearch
-    url: https://repo.nordvpn.com/yum/nordvpn/centos/$basearch
-    gpgkey: https://repo.nordvpn.com/gpg/nordvpn_public.asc
   - name: rpmfusion-free
     desc: RPM Fusion for Fedora $releasever - Free
     url: http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
@@ -100,32 +80,20 @@ enable_repositories:
     gpgkey: https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
   - name: kubernetes
     desc: Kubernetes
-    url: https://pkgs.k8s.io/core:/stable:/v1.28/rpm/
-    gpgkey: https://pkgs.k8s.io/core:/stable:/v1.28/rpm/repodata/repomd.xml.key
+    url: https://pkgs.k8s.io/core:/stable:/v1.33/rpm/
+    gpgkey: https://pkgs.k8s.io/core:/stable:/v1.33/rpm/repodata/repomd.xml.key
+  - name: LACT
+    desc: Copr repo for LACT owned by ilyaz
+    url: https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/fedora-$releasever-$basearch/
+    gpgkey: https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/pubkey.gpg
 
 disable_repositories:
-  - name: "copr:copr.fedorainfracloud.org:phracek:PyCharm"
-    desc: Copr repo for PyCharm owned by phracek
-    file: "_copr:copr.fedorainfracloud.org:phracek:PyCharm"
-    url: https://download.copr.fedorainfracloud.org/results/phracek/PyCharm/fedora-$releasever-$basearch/
-  - name: google-chrome
-    desc: google-chrome
-    file: google-chrome
-    url: http://dl.google.com/linux/chrome/rpm/stable/x86_64
-  - name: rpmfusion-nonfree-nvidia-driver
-    desc: RPM Fusion for Fedora $releasever - Nonfree - NVIDIA Driver
-    file: rpmfusion-nonfree-nvidia-driver
-    url: http://download1.rpmfusion.org/nonfree/fedora/nvidia-driver/$releasever/$basearch/
-  - name: rpmfusion-nonfree-steam
-    desc: RPM Fusion for Fedora $releasever - Nonfree - Steam
-    file: rpmfusion-nonfree-steam
-    url: http://download1.rpmfusion.org/nonfree/fedora/steam/$releasever/$basearch/
 
 fonts:
-  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-  - https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Regular.ttf
+  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Bold.ttf
+  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Italic.ttf
+  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
 bloat:
   - nvidia-gpu-firmware
@@ -174,7 +142,11 @@ gnome_extensions:
     enable: true
   - id: 517 # Caffeine
     enable: false
+  - id: 3396 # Color Picker
+    enable: true
   - id: 1160 # Dash to Panel
+    enable: true
+  - id: 6358 # Disable workspace switcher overlay
     enable: true
   - id: 3088 # Extension List
     enable: false
@@ -188,13 +160,11 @@ gnome_extensions:
     enable: false
   - id: 4099 # No overview at start-up
     enable: true
-  - id: 1462 # Panel Date Format
-    enable: false
   - id: 1616 # panel scroll
     enable: true
-  - id: 5237 # Rounded Window Corners
+  - id: 4691 # PiP on top
+    enable: true
+  - id: 4736 # Smart Auto Move
     enable: false
   - id: 19 # User Themes
-    enable: true
-  - id: 1460 # Vitals
     enable: true
