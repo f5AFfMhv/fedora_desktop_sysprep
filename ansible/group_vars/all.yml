@@ -28,6 +28,8 @@ dotfiles:
     dest: "/home/{{ user }}/.zshenv"
   - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.zshrc"
     dest: "/home/{{ user }}/.zshrc"
+  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.alacritty.toml"
+    dest: "/home/{{ user }}/.alacritty.toml"
 
 symlinks:
   - src: "/home/{{ user }}/.vimrc"

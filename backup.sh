@@ -29,7 +29,7 @@ crontab -l > backup/user_crontab.txt
 dconf dump / > backup/fedora_settings.conf
 
 # Backup dotfiles
-DOTFILES=".zshrc .zshenv .vimrc .p10k.zsh .p10k-8color.zsh .alias.zsh"
+DOTFILES=".zshrc .zshenv .vimrc .p10k.zsh .p10k-8color.zsh .alias.zsh .alacritty.toml"
 
 for dfile in $DOTFILES; do
     cp -f ~/${dfile} dotfiles/
