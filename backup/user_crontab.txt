@@ -6,3 +6,5 @@ BASE_DIR="/home/mj/google/drive/jankunasmartynas/Programming/scripts"
 @reboot cd /home/mj/Documents/Others/Notes/Notes && ./sync_notes.sh
 #Ansible: SRV docker config sync
 @reboot /usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1
+#Sync spotube cache to Music directory
+@reboot /usr/bin/rsync -az /home/mj/.var/app/com.github.KRTirtho.Spotube/cache/spotube/cached_tracks/ /home/mj/Music/ > /dev/null 2>&1

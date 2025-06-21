@@ -637,9 +637,17 @@ gst-editing-services.x86_64
 gstreamer1.i686
 gstreamer1.x86_64
 gstreamer1-plugin-dav1d.x86_64
+gstreamer1-plugin-fallbackswitch.x86_64
+gstreamer1-plugin-fmp4.x86_64
+gstreamer1-plugin-gif.x86_64
 gstreamer1-plugin-gtk4.x86_64
+gstreamer1-plugin-hsv.x86_64
+gstreamer1-plugin-json.x86_64
 gstreamer1-plugin-libav.x86_64
+gstreamer1-plugin-livesync.x86_64
+gstreamer1-plugin-mp4.x86_64
 gstreamer1-plugin-openh264.x86_64
+gstreamer1-plugin-reqwest.x86_64
 gstreamer1-plugins-bad-free.x86_64
 gstreamer1-plugins-bad-free-extras.x86_64
 gstreamer1-plugins-bad-free-fluidsynth.x86_64
@@ -655,6 +663,7 @@ gstreamer1-plugins-good-extras.x86_64
 gstreamer1-plugins-good-gtk.x86_64
 gstreamer1-plugins-good-qt.x86_64
 gstreamer1-plugins-good-qt6.x86_64
+gstreamer1-plugins-ugly.x86_64
 gstreamer1-plugins-ugly-free.x86_64
 gtk-update-icon-cache.x86_64
 gtk-vnc2.x86_64
@@ -2002,6 +2011,7 @@ rpm-sequoia.x86_64
 rpm-sign-libs.x86_64
 rpmconf.noarch
 rpmconf-base.noarch
+rpmfusion-nonfree-release.noarch
 rsvg-pixbuf-loader.x86_64
 rsync.x86_64
 rtkit.x86_64
@@ -2232,6 +2242,7 @@ woff2.x86_64
 words.noarch
 wpa_supplicant.x86_64
 wsdd.noarch
+x264-libs.x86_64
 x265-libs.x86_64
 xcb-util.x86_64
 xcb-util-cursor.x86_64
