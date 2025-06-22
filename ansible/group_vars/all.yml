@@ -13,7 +13,6 @@ allow_sudo:
   - /usr/bin/mount
   - /usr/bin/sshfs
   - /usr/bin/docker
-  - /home/mj/.local/bin/fedora_update.sh
 
 dotfiles:
   - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.vimrc"

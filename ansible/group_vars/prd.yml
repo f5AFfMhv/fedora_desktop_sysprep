@@ -125,7 +125,6 @@ rpms:
   - ulauncher
   - rpi-imager
   - gnome-tweaks
-  - clapper
   - cpu-x
   - radeontop
   - ostree
@@ -136,7 +135,6 @@ flatpaks:
   - cc.arduino.IDE2
   - com.github.tchx84.Flatseal
   - io.github.jonmagon.kdiskmark
-  - io.github.prateekmedia.appimagepool
   - io.github.realmazharhussain.GdmSettings
   - com.mattjakeman.ExtensionManager
   - org.kicad.KiCad

@@ -1,0 +1,21 @@
+[window]
+decorations = "None"
+padding = { x = 5, y = 5 }
+dynamic_padding = true
+
+[font]
+size = 12
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+bindings = [
+{ mouse = "Right", mods = "None", action = "Paste" },
+]
+
+[keyboard]
+bindings = [
+{ key = "v", mods = "Control", action = "Paste" },
+]
+
