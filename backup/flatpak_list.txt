@@ -4,15 +4,11 @@ com.github.KRTirtho.Spotube
 com.github.maoschanz.drawing
 com.github.tchx84.Flatseal
 com.mattjakeman.ExtensionManager
-com.raggesilver.BlackBox
-com.valvesoftware.Steam
-com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 com.visualstudio.code
 io.bassi.Amberol
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
 io.github.jonmagon.kdiskmark
-io.github.prateekmedia.appimagepool
 io.github.realmazharhussain.GdmSettings
 io.github.ungoogled_software.ungoogled_chromium
 io.missioncenter.MissionCenter
@@ -35,7 +31,6 @@ org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Sdk
-org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform
 org.gnome.Platform

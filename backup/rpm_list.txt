@@ -139,9 +139,7 @@ brasero-libs.x86_64
 brcmfmac-firmware.noarch
 brlapi.x86_64
 brltty.x86_64
-btrfs-assistant.x86_64
 btrfs-progs.x86_64
-btrfsmaintenance.noarch
 bubblewrap.x86_64
 bzip2.x86_64
 bzip2-libs.i686
@@ -164,7 +162,6 @@ cifs-utils.x86_64
 cifs-utils-info.x86_64
 cirrus-audio-firmware.noarch
 cjson.x86_64
-clapper.x86_64
 cldr-emoji-annotation.noarch
 cldr-emoji-annotation-dtd.noarch
 cmake-filesystem.x86_64
@@ -654,7 +651,6 @@ gstreamer1-plugins-bad-free-fluidsynth.x86_64
 gstreamer1-plugins-bad-free-libs.x86_64
 gstreamer1-plugins-bad-free-wildmidi.x86_64
 gstreamer1-plugins-bad-free-zbar.x86_64
-gstreamer1-plugins-bad-freeworld.x86_64
 gstreamer1-plugins-base.i686
 gstreamer1-plugins-base.x86_64
 gstreamer1-plugins-good.i686
@@ -935,8 +931,6 @@ libbrotli.i686
 libbrotli.x86_64
 libbs2b.x86_64
 libbsd.x86_64
-libbtrfs.x86_64
-libbtrfsutil.x86_64
 libburn.x86_64
 libbytesize.x86_64
 libcaca.x86_64
@@ -1144,7 +1138,6 @@ libpath_utils.x86_64
 libpcap.x86_64
 libpciaccess.i686
 libpciaccess.x86_64
-libpeas.x86_64
 libpeas1.x86_64
 libpeas1-gtk.x86_64
 libpeas1-loader-python3.x86_64
@@ -2052,8 +2045,6 @@ slang.x86_64
 slirp4netns.x86_64
 smartmontools.x86_64
 smartmontools-selinux.noarch
-snapper.x86_64
-snapper-libs.x86_64
 snappy.x86_64
 snapshot.x86_64
 solaar.noarch
@@ -2305,4 +2296,5 @@ zram-generator-defaults.noarch
 zsh.x86_64
 zstd.x86_64
 zvbi.x86_64
+zxing-cpp.x86_64
 zziplib.x86_64
