@@ -6,6 +6,8 @@ cron_jobs:
     job: "cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
   - name: SRV docker config sync
     job: "/usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1"
+  - name: Sync spotube cache to Music directory
+    job: "@reboot /usr/bin/rsync -az /home/mj/.var/app/com.github.KRTirtho.Spotube/cache/spotube/cached_tracks/ /home/mj/Music/ > /dev/null 2>&1"
 
 cron_env:
   - var: BASE_DIR
@@ -20,12 +22,6 @@ git_repos:
     dest: "{{ git_dir }}/argos_extensions"
   - repo: git@github.com:f5AFfMhv/my-kicad-libraries.git
     dest: "{{ git_dir }}/my-kicad-libraries"
-  - repo: https://github.com/p-e-w/argos.git
-    dest: "{{ git_dir }}/argos"
-  - repo: https://github.com/gohugoio/hugo.git
-    dest: "{{ git_dir }}/hugo"
-  - repo: https://github.com/b3nj5m1n/xdg-ninja.git
-    dest: "{{ git_dir }}/xdg-ninja"
   - repo: https://github.com/romkatv/zsh4humans.git
     dest: "{{ git_dir }}/zsh4humans"
   - repo: https://github.com/vinceliuice/Graphite-gtk-theme.git

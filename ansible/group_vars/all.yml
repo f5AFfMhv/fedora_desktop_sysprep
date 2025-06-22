@@ -43,8 +43,6 @@ symlinks:
     dest: /root/.zshenv
   - src: "/home/{{ user }}/.zshrc"
     dest: /root/.zshrc
-  - src: "{{ git_dir }}/argos/argos@pew.worldwidemann.com"
-    dest: "/home/{{ user }}/.local/share/gnome-shell/extensions/argos@pew.worldwidemann.com"
   - src: "{{ git_dir }}/argos_extensions"
     dest: "/home/{{ user }}/.config/argos"
 
