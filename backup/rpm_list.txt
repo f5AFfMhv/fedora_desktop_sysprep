@@ -463,7 +463,7 @@ gettext-envsubst.x86_64
 gettext-libs.x86_64
 gettext-runtime.x86_64
 ghostscript.x86_64
-ghostscript-tools-fonts.noarch
+ghostscript-tools-fontutils.noarch
 ghostscript-tools-printing.noarch
 giflib.x86_64
 git.x86_64
