@@ -702,6 +702,7 @@ harfbuzz.i686
 harfbuzz.x86_64
 harfbuzz-icu.x86_64
 hdparm.x86_64
+helm.x86_64
 hfsplus-tools.x86_64
 hicolor-icon-theme.noarch
 hidapi.x86_64
@@ -1452,6 +1453,7 @@ mesa-va-drivers.i686
 mesa-va-drivers.x86_64
 mesa-vulkan-drivers.x86_64
 microcode_ctl.x86_64
+minikube.x86_64
 minizip-ng-compat.x86_64
 mjpegtools-libs.x86_64
 mkpasswd.x86_64

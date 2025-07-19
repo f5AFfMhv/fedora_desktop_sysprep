@@ -2,7 +2,6 @@ app.zen_browser.zen
 cc.arduino.IDE2
 com.github.KRTirtho.Spotube
 com.github.maoschanz.drawing
-com.github.rafostar.Clapper.Enhancers
 com.github.tchx84.Flatseal
 com.mattjakeman.ExtensionManager
 com.visualstudio.code
