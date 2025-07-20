@@ -16,6 +16,7 @@ io.missioncenter.MissionCenter
 md.obsidian.Obsidian
 me.iepure.devtoolbox
 me.kozec.syncthingtk
+org.fedoraproject.KDE5Platform
 org.fedoraproject.Platform
 org.fedoraproject.Platform.GL.default
 org.fedoraproject.Platform.Locale
@@ -45,4 +46,5 @@ org.kicad.KiCad.Library.Symbols
 org.kicad.KiCad.Library.Templates
 org.mozilla.Thunderbird
 org.onlyoffice.desktopeditors
+org.sqlitebrowser.sqlitebrowser
 org.videolan.VLC
