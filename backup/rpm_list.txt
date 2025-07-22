@@ -1763,7 +1763,7 @@ python3-abrt-addon.noarch
 python3-argcomplete.noarch
 python3-attrs.noarch
 python3-audit.x86_64
-python3-augeas.noarch
+python3-augeas.x86_64
 python3-autopep8.noarch
 python3-bcrypt.x86_64
 python3-beaker.noarch
