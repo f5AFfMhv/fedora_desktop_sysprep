@@ -7,7 +7,7 @@ cron_jobs:
   - name: SRV docker config sync
     job: "/usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1"
   - name: Sync spotube cache to Music directory
-    job: "@reboot /usr/bin/rsync -az /home/mj/.var/app/com.github.KRTirtho.Spotube/cache/spotube/cached_tracks/ /home/mj/Music/ > /dev/null 2>&1"
+    job: "/usr/bin/rsync -az /home/mj/.var/app/com.github.KRTirtho.Spotube/cache/spotube/cached_tracks/ /home/mj/Music/ > /dev/null 2>&1"
 
 cron_env:
   - var: BASE_DIR
