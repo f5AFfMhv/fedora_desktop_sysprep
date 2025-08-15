@@ -1916,6 +1916,7 @@ qadwaitadecorations-qt5.x86_64
 qatlib.x86_64
 qatlib-service.x86_64
 qatzip-libs.x86_64
+qcom-wwan-firmware.noarch
 qemu-audio-alsa.x86_64
 qemu-audio-dbus.x86_64
 qemu-audio-jack.x86_64
