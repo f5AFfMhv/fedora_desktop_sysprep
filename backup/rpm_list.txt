@@ -343,6 +343,7 @@ e2fsprogs.x86_64
 e2fsprogs-libs.x86_64
 editorconfig-libs.x86_64
 edk2-ovmf.noarch
+edk2-shell-x64.noarch
 efi-filesystem.noarch
 efibootmgr.x86_64
 efivar-libs.x86_64
