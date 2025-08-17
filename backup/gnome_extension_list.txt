@@ -16,6 +16,7 @@ no-overview@fthx
 openbar@neuromorph
 panelScroll@sun.wxg@gmail.com
 pip-on-top@rafostar.github.com
+quick-settings-tweaks@qwreey
 scratchpad@wastedintelligence.com
 smart-auto-move@khimaros.com
 update-extension@purejava.org
