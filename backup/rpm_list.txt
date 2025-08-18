@@ -91,6 +91,7 @@ apr-util.x86_64
 apr-util-lmdb.x86_64
 apr-util-openssl.x86_64
 aribb24.x86_64
+arj.x86_64
 at-spi2-atk.i686
 at-spi2-atk.x86_64
 at-spi2-core.i686
@@ -127,6 +128,7 @@ bc.x86_64
 bind-libs.x86_64
 bind-utils.x86_64
 binutils.x86_64
+binwalk.noarch
 biosdevname.x86_64
 blivet-data.noarch
 blivet-gui-runtime.noarch
@@ -152,6 +154,7 @@ bzip2-libs.i686
 bzip2-libs.x86_64
 c-ares.x86_64
 ca-certificates.noarch
+cabextract.x86_64
 cairo.i686
 cairo.x86_64
 cairo-gobject.i686
@@ -1473,6 +1476,7 @@ mpg123-libs.i686
 mpg123-libs.x86_64
 msgraph.x86_64
 mt7xxx-firmware.noarch
+mtd-utils.x86_64
 mtdev.x86_64
 mtools.x86_64
 mtr.x86_64
@@ -1568,6 +1572,8 @@ p11-kit.i686
 p11-kit.x86_64
 p11-kit-server.x86_64
 p11-kit-trust.x86_64
+p7zip.x86_64
+p7zip-plugins.x86_64
 paktype-naskh-basic-fonts.noarch
 pam.x86_64
 pam-libs.i686
@@ -1909,6 +1915,7 @@ python3-werkzeug.noarch
 python3-wheel.noarch
 python3-xkbregistry.x86_64
 python3-xlib.noarch
+python3-zombie-imp.noarch
 python3.10.x86_64
 python3.10-libs.x86_64
 python3.8.x86_64
@@ -2113,6 +2120,7 @@ sqlite-libs.i686
 sqlite-libs.x86_64
 squashfs-tools.x86_64
 sratom.x86_64
+srecord.x86_64
 srt-libs.x86_64
 sshpass.x86_64
 sssd-client.x86_64

@@ -6,6 +6,7 @@ autopep8
 bcrypt
 Beaker
 beautifulsoup4
+binwalk
 blinker
 blivet
 blivet-gui
@@ -138,3 +139,4 @@ Werkzeug
 wheel
 xkbregistry
 yamllint
+zombie-imp
