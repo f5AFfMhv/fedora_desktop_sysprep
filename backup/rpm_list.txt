@@ -1532,6 +1532,8 @@ nxpwireless-firmware.noarch
 ocl-icd.i686
 ocl-icd.x86_64
 oniguruma.x86_64
+onnx-libs.x86_64
+onnxruntime.x86_64
 open-sans-fonts.noarch
 open-vm-tools.x86_64
 open-vm-tools-desktop.x86_64
