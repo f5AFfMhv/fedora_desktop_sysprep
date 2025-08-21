@@ -4,6 +4,7 @@ com.github.KRTirtho.Spotube
 com.github.maoschanz.drawing
 com.github.tchx84.Flatseal
 com.mattjakeman.ExtensionManager
+com.ml4w.dotfilesinstaller
 com.visualstudio.code
 de.leopoldluley.Clapgrep
 io.bassi.Amberol
