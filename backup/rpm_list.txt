@@ -447,6 +447,7 @@ fwupd-efi.x86_64
 fwupd-plugin-flashrom.x86_64
 fwupd-plugin-modem-manager.x86_64
 fwupd-plugin-uefi-capsule-data.x86_64
+fzf.x86_64
 game-music-emu.x86_64
 gamemode.x86_64
 gawk.x86_64
@@ -2342,6 +2343,7 @@ zlib-ng.x86_64
 zlib-ng-compat.i686
 zlib-ng-compat.x86_64
 zlib-ng-compat-devel.x86_64
+zoxide.x86_64
 zram-generator.x86_64
 zram-generator-defaults.noarch
 zsh.x86_64
