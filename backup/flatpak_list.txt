@@ -8,6 +8,7 @@ com.ml4w.dotfilesinstaller
 com.visualstudio.code
 de.leopoldluley.Clapgrep
 io.bassi.Amberol
+io.freetubeapp.FreeTube
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
 io.github.jonmagon.kdiskmark
