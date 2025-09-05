@@ -1749,6 +1749,7 @@ poppler-data.noarch
 poppler-glib.x86_64
 poppler-utils.x86_64
 popt.x86_64
+portaudio.x86_64
 powerline.x86_64
 powerline-fonts.noarch
 ppp.x86_64
@@ -1876,6 +1877,7 @@ python3-pyOpenSSL.noarch
 python3-pyasn1.noarch
 python3-pyasn1-modules.noarch
 python3-pyatspi.noarch
+python3-pyaudio.x86_64
 python3-pycodestyle.noarch
 python3-pycparser.noarch
 python3-pygit2.x86_64
@@ -2280,6 +2282,7 @@ wildmidi-libs.x86_64
 wireless-regdb.noarch
 wireplumber.x86_64
 wireplumber-libs.x86_64
+wl-clipboard.x86_64
 wmctrl.x86_64
 woff2.x86_64
 words.noarch

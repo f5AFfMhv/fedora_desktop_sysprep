@@ -81,6 +81,7 @@ ptyprocess
 pwquality
 pyasn1
 pyasn1_modules
+PyAudio
 pycairo
 pycodestyle
 pycparser
