@@ -33,6 +33,7 @@ me.kozec.syncthingtk
 org.fedoraproject.KDE5Platform
 org.fedoraproject.Platform
 org.fedoraproject.Platform.GL.default
+org.fedoraproject.Platform.Locale
 org.freedesktop.Platform
 org.freedesktop.Platform
 org.freedesktop.Platform
@@ -42,10 +43,14 @@ org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
+org.freedesktop.Platform.GL.default
+org.freedesktop.Platform.GL.default
+org.freedesktop.Platform.codecs-extra
 org.freedesktop.Platform.ffmpeg-full
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
 org.freedesktop.Platform.openh264
+org.freedesktop.Sdk
 org.freedesktop.Sdk
 org.gnome.Calendar
 org.gnome.Firmware
