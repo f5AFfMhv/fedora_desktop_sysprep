@@ -48,6 +48,7 @@
     context
     virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html
 		kubecontext
+		load
 )
     # anaconda                # conda environment (https://conda.io/)
     # pyenv                   # python environment (https://github.com/pyenv/pyenv)

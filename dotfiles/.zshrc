@@ -6,7 +6,7 @@
 
 # Periodic auto-update on Zsh startup: 'ask' or 'no'.
 # You can manually run `z4h update` to update everything.
-zstyle ':z4h:' auto-update      'no'
+zstyle ':z4h:' auto-update      'yes'
 # Ask whether to auto-update this often; has no effect if auto-update is 'no'.
 zstyle ':z4h:' auto-update-days '28'
 
@@ -33,11 +33,6 @@ zstyle ':z4h:direnv:success' notify 'yes'
 
 # Enable ('yes') or disable ('no') automatic teleportation of z4h over
 # SSH when connecting to these hosts.
-zstyle ':z4h:ssh:192.168.1.4'   enable 'yes'
-zstyle ':z4h:ssh:192.168.1.3'   enable 'yes'
-zstyle ':z4h:ssh:192.168.1.8'   enable 'yes'
-zstyle ':z4h:ssh:192.168.1.9'   enable 'yes'
-zstyle ':z4h:ssh:192.168.1.113'   enable 'yes'
 zstyle ':z4h:ssh:*.home.lab'   enable 'yes'
 # The default value if none of the overrides above match the hostname.
 zstyle ':z4h:ssh:*'                   enable 'no'
@@ -62,14 +57,11 @@ z4h init || return
 # Extend PATH.
 path=(~/bin $path)
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export PATH="$PATH:/home/mj/github/flutter/bin"
 export PATH="$PATH:/opt/cmdline-tools/latest/bin"
 export PATH="$PATH:/opt/platform-tools"
 
 # Export environment variables.
 export GPG_TTY=$TTY
-export CHROME_EXECUTABLE=/usr/bin/chromium-browser
-export ANDROID_SDK_ROOT=/home/mj/Android/Sdk
 
 # Source additional local files if they exist.
 z4h source ~/.config/zsh/env.zsh
@@ -103,9 +95,6 @@ compdef _directories md
 # Define named directories: ~w <=> Windows home directory on WSL.
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
-# Define aliases.
-alias tree='tree -a -I .git'
-
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
@@ -116,14 +105,12 @@ if [ -f '~/google/cloud/google-cloud-sdk/path.zsh.inc' ]; then . '~/google/cloud
 # The next line enables shell command completion for gcloud.
 if [ -f '~/google/cloud/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google/cloud/google-cloud-sdk/completion.zsh.inc'; fi
 
-# json file for application authentication to GCP
-export GOOGLE_APPLICATION_CREDENTIALS=/home/mj/.config/gcloud/application_default_credentials.json
-
 # XDG-ninja recomendation
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
-# Thefuck
-eval $(thefuck --alias)
 
 # kubectl zsh completion
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+# enable zoxide
+eval "$(zoxide init zsh)"

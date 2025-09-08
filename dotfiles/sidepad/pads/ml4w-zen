@@ -1,0 +1,3 @@
+# Sidepad configuration for Zen
+SIDEPAD_APP="flatpak run  app.zen_browser.zen --no-remote -P default --name dotfiles-sidepad"
+SIDEPAD_CLASS="dotfiles-sidepad"
