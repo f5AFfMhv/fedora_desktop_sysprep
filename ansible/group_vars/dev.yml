@@ -10,98 +10,19 @@ cron_env:
 git_repos:
   - repo: https://github.com/f5AFfMhv/fedora_desktop_sysprep.git
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
-  - repo: https://github.com/f5AFfMhv/argos_extensions.git
-    dest: "{{ git_dir }}/argos_extensions"
-  - repo: https://github.com/p-e-w/argos.git
-    dest: "{{ git_dir }}/argos"
-  - repo: https://github.com/vinceliuice/Graphite-gtk-theme.git
-    dest: "{{ git_dir }}/Graphite-gtk-theme"
-  - repo: https://gitlab.com/VandalByte/darkmatter-grub-theme.git
-    dest: "{{ git_dir }}/darkmatter-grub-theme"
-  - repo: https://github.com/vinceliuice/Tela-circle-icon-theme.git
-    dest: "{{ git_dir }}/Tela-circle-icon-theme"
-  - repo: https://github.com/brunelli/gnome-shell-extension-installer.git
-    dest: "{{ git_dir }}/gnome-shell-extension-installer"
-
-rpms:
-  - python3.10
-  - python3-pip
-  - python3-devel
-  - python3-autopep8
-  - python3-certifi
-  - python3-google-auth
-  - python3-google-auth-oauthlib
-  - python3-kubernetes
-  - python3-jmespath
-  - python3-jsonschema
-  - python3-matplotlib
-  - python3-oauthlib
-  - python3-numpy
-  - python3-paramiko
-  - python3-flask
-  - python3-pillow-devel
-  - python3-toml
-  - python3-pyyaml
-  - python3-wheel
-  - gstreamer1
-  - gstreamer1-plugin-libav
-  - gstreamer1-plugin-openh264
-  - gstreamer1-plugins-bad-free
-  - gstreamer1-plugins-bad-free-extras
-  - gstreamer1-plugins-bad-free-fluidsynth
-  - gstreamer1-plugins-bad-free-wildmidi
-  - gstreamer1-plugins-bad-free-zbar
-  - gstreamer1-plugins-bad-freeworld
-  - gstreamer1-plugins-base.i686
-  - gstreamer1-plugins-base
-  - gstreamer1-plugins-good.i686
-  - gstreamer1-plugins-good
-  - gstreamer1-plugins-good-extras
-  - gstreamer1-plugins-good-gtk
-  - gstreamer1-plugins-good-qt
-  - gstreamer1-plugins-ugly-free
-  - gcc
-  - crontabs
-  - openssh-askpass
-  - vim
-  - vim-ansible
-  - vim-powerline
-  - powerline
-  - powerline-fonts
-  - lame-libs
-  - libgda
-  - libgda-sqlite
-  - moreutils
-  - net-tools
-  - nfs-utils
-  - xdotool
-  - yamllint
-  - kubectl
-  - ansible
-  - ansible-core
-  - ansible-collection-community-docker
-  - docker-ce
-  - docker-compose-plugin
-  - jq
-  - lsd
-  - bat
-  - htop
-  - zsh
-  - telnet
-  - distrobox
-  - neofetch
-  - gnome-tweaks
+  - repo: https://github.com/mylinuxforwork/dotfiles.git
+    dest: "{{ git_dir }}/ml4w"
+  - repo: https://github.com/Keyitdev/sddm-astronaut-theme.git
+    dest: "{{ git_dir }}/{{ sddm_theme }}"
+  - repo: https://github.com/romkatv/powerlevel10k-media.git
+    dest: "{{ git_dir }}/p10k-media"
 
 flatpaks:
   - com.github.tchx84.Flatseal
-  - com.raggesilver.BlackBox
-  - io.github.realmazharhussain.GdmSettings
-  - com.mattjakeman.ExtensionManager
-  - com.visualstudio.code
-  - io.github.flattool.Warehouse
-
-python_packages:
-  - name: thefuck
-    pip: pip3.10
-  - name: git+https://github.com/gilesknap/gphotos-sync.git
-    pip: pip3.10
+  - org.onlyoffice.desktopeditors
+  - io.github.zen_browser.zen
+  - ca.edestcroix.Recordbox
+  - com.github.maoschanz.drawing
+  - io.missioncenter.MissionCenter
+  - io.github.flattool.Ignition # Startup app manager
+  - io.github.amit9838.mousam # Weather app

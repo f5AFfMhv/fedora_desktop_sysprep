@@ -1,4 +1,5 @@
 .vscode/
+.ansible/
 ansible/.vscode
 error.txt
 TODO

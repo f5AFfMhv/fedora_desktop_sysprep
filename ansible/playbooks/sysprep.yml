@@ -1,11 +1,10 @@
 - name: Provision Fedora Desktop
   gather_facts: true
-  hosts: prd
+  hosts: dev
   roles:
     - prometheus.prometheus.node_exporter
-    - petermosmans.customize-gnome
   tasks:
-    - name: Add repositories
+    - name: Add rpm repositories
       ansible.builtin.yum_repository:
         name: "{{ item.name }}"
         description: "{{ item.desc }}"
@@ -14,19 +13,7 @@
         file: my_repos
         gpgcheck: true
         enabled: true
-      with_items: "{{ enable_repositories }}"
-      tags:
-        - repo
-        - install
-
-    - name: Disable repositories
-      ansible.builtin.yum_repository:
-        name: "{{ item.name }}"
-        description: "{{ item.desc }}"
-        baseurl: "{{ item.url }}"
-        file: "{{ item.file }}"
-        enabled: false
-      with_items: "{{ disable_repositories }}"
+      with_items: "{{ rpm_repositories }}"
       tags:
         - repo
         - install
@@ -38,15 +25,6 @@
       tags:
         - install
 
-    - name: Remove bloat
-      ansible.builtin.dnf:
-        name: "{{ bloat }}"
-        state: absent
-        autoremove: true
-      tags:
-        - bloat
-        - install
-
     - name: Install rpm packages
       ansible.builtin.dnf:
         name: "{{ rpms }}"
@@ -54,12 +32,22 @@
       tags:
         - install
 
-    - name: Add flathub repository
+    - name: Uninstall unwanted packages
+      ansible.builtin.dnf:
+        name: "{{ uninstall_rpms }}"
+        state: absent
+        autoremove: true
+      tags:
+        - cleanup
+        - install
+
+    - name: Add flatpak repositories
       community.general.flatpak_remote:
-        name: flathub
+        name: "{{ item.name }}"
         state: present
-        flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
-      notify: Remove filtered option from flathub repository
+        flatpakrepo_url: "{{ item.url }}"
+      with_items:
+        - "{{ flatpak_repositories }}"
       tags:
         - flatpak
         - install
@@ -72,21 +60,22 @@
         - flatpak
         - install
 
-    - name: Download get-pip.py script
-      ansible.builtin.get_url:
-        url: https://bootstrap.pypa.io/get-pip.py
-        dest: /tmp/get-pip.py
-        mode: "0770"
+    - name: Add ML4W flathub repository and install flatpaks
+      ansible.builtin.shell: |
+        wget -P /tmp {{ ml4w_flatpak_gpg }}
+        flatpak remote-add --if-not-exists ml4w {{ ml4w_flatpak_repo }} \
+          --gpg-import=/tmp/ml4w-apps-public-key.asc
+        rm -f /tmp/ml4w-apps-public-key.asc
+        flatpak install --system --noninteractive ml4w \
+          com.ml4w.calendar \
+          com.ml4w.hyprlandsettings \
+          com.ml4w.settings \
+          com.ml4w.welcome \
+          com.ml4w.sidebar
+      register: output
+      changed_when: output.rc == 0
       tags:
-        - python
-        - install
-
-    - name: Install pip3.10
-      ansible.builtin.command: python3.10 /tmp/get-pip.py
-      register: out
-      changed_when: out.rc == 0
-      tags:
-        - python
+        - flatpak
         - install
 
     - name: Upgrade pip
@@ -103,12 +92,19 @@
 
     - name: Install python packages
       ansible.builtin.pip:
-        name: "{{ item.name }}"
+        name: "{{ python_packages }}"
         extra_args: --no-cache-dir
-        executable: "{{ item.pip }}"
-      with_items: "{{ python_packages }}"
       tags:
         - python
+        - install
+
+    - name: Install binaries
+      ansible.builtin.get_url:
+        url: "{{ item.url }}"
+        dest: "/usr/local/bin/{{ item.name }}"
+        mode: "0755"
+      with_items: "{{ binaries }}"
+      tags:
         - install
 
     - name: Add sudo rules
@@ -177,17 +173,6 @@
         - config
         - git
 
-    - name: Create gnome extensions directory
-      ansible.builtin.file:
-        path: "/home/{{ user }}/.local/share/gnome-shell/extensions"
-        owner: "{{ user }}"
-        group: "{{ user }}"
-        mode: "0755"
-        state: directory
-      tags:
-        - config
-        - extensions
-
     - name: Create a symbolic links
       ansible.builtin.file:
         src: "{{ item.src }}"
@@ -207,7 +192,7 @@
         dest: "{{ item.dest }}"
         owner: "{{ user }}"
         group: "{{ user }}"
-        mode: "0664"
+        mode: "0751"
         remote_src: true
       with_items: "{{ dotfiles }}"
       tags:
@@ -221,9 +206,35 @@
         owner: root
         group: root
         mode: "0644"
+      notify: Restart DNSMasq
       tags:
         - config
         - dns
+
+    - name: Add SDDM configuration
+      ansible.builtin.template:
+        src: sddm.conf.j2
+        dest: /etc/sddm.conf
+        owner: root
+        group: root
+        mode: "0644"
+      notify: Restart SDDM
+      tags:
+        - config
+        - sddm
+
+    - name: Add SDDM theme
+      ansible.builtin.copy:
+        src: "{{ git_dir }}/{{ sddm_theme }}"
+        dest: /usr/share/sddm/themes/
+        owner: root
+        group: root
+        mode: "0755"
+        remote_src: true
+      notify: Restart SDDM
+      tags:
+        - config
+        - sddm
 
     - name: Create system fonts directory
       ansible.builtin.file:
@@ -233,11 +244,26 @@
         - config
         - fonts
 
-    - name: Download fonts
-      ansible.builtin.get_url:
-        url: "{{ item }}"
+    - name: Find all .ttf files in source directories
+      ansible.builtin.find:
+        paths:
+
+        patterns: "*.ttf"
+        recurse: yes
+      register: ttf_fonts
+      tags:
+        - config
+        - fonts
+
+    - name: Copy fonts from repos
+      ansible.builtin.copy:
+        src: "{{ item }}"
         dest: "/usr/local/share/fonts/"
-      with_items: "{{ fonts }}"
+        owner: root
+        group: root
+        mode: "0644"
+        remote_src: true
+      with_items: "{{ ttf_fonts.files | map(attribute='path') | list }}"
       notify: Update font cache
       tags:
         - config
@@ -252,11 +278,15 @@
         - zsh
 
   handlers:
-    - name: Remove filtered option from flathub repository
-      ansible.builtin.command:
-        cmd: flatpak remote-modify flathub --no-filter
-      register: output
-      changed_when: output.rc == 0
-
     - name: Update font cache
       ansible.builtin.command: fc-cache
+
+    - name: Restart DNSMasq
+      ansible.builtin.service:
+        name: dnsmasq
+        state: restarted
+
+    - name: Restart SDDM
+      ansible.builtin.service:
+        name: sddm
+        state: restarted

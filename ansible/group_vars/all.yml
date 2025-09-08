@@ -3,7 +3,12 @@ user: mj
 domain: home.lab
 dns:
   - 192.168.1.40
-git_dir: "/home/{{ user }}/github"
+home_dir: "/home/{{ user }}"
+git_dir: "{{ home_dir }}/github"
+dotfiles_dir: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles"
+sddm_theme: sddm-astronaut-theme
+ml4w_flatpak_repo: https://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps.flatpakrepo
+ml4w_flatpak_gpg: https://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps-public-key.asc
 
 allow_sudo:
   - /bin/kill
@@ -14,37 +19,66 @@ allow_sudo:
   - /usr/bin/sshfs
   - /usr/bin/docker
 
+font_dirs:
+  - "{{ git_dir }}/sddm-astronaut-theme/Fonts"
+  - "{{ git_dir }}/p10k-media"
+  - "{{ git_dir }}/ml4w/setup/fonts"
+
 dotfiles:
-  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.vimrc"
-    dest: "/home/{{ user }}/.vimrc"
-  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.p10k-8color.zsh"
-    dest: "/home/{{ user }}/.p10k-8color.zsh"
-  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.p10k.zsh"
-    dest: "/home/{{ user }}/.p10k.zsh"
-  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.alias.zsh"
-    dest: /home/{{ user }}/.alias.zsh
-  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.zshenv"
-    dest: "/home/{{ user }}/.zshenv"
-  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.zshrc"
-    dest: "/home/{{ user }}/.zshrc"
-  - src: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles/.alacritty.toml"
-    dest: "/home/{{ user }}/.alacritty.toml"
+  - src: "{{ dotfiles_dir }}/.vimrc"
+    dest: "{{ home_dir }}/.vimrc"
+  - src: "{{ dotfiles_dir }}/.p10k.zsh"
+    dest: "{{ home_dir }}/.p10k.zsh"
+  - src: "{{ dotfiles_dir }}/.alias.zsh"
+    dest: "{{ home_dir }}/.alias.zsh"
+  - src: "{{ dotfiles_dir }}/.zshrc"
+    dest: "{{ home_dir }}/.zshrc"
+  - src: "{{ dotfiles_dir }}/.alacritty.toml"
+    dest: "{{ home_dir }}/.alacritty.toml"
+  - src: "{{ dotfiles_dir }}/.gtkrc-2.0"
+    dest: "{{ home_dir }}"
+  - src: "{{ dotfiles_dir }}/.config/gtk-3.0"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/gtk-4.0"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/hypr"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/ml4w"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/nwg-dock-hyprland"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/qt6ct"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/rofi"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/sidepad"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/swaync"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/waybar"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/waypaper"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/wlogout"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/xsettingsd"
+    dest: "{{ home_dir }}/.config"
+  - src: "{{ dotfiles_dir }}/.config/fastfetch"
+    dest: "{{ home_dir }}/.config"
 
 symlinks:
-  - src: "/home/{{ user }}/.vimrc"
+  - src: "{{ home_dir }}/.vimrc"
     dest: /root/.vimrc
-  - src: "/home/{{ user }}/.vim"
+  - src: "{{ home_dir }}/.vim"
     dest: /root/.vim
-  - src: "/home/{{ user }}/.p10k.zsh"
+  - src: "{{ home_dir }}/.p10k.zsh"
     dest: /root/.p10k.zsh
-  - src: "/home/{{ user }}/.alias.zsh"
+  - src: "{{ home_dir }}/.alias.zsh"
     dest: /root/.alias.zsh
-  - src: "/home/{{ user }}/.zshenv"
+  - src: "{{ home_dir }}/.zshenv"
     dest: /root/.zshenv
-  - src: "/home/{{ user }}/.zshrc"
+  - src: "{{ home_dir }}/.zshrc"
     dest: /root/.zshrc
-  - src: "{{ git_dir }}/argos_extensions"
-    dest: "/home/{{ user }}/.config/argos"
 
 services:
   - name: docker
@@ -60,7 +94,7 @@ services:
     state: started
     enabled: true
 
-enable_repositories:
+rpm_repositories:
   - name: docker-ce-stable
     desc: Docker CE Stable - $basearch
     url: https://download.docker.com/linux/fedora/$releasever/$basearch/stable
@@ -69,42 +103,162 @@ enable_repositories:
     desc: insync repo
     url: http://yum.insync.io/fedora/$releasever/
     gpgkey: https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
-  - name: rpmfusion-free
-    desc: RPM Fusion for Fedora $releasever - Free
-    url: http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
-    gpgkey: https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
-  - name: rpmfusion-free-updates
-    desc: RPM Fusion for Fedora $releasever - Free - Updates
-    url: http://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/
-    gpgkey: https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
-  - name: kubernetes
-    desc: Kubernetes
-    url: https://pkgs.k8s.io/core:/stable:/v1.33/rpm/
-    gpgkey: https://pkgs.k8s.io/core:/stable:/v1.33/rpm/repodata/repomd.xml.key
-  - name: LACT
-    desc: Copr repo for LACT owned by ilyaz
-    url: https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/fedora-$releasever-$basearch/
-    gpgkey: https://download.copr.fedorainfracloud.org/results/ilyaz/LACT/pubkey.gpg
+  - name: copr.solopasha.hyprland
+    desc: Hyprland and related packages
+    url: https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-$releasever-$basearch/
+    gpgkey: https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/pubkey.gpg
+  - name: copr.erikreider.SwayNotificationCenter
+    desc: SwayNotificationCenter and related packages
+    url: https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
+    gpgkey: https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
+  # - name: rpmfusion-free
+  #   desc: RPM Fusion for Fedora $releasever - Free
+  #   url: http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
+  #   gpgkey: https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
+  # - name: rpmfusion-free-updates
+  #   desc: RPM Fusion for Fedora $releasever - Free - Updates
+  #   url: http://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/
+  #   gpgkey: https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
 
-disable_repositories: []
+flatpak_repositories:
+  - name: flathub
+    url: "https://dl.flathub.org/repo/flathub.flatpakrepo"
 
-fonts:
-  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Regular.ttf
-  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Bold.ttf
-  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Italic.ttf
-  - https://github.com/romkatv/powerlevel10k-media/raw/refs/heads/master/MesloLGS%20NF%20Bold%20Italic.ttf
+python_packages:
+  - hyprshade
+  - screeninfo
+  - ansible
 
-bloat:
+binaries:
+  - name: minikube
+    url: https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+  - name: kubectl
+    url: https://dl.k8s.io/release/v1.34.0/bin/linux/amd64/kubectl
+
+rpms:
+  # Development tools
+  - python3-pip
+  - python3-devel
+  - python3-autopep8
+  - python3-toml
+  - python3-pyyaml
+  - python3-wheel
+  - python3-gobject
+  - python3-ansible-lint
+  - qt6ct
+  - qt5-qtwayland
+  - qt6-qtwayland
+  - qt6-qtsvg
+  - qt6-qtmultimedia
+  - gcc
+  - jq
+  - yamllint
+  - ansible
+  - ansible-core
+  - ansible-collection-community-docker
+  - docker-ce
+  - docker-compose-plugin
+  # Networking
+  - openssl
+  - nm-connection-editor
+  - network-manager-applet
+  - NetworkManager-tui
+  - net-tools
+  - telnet
+  - iperf
+  # System tools
+  - zsh
+  - crontabs
+  - moreutils
+  - lm_sensors
+  - nfs-utils
+  - openssh-askpass
+  - fuse
+  - fuse-sshfs
+  - cups
+  - flatpak
+  - sddm
+  - blueman
+  - ImageMagick
+  - inotify-tools
+  - pavucontrol
+  - gvfs
+  - fastfetch
+  # Libraries
+  - lame-libs
+  - libgda
+  - libgda-sqlite
+  - libnotify
+  # Wayland + Hyprland + ML4W
+  - hyprland
+  - hyprpaper
+  - hyprlock
+  - hypridle
+  - hyprpicker
+  - xdg-user-dirs
+  - xdg-desktop-portal-gtk
+  - xdg-desktop-portal-hyprland
+  - wlogout
+  - waypaper
+  - waybar
+  - rofi-wayland
+  - nwg-dock-hyprland
+  - nwg-look
+  - SwayNotificationCenter
+  - xclip
+  - brightnessctl
+  - tumbler
+  - slurp
+  - cliphist
+  - grim
+  - uwsm
+  - papirus-icon-theme
+  - papirus-icon-theme-dark
+  - dejavu-fonts-all
+  - fontawesome-fonts
+  - google-noto-emoji-fonts
+  - google-noto-sans-cjk-fonts
+    # Terminal tools
+  - vim
+  - vim-ansible
+  - vim-powerline
+  - powerline
+  - powerline-fonts
+  - lsd # LSDeluxe, a modern replacement for 'ls'
+  - bat # Better cat
+  - htop
+  - radeontop
+  - zoxide # Fast directory jumper
+  - git
+  - fzf # Fuzzy finder
+  - rsync
+  - unzip
+  - wget
+  - curl
+  # GUI apps
+  - virt-manager
+  - insync # Google Drive client
+  - solaar # Logitech device manager
+  - rpi-imager
+  - cpu-x
+  - alacritty
+  - vlc
+  - nextcloud-client
+  - gnome-calculator
+  - gnome-software
+  - gnome-text-editor
+  - gnome-calendar
+  - gnome-font-viewer
+  - nautilus # File manager
+  - evince # Document viewer
+  - baobab # Disk Usage Analyzer
+  - mediawriter # Fedora Media Writer
+  - loupe # Image viewer
+  - snapshot # Camera viewer
+
+uninstall_rpms:
   - nvidia-gpu-firmware
   - totem
-  - simple-scan
-  - gnome-boxes
-  - gnome-contacts
-  - gnome-tour
-  - gnome-maps
-  - gnome-characters
-  - gnome-connections
-  - gnome-system-monitor
   - unoconv
   - libreoffice-calc
   - libreoffice-core
@@ -125,45 +279,9 @@ bloat:
   - libreoffice-ure-common
   - libreoffice-writer
   - libreoffice-xsltfilter
-
-# Extensions IDs from https://extensions.gnome.org/
-gnome_user: "{{ user }}"
-gnome_extensions:
-  - id: 16 # Auto Move Windows
-    enable: true
-  - id: 3991 # Bluetooth battery indicator
-    enable: true
-  - id: 3193 # Blur my Shell
-    enable: false
-  - id: 2917 # Bring Out Submenu Of Power Off Button
-    enable: true
-  - id: 4679 # Burn My Windows
-    enable: true
-  - id: 517 # Caffeine
-    enable: false
-  - id: 3396 # Color Picker
-    enable: true
-  - id: 1160 # Dash to Panel
-    enable: true
-  - id: 6358 # Disable workspace switcher overlay
-    enable: true
-  - id: 3088 # Extension List
-    enable: false
-  - id: 6406 # Fedora Linux Update Indicator
-    enable: true
-  - id: 4481 # Forge
-    enable: true
-  - id: 4158 # Gnome 4x UI Improvements
-    enable: true
-  - id: 2983 # IP Finder
-    enable: false
-  - id: 4099 # No overview at start-up
-    enable: true
-  - id: 1616 # panel scroll
-    enable: true
-  - id: 4691 # PiP on top
-    enable: true
-  - id: 4736 # Smart Auto Move
-    enable: false
-  - id: 19 # User Themes
-    enable: true
+  - foot
+  - Thunar
+  - thunar-archive-plugin
+  - firefox
+  - kitty
+  - yt-dlp

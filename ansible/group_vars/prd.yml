@@ -3,11 +3,9 @@ cron_jobs:
   - name: Git backup
     job: "#cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"
   - name: Note sync
-    job: "cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
+    job: "#cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
   - name: SRV docker config sync
-    job: "/usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1"
-  - name: Sync spotube cache to Music directory
-    job: "/usr/bin/rsync -az /home/mj/.var/app/com.github.KRTirtho.Spotube/cache/spotube/cached_tracks/ /home/mj/Music/ > /dev/null 2>&1"
+    job: "#/usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1"
 
 cron_env:
   - var: BASE_DIR
@@ -18,142 +16,44 @@ cron_env:
 git_repos:
   # - repo: git@github.com:f5AFfMhv/fedora_desktop_sysprep.git
   #   dest: "{{ git_dir }}/fedora_desktop_sysprep"
-  - repo: git@github.com:f5AFfMhv/argos_extensions.git
-    dest: "{{ git_dir }}/argos_extensions"
-  - repo: git@github.com:f5AFfMhv/my-kicad-libraries.git
-    dest: "{{ git_dir }}/my-kicad-libraries"
   - repo: https://github.com/romkatv/zsh4humans.git
     dest: "{{ git_dir }}/zsh4humans"
-  - repo: https://github.com/vinceliuice/Graphite-gtk-theme.git
-    dest: "{{ git_dir }}/Graphite-gtk-theme"
-  - repo: https://gitlab.com/VandalByte/darkmatter-grub-theme.git
-    dest: "{{ git_dir }}/darkmatter-grub-theme"
   - repo: https://github.com/abertsch/Menlo-for-Powerline.git
     dest: "{{ git_dir }}/Menlo-for-Powerline"
-  - repo: https://github.com/preservim/nerdtree.git
-    dest: "{{ git_dir }}/nerdtree"
   - repo: https://github.com/sb-ocr/ocreeb-12.git
     dest: "{{ git_dir }}/ocreeb-12"
-  - repo: https://github.com/refi64/stylepak.git
-    dest: "{{ git_dir }}/stylepak"
-  - repo: https://github.com/vinceliuice/Tela-circle-icon-theme.git
-    dest: "{{ git_dir }}/Tela-circle-icon-theme"
   - repo: https://github.com/comfyanonymous/ComfyUI.git
     dest: "{{ git_dir }}/ComfyUI"
-  - repo: https://github.com/imarkoff/Marble-shell-theme.git
-    dest: "{{ git_dir }}/Marble-shell-theme"
-  - repo: https://github.com/vinceliuice/Fluent-gtk-theme.git
-    dest: "{{ git_dir }}/Fluent-gtk-theme"
-
-rpms:
-  - python3.10
-  - python3-pip
-  - python3-devel
-  - python3-autopep8
-  - python3-certifi
-  - python3-kubernetes
-  - python3-jmespath
-  - python3-jsonschema
-  - python3-matplotlib
-  - python3-oauthlib
-  - python3-numpy
-  - python3-paramiko
-  - python3-flask
-  - python3-pillow-devel
-  - python3-toml
-  - python3-pyyaml
-  - python3-wheel
-  - gstreamer1
-  - gstreamer1-plugin-libav
-  - gstreamer1-plugin-openh264
-  - gstreamer1-plugins-bad-free
-  - gstreamer1-plugins-bad-free-extras
-  - gstreamer1-plugins-bad-free-fluidsynth
-  - gstreamer1-plugins-bad-free-wildmidi
-  - gstreamer1-plugins-bad-free-zbar
-  - gstreamer1-plugins-bad-freeworld
-  - gstreamer1-plugins-base.i686
-  - gstreamer1-plugins-base
-  - gstreamer1-plugins-good.i686
-  - gstreamer1-plugins-good
-  - gstreamer1-plugins-good-extras
-  - gstreamer1-plugins-good-gtk
-  - gstreamer1-plugins-good-qt
-  - gstreamer1-plugins-ugly-free
-  - gcc
-  - openssl
-  - crontabs
-  - openssh-askpass
-  - vim
-  - vim-ansible
-  - vim-powerline
-  - powerline
-  - powerline-fonts
-  - cups
-  - lame-libs
-  - libgda
-  - libgda-sqlite
-  - moreutils
-  - seahorse
-  - dconf-editor
-  - fuse-sshfs
-  - net-tools
-  - nfs-utils
-  - lm_sensors
-  - yamllint
-  - kubectl
-  - ansible
-  - ansible-core
-  - ansible-collection-community-docker
-  - docker-ce
-  - docker-compose-plugin
-  - iperf
-  - jq
-  - lsd
-  - bat
-  - htop
-  - zsh
-  - telnet
-  - virt-manager
-  - insync
-  - keepassxc
-  - solaar
-  - ulauncher
-  - rpi-imager
-  - gnome-tweaks
-  - cpu-x
-  - radeontop
-  - ostree
-  - lact
-  - alacritty
+  - repo: https://github.com/mylinuxforwork/dotfiles.git
+    dest: "{{ git_dir }}/ml4w"
+  - repo: https://github.com/Keyitdev/sddm-astronaut-theme.git
+    dest: "{{ git_dir }}/{{ sddm_theme }}"
+  - repo: https://github.com/romkatv/powerlevel10k-media.git
+    dest: "{{ git_dir }}/p10k-media"
 
 flatpaks:
   - cc.arduino.IDE2
   - com.github.tchx84.Flatseal
   - io.github.jonmagon.kdiskmark
-  - io.github.realmazharhussain.GdmSettings
-  - com.mattjakeman.ExtensionManager
   - org.kicad.KiCad
   - org.onlyoffice.desktopeditors
-  - org.videolan.VLC
-  - com.visualstudio.code
+  - com.vscodium.codium
   - io.github.giantpinkrobots.flatsweep
   - org.mozilla.Thunderbird
   - me.kozec.syncthingtk
   - md.obsidian.Obsidian
   - io.github.flattool.Warehouse
   - io.github.zen_browser.zen
-  - io.bassi.Amberol
-  - com.github.KRTirtho.Spotube
+  - ca.edestcroix.Recordbox
   - com.github.maoschanz.drawing
   - io.github.ungoogled_software.ungoogled_chromium
   - io.missioncenter.MissionCenter
   - org.gnome.SoundRecorder
+  - com.github.iwalton3.jellyfin-media-player
+  - me.iepure.devtoolbox
+  - org.sqlitebrowser.sqlitebrowser
+  - io.github.flattool.Ignition
+  - io.github.amit9838.mousam # Weather app
+  - it.mijorus.gearlever # Appimage manager
+  - io.github.plrigaux.sysd-manager # Systemd Manager
 
-python_packages:
-  - name: PcbDraw
-    pip: pip3.10
-  - name: pcbnewTransition
-    pip: pip3.13
-  - name: Pinion
-    pip: pip3.10
