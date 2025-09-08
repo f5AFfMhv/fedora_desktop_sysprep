@@ -246,10 +246,9 @@
 
     - name: Find all .ttf files in source directories
       ansible.builtin.find:
-        paths:
-
+        paths: "{{ font_dirs }}"
         patterns: "*.ttf"
-        recurse: yes
+        recurse: true
       register: ttf_fonts
       tags:
         - config
