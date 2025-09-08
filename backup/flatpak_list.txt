@@ -13,6 +13,7 @@ de.leopoldluley.Clapgrep
 dev.salaniLeo.forecast
 io.bassi.Amberol
 io.freetubeapp.FreeTube
+io.github.JakubMelka.Pdf4qt
 io.github.amit9838.mousam
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
@@ -30,6 +31,7 @@ it.mijorus.gearlever
 md.obsidian.Obsidian
 me.iepure.devtoolbox
 me.kozec.syncthingtk
+net.code_industry.MasterPDFEditor
 org.fedoraproject.KDE5Platform
 org.fedoraproject.Platform
 org.fedoraproject.Platform.GL.default
