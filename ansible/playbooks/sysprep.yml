@@ -197,7 +197,7 @@
       with_items: "{{ dotfile_symlinks }}"
       tags:
         - config
-        - symlinks
+        - dotfiles
 
     - name: Create dotfile symbolic links for root
       ansible.builtin.file:
@@ -210,7 +210,7 @@
       with_items: "{{ dotfile_symlinks }}"
       tags:
         - config
-        - symlinks
+        - dotfiles
 
     - name: Add DNS configuration
       ansible.builtin.template:
