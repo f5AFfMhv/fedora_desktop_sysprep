@@ -2,7 +2,7 @@
   gather_facts: true
   hosts: dev
   roles:
-    - prometheus.prometheus.node_exporter
+    # - prometheus.prometheus.node_exporter
   tasks:
     - name: Add rpm repositories
       ansible.builtin.yum_repository:
@@ -173,23 +173,36 @@
         - config
         - git
 
-    - name: Create a symbolic links
+    - name: Create dotfile symbolic links for user
       ansible.builtin.file:
-        src: "{{ item.src }}"
-        dest: "{{ item.dest }}"
+        src: "{{ home_dir }}/.config/{{ item }}"
+        dest: "{{ home_dir }}/{{ item }}"
         owner: "{{ user }}"
         group: "{{ user }}"
         state: link
         force: true
-      with_items: "{{ symlinks }}"
+      with_items: "{{ dotfile_symlinks }}"
+      tags:
+        - config
+        - symlinks
+
+    - name: Create dotfile symbolic links for root
+      ansible.builtin.file:
+        src: "{{ home_dir }}/.config/{{ item }}"
+        dest: "/root/{{ item }}"
+        owner: root
+        group: root
+        state: link
+        force: true
+      with_items: "{{ dotfile_symlinks }}"
       tags:
         - config
         - symlinks
 
     - name: Deploy dotfiles
       ansible.builtin.copy:
-        src: "{{ item.src }}"
-        dest: "{{ item.dest }}"
+        src: "{{ dotfiles_dir }}/{{ item }}"
+        dest: "{{ home_dir }}/.config"
         owner: "{{ user }}"
         group: "{{ user }}"
         mode: "0751"

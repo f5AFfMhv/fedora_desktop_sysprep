@@ -25,60 +25,36 @@ font_dirs:
   - "{{ git_dir }}/ml4w/setup/fonts"
 
 dotfiles:
-  - src: "{{ dotfiles_dir }}/.vimrc"
-    dest: "{{ home_dir }}"
-  - src: "{{ dotfiles_dir }}/.p10k.zsh"
-    dest: "{{ home_dir }}"
-  - src: "{{ dotfiles_dir }}/.alias.zsh"
-    dest: "{{ home_dir }}"
-  - src: "{{ dotfiles_dir }}/.zshrc"
-    dest: "{{ home_dir }}"
-  - src: "{{ dotfiles_dir }}/.alacritty.toml"
-    dest: "{{ home_dir }}"
-  - src: "{{ dotfiles_dir }}/.gtkrc-2.0"
-    dest: "{{ home_dir }}"
-  - src: "{{ dotfiles_dir }}/gtk-3.0"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/gtk-4.0"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/hypr"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/ml4w"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/nwg-dock-hyprland"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/qt6ct"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/rofi"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/sidepad"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/swaync"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/waybar"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/waypaper"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/wlogout"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/xsettingsd"
-    dest: "{{ home_dir }}/.config"
-  - src: "{{ dotfiles_dir }}/fastfetch"
-    dest: "{{ home_dir }}/.config"
+  - .vimrc
+  - .p10k.zsh
+  - .alias.zsh
+  - .zshrc
+  - .zshenv
+  - .alacritty.toml
+  - .gtkrc-2.0
+  - gtk-3.0
+  - gtk-4.0
+  - hypr
+  - ml4w
+  - nwg-dock-hyprland
+  - qt6ct
+  - rofi
+  - sidepad
+  - swaync
+  - waybar
+  - waypaper
+  - wlogout
+  - xsettingsd
+  - fastfetch
 
-symlinks:
-  - src: "{{ home_dir }}/.vimrc"
-    dest: /root/.vimrc
-  - src: "{{ home_dir }}/.vim"
-    dest: /root/.vim
-  - src: "{{ home_dir }}/.p10k.zsh"
-    dest: /root/.p10k.zsh
-  - src: "{{ home_dir }}/.alias.zsh"
-    dest: /root/.alias.zsh
-  - src: "{{ home_dir }}/.zshenv"
-    dest: /root/.zshenv
-  - src: "{{ home_dir }}/.zshrc"
-    dest: /root/.zshrc
+dotfile_symlinks:
+  - .vimrc
+  - .p10k.zsh
+  - .alias.zsh
+  - .zshrc
+  - .zshenv
+  - .alacritty.toml
+  - .gtkrc-2.0
 
 services:
   - name: docker
