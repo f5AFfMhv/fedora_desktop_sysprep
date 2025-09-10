@@ -1,4 +1,5 @@
 demo.AppImage
+ksnip-1.10.1-x86_64.AppImage
 pulseview-NIGHTLY-x86_64-debug.AppImage
 qFlipper-x86_64-1.3.3.AppImage
 Qucs-S-latest-x86_64.AppImage
