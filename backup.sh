@@ -26,30 +26,31 @@ crontab -l > backup/user_crontab.txt
 
 # Backup dotfiles
 DOTFILES="
-.zshrc
-.vimrc
-.p10k.zsh
-.alias.zsh
-.alacritty.toml
-.gtkrc-2.0
-.config/gtk-3.0
-.config/gtk-4.0
-.config/hypr
-.config/ml4w
-.config/nwg-dock-hyprland
-.config/qt6ct
-.config/rofi
-.config/sidepad
-.config/swaync
-.config/waybar
-.config/waypaper
-.config/wlogout
-.config/xsettingsd
-.config/fastfetch
+zshrc
+zshenv
+vimrc
+p10k.zsh
+alias.zsh
+alacritty.toml
+gtkrc-2.0
+gtk-3.0
+gtk-4.0
+hypr
+ml4w
+nwg-dock-hyprland
+qt6ct
+rofi
+sidepad
+swaync
+waybar
+waypaper
+wlogout
+xsettingsd
+fastfetch
 "
 
 for dfile in $DOTFILES; do
-    cp -r -f ~/${dfile} dotfiles/
+    cp -r -f ~/.config/${dfile} dotfiles/
 done
 
 # Push backup to repo
