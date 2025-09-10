@@ -25,13 +25,13 @@ font_dirs:
   - "{{ git_dir }}/ml4w/setup/fonts"
 
 dotfiles:
-  - .vimrc
-  - .p10k.zsh
-  - .alias.zsh
-  - .zshrc
-  - .zshenv
-  - .alacritty.toml
-  - .gtkrc-2.0
+  - vimrc
+  - p10k.zsh
+  - alias.zsh
+  - zshrc
+  - zshenv
+  - alacritty.toml
+  - gtkrc-2.0
   - gtk-3.0
   - gtk-4.0
   - hypr
@@ -48,13 +48,13 @@ dotfiles:
   - fastfetch
 
 dotfile_symlinks:
-  - .vimrc
-  - .p10k.zsh
-  - .alias.zsh
-  - .zshrc
-  - .zshenv
-  - .alacritty.toml
-  - .gtkrc-2.0
+  - vimrc
+  - p10k.zsh
+  - alias.zsh
+  - zshrc
+  - zshenv
+  - alacritty.toml
+  - gtkrc-2.0
 
 services:
   - name: docker

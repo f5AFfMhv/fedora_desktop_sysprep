@@ -173,32 +173,6 @@
         - config
         - git
 
-    - name: Create dotfile symbolic links for user
-      ansible.builtin.file:
-        src: "{{ home_dir }}/.config/{{ item }}"
-        dest: "{{ home_dir }}/{{ item }}"
-        owner: "{{ user }}"
-        group: "{{ user }}"
-        state: link
-        force: true
-      with_items: "{{ dotfile_symlinks }}"
-      tags:
-        - config
-        - symlinks
-
-    - name: Create dotfile symbolic links for root
-      ansible.builtin.file:
-        src: "{{ home_dir }}/.config/{{ item }}"
-        dest: "/root/{{ item }}"
-        owner: root
-        group: root
-        state: link
-        force: true
-      with_items: "{{ dotfile_symlinks }}"
-      tags:
-        - config
-        - symlinks
-
     - name: Deploy dotfiles
       ansible.builtin.copy:
         src: "{{ dotfiles_dir }}/{{ item }}"
@@ -211,6 +185,32 @@
       tags:
         - config
         - dotfiles
+
+    - name: Create dotfile symbolic links for user
+      ansible.builtin.file:
+        src: "{{ home_dir }}/.config/{{ item }}"
+        dest: "{{ home_dir }}/.{{ item }}"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        state: link
+        force: true
+      with_items: "{{ dotfile_symlinks }}"
+      tags:
+        - config
+        - symlinks
+
+    - name: Create dotfile symbolic links for root
+      ansible.builtin.file:
+        src: "{{ home_dir }}/.config/{{ item }}"
+        dest: "/root/.{{ item }}"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        state: link
+        force: true
+      with_items: "{{ dotfile_symlinks }}"
+      tags:
+        - config
+        - symlinks
 
     - name: Add DNS configuration
       ansible.builtin.template:
