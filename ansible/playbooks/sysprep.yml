@@ -2,7 +2,7 @@
   gather_facts: true
   hosts: dev
   roles:
-    # - prometheus.prometheus.node_exporter
+    - prometheus.prometheus.node_exporter
   tasks:
     - name: Add rpm repositories
       ansible.builtin.yum_repository:
@@ -70,7 +70,6 @@
           com.ml4w.calendar \
           com.ml4w.hyprlandsettings \
           com.ml4w.settings \
-          com.ml4w.welcome \
           com.ml4w.sidebar
       register: output
       changed_when: output.rc == 0
