@@ -24,5 +24,3 @@ flatpaks:
   - ca.edestcroix.Recordbox
   - com.github.maoschanz.drawing
   - io.missioncenter.MissionCenter
-  - io.github.flattool.Ignition # Startup app manager
-  - io.github.amit9838.mousam # Weather app

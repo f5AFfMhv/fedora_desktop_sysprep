@@ -34,26 +34,19 @@ git_repos:
 flatpaks:
   - cc.arduino.IDE2
   - com.github.tchx84.Flatseal
-  - io.github.jonmagon.kdiskmark
-  - org.kicad.KiCad
-  - org.onlyoffice.desktopeditors
-  - com.vscodium.codium
+  - org.kicad.KiCad # PCB design
+  - org.onlyoffice.desktopeditors # Office suite
+  - com.vscodium.codium # Code editor
   - io.github.giantpinkrobots.flatsweep
-  - org.mozilla.Thunderbird
+  - org.mozilla.Thunderbird # Mail client
   - me.kozec.syncthingtk
-  - md.obsidian.Obsidian
-  - io.github.flattool.Warehouse
-  - io.github.zen_browser.zen
-  - ca.edestcroix.Recordbox
+  - md.obsidian.Obsidian # Notes
+  - io.github.flattool.Warehouse # Flatpak manager
+  - io.github.zen_browser.zen # Internet browser
+  - ca.edestcroix.Recordbox # Music player
   - com.github.maoschanz.drawing
   - io.github.ungoogled_software.ungoogled_chromium
-  - io.missioncenter.MissionCenter
-  - org.gnome.SoundRecorder
-  - com.github.iwalton3.jellyfin-media-player
+  - io.missioncenter.MissionCenter # System monitor
   - me.iepure.devtoolbox
-  - org.sqlitebrowser.sqlitebrowser
-  - io.github.flattool.Ignition
-  - io.github.amit9838.mousam # Weather app
   - it.mijorus.gearlever # Appimage manager
-  - io.github.plrigaux.sysd-manager # Systemd Manager
 

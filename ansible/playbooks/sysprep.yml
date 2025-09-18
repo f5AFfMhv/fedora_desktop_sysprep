@@ -1,8 +1,8 @@
 - name: Provision Fedora Desktop
   gather_facts: true
-  hosts: dev
+  hosts: prd
   roles:
-    - prometheus.prometheus.node_exporter
+   - prometheus.prometheus.node_exporter
   tasks:
     - name: Add rpm repositories
       ansible.builtin.yum_repository:
@@ -67,7 +67,6 @@
           --gpg-import=/tmp/ml4w-apps-public-key.asc
         rm -f /tmp/ml4w-apps-public-key.asc
         flatpak install --system --noninteractive ml4w \
-          com.ml4w.calendar \
           com.ml4w.hyprlandsettings \
           com.ml4w.settings \
           com.ml4w.sidebar

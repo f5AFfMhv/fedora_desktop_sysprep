@@ -87,14 +87,6 @@ rpm_repositories:
     desc: SwayNotificationCenter and related packages
     url: https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
     gpgkey: https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
-  # - name: rpmfusion-free
-  #   desc: RPM Fusion for Fedora $releasever - Free
-  #   url: http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
-  #   gpgkey: https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
-  # - name: rpmfusion-free-updates
-  #   desc: RPM Fusion for Fedora $releasever - Free - Updates
-  #   url: http://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/
-  #   gpgkey: https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
 
 flatpak_repositories:
   - name: flathub
@@ -134,6 +126,8 @@ rpms:
   - ansible-collection-community-docker
   - docker-ce
   - docker-compose-plugin
+  - figlet
+  - gum
   # Networking
   - openssl
   - nm-connection-editor
