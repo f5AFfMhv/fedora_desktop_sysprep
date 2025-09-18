@@ -64,6 +64,7 @@ nwg-wrapper
 olefile
 packaging
 pathspec
+perf
 pexpect
 pid
 pillow
@@ -82,16 +83,19 @@ pycparser
 pycups
 pygit2
 PyGObject
+pyinotify
 pykickstart
 pyparted
 PySocks
 python-augeas
 python-dateutil
+python-linux-procfs
 python-meh
 python-xlib
 pyudev
 pyxdg
 PyYAML
+pyynl
 referencing
 requests
 requests-file

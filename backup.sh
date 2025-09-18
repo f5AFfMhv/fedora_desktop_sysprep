@@ -54,8 +54,8 @@ for dfile in $DOTFILES; do
 done
 
 # Push backup to repo
-nr_of_changes=$(git status --porcelain | wc -l)
-if [ "$nr_of_changes" -gt "0" ]; then
-    git commit -am "backup $(date +%Y-%m-%d)"
-    git push -u origin hyprland
-fi
+# nr_of_changes=$(git status --porcelain | wc -l)
+# if [ "$nr_of_changes" -gt "0" ]; then
+#     git commit -am "backup $(date +%Y-%m-%d)"
+#     git push -u origin hyprland
+# fi

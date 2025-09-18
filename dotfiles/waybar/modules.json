@@ -226,8 +226,8 @@
 
   // Clock
   "clock": {
-    "format": "{:%H:%M %a}",
-    "on-click": "flatpak run com.ml4w.calendar",
+        "format": "{:%b %e %a%t%H:%M}",
+    "on-click": "gnome-calendar",
     "timezone": "",
     "tooltip": false
   },
@@ -259,7 +259,7 @@
   },
 
   "hyprland/language": {
-    "format": "/ K {short}"
+    "format": "{short}"
   },
 
   // Group Hardware
@@ -284,7 +284,7 @@
     "modules": [
       "custom/tools",
       "custom/cliphist",
-      "custom/hypridle",
+//      "custom/hypridle",
       "custom/hyprshade"
     ]
   },
