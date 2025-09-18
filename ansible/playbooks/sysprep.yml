@@ -2,7 +2,7 @@
   gather_facts: true
   hosts: prd
   roles:
-   - prometheus.prometheus.node_exporter
+    - prometheus.prometheus.node_exporter
   tasks:
     - name: Add rpm repositories
       ansible.builtin.yum_repository:
