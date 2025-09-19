@@ -1,6 +1,7 @@
 ---
 user: mj
 domain: home.lab
+locale: lt_LT.UTF-8
 dns:
   - 192.168.1.40
 home_dir: "/home/{{ user }}"
