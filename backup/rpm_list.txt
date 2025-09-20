@@ -562,6 +562,7 @@ google-carlito-fonts.noarch
 google-crosextra-caladea-fonts.noarch
 google-droid-sans-fonts.noarch
 google-noto-color-emoji-fonts.noarch
+google-noto-emoji-fonts.noarch
 google-noto-fonts-common.noarch
 google-noto-naskh-arabic-vf-fonts.noarch
 google-noto-sans-arabic-vf-fonts.noarch
@@ -1573,6 +1574,7 @@ ostree.x86_64
 ostree-libs.x86_64
 p11-kit.i686
 p11-kit.x86_64
+p11-kit-client.x86_64
 p11-kit-server.x86_64
 p11-kit-trust.x86_64
 p7zip.x86_64
@@ -1771,6 +1773,7 @@ python3.x86_64
 python3-Levenshtein.x86_64
 python3-abrt.x86_64
 python3-abrt-addon.noarch
+python3-anyio.noarch
 python3-argcomplete.noarch
 python3-attrs.noarch
 python3-audit.x86_64
@@ -1814,8 +1817,11 @@ python3-fonttools.x86_64
 python3-gobject.x86_64
 python3-gobject-base.x86_64
 python3-google-auth.noarch
+python3-h11.noarch
 python3-hawkey.x86_64
 python3-hid-parser.noarch
+python3-httpcore.noarch
+python3-httpx.noarch
 python3-humanize.noarch
 python3-idna.noarch
 python3-inotify.noarch
@@ -1906,6 +1912,7 @@ python3-setuptools.noarch
 python3-simpleaudio.x86_64
 python3-simpleline.noarch
 python3-six.noarch
+python3-sniffio.noarch
 python3-soupsieve.noarch
 python3-speechd.x86_64
 python3-systemd.x86_64
@@ -2169,7 +2176,10 @@ tcpdump.x86_64
 teamd.x86_64
 tecla.x86_64
 telnet.x86_64
+tesseract-common.noarch
+tesseract-langpack-eng.noarch
 tesseract-libs.x86_64
+tesseract-tessdata-doc.noarch
 texlive-base.x86_64
 texlive-cm.noarch
 texlive-dvipng.x86_64

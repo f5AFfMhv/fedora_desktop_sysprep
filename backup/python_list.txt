@@ -1,5 +1,6 @@
 ansible
 ansible-core
+anyio
 argcomplete
 attrs
 autopep8
@@ -36,7 +37,10 @@ Flask
 fonttools
 fros
 google-auth
+h11
 hid-parser
+httpcore
+httpx
 humanize
 idna
 iso639
@@ -126,6 +130,7 @@ setuptools
 simpleaudio
 simpleline
 six
+sniffio
 solaar
 sos
 soupsieve
