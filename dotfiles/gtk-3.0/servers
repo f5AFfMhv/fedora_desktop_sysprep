@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="smb://nas.home.lab/" added="2022-06-05T17:10:18.255530Z" modified="2022-06-05T17:15:02.547269Z" visited="2022-06-05T17:15:02.547268Z">
+    <title>Windows shares on nas.home.lab</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-06-05T17:15:02.547269Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.1.229/hdd_pool/" added="2022-06-29T19:04:01.166722Z" modified="2022-06-29T19:04:01.166726Z" visited="2022-06-29T19:04:01.166723Z">
+    <title>hdd_pool on 192.168.1.229</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-06-29T19:04:01.166724Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.1.229/ssd_pool/" added="2022-06-30T18:30:39.170048Z" modified="2022-06-30T18:30:39.170052Z" visited="2022-06-30T18:30:39.170050Z">
+    <title>ssd_pool on 192.168.1.229</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-06-30T18:30:39.170051Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://root@192.168.1.3/opt" added="2022-08-28T17:29:09.428575Z" modified="2022-08-28T17:29:09.428580Z" visited="2022-08-28T17:29:09.428577Z">
+    <title>opt</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-08-28T17:29:09.428578Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://ubuntu@192.168.1.4/" added="2022-09-25T20:34:57.255234Z" modified="2022-09-25T20:34:57.255238Z" visited="2022-09-25T20:34:57.255236Z">
+    <title>/ on 192.168.1.4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-09-25T20:34:57.255237Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
