@@ -533,6 +533,7 @@ lua-libs.x86_64
 lzop.x86_64
 make.x86_64
 makedumpfile.x86_64
+matugen.x86_64
 mbedtls.x86_64
 mdadm.x86_64
 mdevctl.x86_64
