@@ -1,6 +1,6 @@
 * {
     background: rgba(0, 0, 0, 0.3);
-    surface: rgba(0, 0, 0, 1);
+    surface: #2E2F30;
     on-surface: #ffffffff;
     on-surface-variant: #3f484a;
     primary: #006973;
