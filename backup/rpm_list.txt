@@ -307,10 +307,15 @@ jxl-pixbuf-loader.x86_64
 kanshi.x86_64
 kdump-utils.x86_64
 kernel.x86_64
+kernel.x86_64
+kernel-core.x86_64
 kernel-core.x86_64
 kernel-headers.x86_64
 kernel-modules.x86_64
+kernel-modules.x86_64
 kernel-modules-core.x86_64
+kernel-modules-core.x86_64
+kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kexec-tools.x86_64
 kf5-filesystem.x86_64
@@ -333,6 +338,7 @@ libX11-common.noarch
 libX11-xcb.x86_64
 libXpm.x86_64
 libadwaita.x86_64
+libaom.x86_64
 libarchive.x86_64
 libatomic.x86_64
 libavcodec-free.x86_64
