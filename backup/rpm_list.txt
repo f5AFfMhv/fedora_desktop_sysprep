@@ -543,7 +543,6 @@ matugen.x86_64
 mbedtls.x86_64
 mdadm.x86_64
 mdevctl.x86_64
-mediawriter.x86_64
 mesa-dri-drivers.x86_64
 mesa-filesystem.x86_64
 mesa-libEGL.x86_64
