@@ -34,6 +34,7 @@ ansible.noarch
 ansible-collection-community-docker.noarch
 ansible-collection-community-library_inventory_filtering_v1.noarch
 ansible-core.noarch
+appstream.x86_64
 aquamarine.x86_64
 aribb25.x86_64
 assimp.x86_64
@@ -389,6 +390,7 @@ libeconf.x86_64
 libei.x86_64
 libertas-firmware.noarch
 libfdt.x86_64
+libfyaml.x86_64
 libgcc.x86_64
 libgda.x86_64
 libgda-sqlite.x86_64
