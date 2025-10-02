@@ -213,6 +213,7 @@ gnome-software-fedora-langpacks.x86_64
 gnome-text-editor.x86_64
 gnu-free-fonts-common.noarch
 gnu-free-sans-fonts.noarch
+gnulib-l10n.noarch
 gnutls.x86_64
 gnutls-dane.x86_64
 gnutls-utils.x86_64
@@ -927,6 +928,7 @@ spice-glib.x86_64
 spice-gtk3.x86_64
 spice-server.x86_64
 spirv-tools-libs.x86_64
+sqlite-libs.x86_64
 sssd-client.x86_64
 sssd-common.x86_64
 sssd-kcm.x86_64
