@@ -214,7 +214,6 @@ rpms:
   - cpu-x
   - alacritty
   - vlc
-  - nextcloud-client
   - gnome-calculator
   - gnome-software
   - gnome-text-editor
@@ -223,7 +222,7 @@ rpms:
   - nautilus # File manager
   - evince # Document viewer
   - baobab # Disk Usage Analyzer
-  - mediawriter # Fedora Media Writer
+  # - mediawriter # Fedora Media Writer
   - loupe # Image viewer
   - snapshot # Camera viewer
 

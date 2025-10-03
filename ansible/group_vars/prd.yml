@@ -49,4 +49,5 @@ flatpaks:
   - io.missioncenter.MissionCenter # System monitor
   - me.iepure.devtoolbox
   - it.mijorus.gearlever # Appimage manager
+  - com.nextcloud.desktopclient.nextcloud
 
