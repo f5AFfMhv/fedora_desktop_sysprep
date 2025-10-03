@@ -304,6 +304,7 @@ iscsi-initiator-utils.x86_64
 iscsi-initiator-utils-iscsiuio.x86_64
 iwlegacy-firmware.noarch
 iwlwifi-dvm-firmware.noarch
+iwlwifi-mld-firmware.noarch
 iwlwifi-mvm-firmware.noarch
 javascriptcoregtk4.1.x86_64
 javascriptcoregtk6.0.x86_64
@@ -312,13 +313,18 @@ kanshi.x86_64
 kdump-utils.x86_64
 kernel.x86_64
 kernel.x86_64
+kernel.x86_64
+kernel-core.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
 kernel-headers.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
+kernel-modules.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
+kernel-modules-core.x86_64
+kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kexec-tools.x86_64
@@ -413,6 +419,7 @@ libinput.x86_64
 libiscsi.x86_64
 libisoburn.x86_64
 libisofs.x86_64
+libjcat.x86_64
 libjpeg-turbo.x86_64
 libjxl.x86_64
 libkate.x86_64
