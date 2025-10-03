@@ -1,0 +1,5 @@
+# Sidepad configuration for Zen
+# SIDEPAD_APP="flatpak run  app.zen_browser.zen --no-remote -P default --name dotfiles-sidepad"
+SIDEPAD_APP="flatpak run  app.zen_browser.zen"
+SIDEPAD_CLASS="zen-sidepad"
+SIDEPAD_OPTIONS="--width 1250"

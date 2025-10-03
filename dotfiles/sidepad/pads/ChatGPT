@@ -1,0 +1,3 @@
+# Sidepad configuration for ChatGPT running on chrome
+SIDEPAD_APP="flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://chatgpt.com"
+SIDEPAD_CLASS="chrome-chatgpt.com__-Default"
