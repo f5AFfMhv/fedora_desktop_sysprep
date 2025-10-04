@@ -46,7 +46,6 @@ flatpaks:
   - md.obsidian.Obsidian # Notes
   - io.github.flattool.Warehouse # Flatpak manager
   - io.github.zen_browser.zen # Internet browser
-  - io.bassi.Amberol # Music player
   - com.github.maoschanz.drawing
   - io.github.ungoogled_software.ungoogled_chromium
   - io.missioncenter.MissionCenter # System monitor

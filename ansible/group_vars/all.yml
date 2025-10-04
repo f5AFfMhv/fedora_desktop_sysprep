@@ -233,6 +233,7 @@ rpms:
   - baobab # Disk Usage Analyzer
   # - mediawriter # Fedora Media Writer
   - loupe # Image viewer
+  - lollypop # Music Player
   - snapshot # Camera viewer
 
 uninstall_rpms:
