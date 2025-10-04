@@ -227,6 +227,7 @@ gpm-libs.x86_64
 gpsd-libs.x86_64
 graphviz-libs.x86_64
 grim.x86_64
+grimblast.noarch
 grimshot.noarch
 grub2-common.noarch
 grub2-efi-ia32.x86_64
@@ -284,6 +285,7 @@ hyprlock.x86_64
 hyprpaper.x86_64
 hyprpicker.x86_64
 hyprpolkitagent.x86_64
+hyprshot.noarch
 hyprutils.x86_64
 id3lib.x86_64
 iniparser.x86_64
