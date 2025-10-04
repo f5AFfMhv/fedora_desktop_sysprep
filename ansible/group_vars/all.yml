@@ -192,6 +192,7 @@ rpms:
   - slurp
   - cliphist
   - grim
+  - grimblast
   - uwsm
   - papirus-icon-theme
   - papirus-icon-theme-dark
