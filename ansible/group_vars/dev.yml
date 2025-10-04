@@ -22,6 +22,6 @@ flatpaks:
   - com.github.tchx84.Flatseal
   - org.onlyoffice.desktopeditors
   - io.github.zen_browser.zen
-  - ca.edestcroix.Recordbox
+  - io.bassi.Amberol
   - com.github.maoschanz.drawing
   - io.missioncenter.MissionCenter
