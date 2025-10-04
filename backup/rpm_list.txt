@@ -148,7 +148,8 @@ fastfetch.x86_64
 fedora-release-common.noarch
 fedora-release-identity-sway.noarch
 fedora-release-sway.noarch
-ffmpeg-free.x86_64
+ffmpeg.x86_64
+ffmpeg-libs.x86_64
 figlet.x86_64
 file.x86_64
 file-libs.x86_64
@@ -282,7 +283,9 @@ hyprlang.x86_64
 hyprlock.x86_64
 hyprpaper.x86_64
 hyprpicker.x86_64
+hyprpolkitagent.x86_64
 hyprutils.x86_64
+id3lib.x86_64
 iniparser.x86_64
 initscripts.x86_64
 initscripts-rename-device.x86_64
@@ -340,6 +343,7 @@ kf6-kiconthemes.x86_64
 kf6-kimageformats.x86_64
 kf6-kwidgetsaddons.x86_64
 kf6-kwindowsystem.x86_64
+kid3-common.x86_64
 krb5-libs.x86_64
 langtable.noarch
 less.x86_64
@@ -351,11 +355,7 @@ libadwaita.x86_64
 libaom.x86_64
 libarchive.x86_64
 libatomic.x86_64
-libavcodec-free.x86_64
-libavdevice-free.x86_64
-libavfilter-free.x86_64
-libavformat-free.x86_64
-libavutil-free.x86_64
+libavdevice.x86_64
 libblkio.x86_64
 libblockdev.x86_64
 libblockdev-btrfs.x86_64
@@ -449,7 +449,6 @@ libphonenumber.x86_64
 libpmem.x86_64
 libportal.x86_64
 libportal-gtk4.x86_64
-libpostproc-free.x86_64
 libproxy-bin.x86_64
 libqtxdg.x86_64
 libquadmath.x86_64
@@ -477,12 +476,11 @@ libsss_idmap.x86_64
 libsss_nss_idmap.x86_64
 libsss_sudo.x86_64
 libstdc++.x86_64
-libswresample-free.x86_64
-libswscale-free.x86_64
 libtiff.x86_64
 libtiger.x86_64
 libtinysparql.x86_64
 libtirpc.x86_64
+libtomcrypt.x86_64
 libtpms.x86_64
 libudisks2.x86_64
 libupnp.x86_64
@@ -545,6 +543,7 @@ llhttp.x86_64
 llvm-filesystem.x86_64
 llvm-libs.x86_64
 lm_sensors.x86_64
+lollypop.noarch
 loupe.x86_64
 lsd.x86_64
 lua-libs.x86_64
@@ -751,6 +750,7 @@ python3-blockdev.x86_64
 python3-boto3.noarch
 python3-botocore.noarch
 python3-bracex.noarch
+python3-certifi.noarch
 python3-click.noarch
 python3-cryptography.x86_64
 python3-devel.x86_64
@@ -759,6 +759,7 @@ python3-file-magic.noarch
 python3-filelock.noarch
 python3-firewall.noarch
 python3-frozenlist.x86_64
+python3-gstreamer1.x86_64
 python3-hid-parser.noarch
 python3-imageio.noarch
 python3-imageio-ffmpeg.noarch
@@ -776,6 +777,7 @@ python3-libvirt.x86_64
 python3-lxml.x86_64
 python3-markupsafe.x86_64
 python3-multidict.x86_64
+python3-mutagen.noarch
 python3-mypy_extensions.noarch
 python3-netifaces.x86_64
 python3-numpy.x86_64
@@ -788,6 +790,7 @@ python3-platformdirs.noarch
 python3-productmd.noarch
 python3-pycares.x86_64
 python3-pycodestyle.noarch
+python3-pycryptodomex.x86_64
 python3-pygit2.x86_64
 python3-pyxdg.noarch
 python3-referencing.noarch
@@ -805,6 +808,7 @@ python3-subprocess-tee.noarch
 python3-toml.noarch
 python3-unbound.x86_64
 python3-wcmatch.noarch
+python3-websockets.x86_64
 python3-wheel.noarch
 python3-yarl.x86_64
 python3-zipp.noarch
@@ -999,10 +1003,12 @@ vlc-plugin-visualization.x86_64
 vlc-plugins-base.x86_64
 vlc-plugins-extra.x86_64
 vlc-plugins-video-out.x86_64
+vmaf-models.noarch
 vpnc.x86_64
 vte-profile.x86_64
 vte291.x86_64
 vulkan-loader.x86_64
+vvenc-libs.x86_64
 waybar.x86_64
 waypaper.noarch
 webkit2gtk4.1.x86_64
@@ -1020,6 +1026,8 @@ wlogout.x86_64
 wlroots0.18.x86_64
 wofi.x86_64
 wpa_supplicant.x86_64
+x264-libs.x86_64
+x265-libs.x86_64
 xarchiver.x86_64
 xclip.x86_64
 xcur2png.x86_64
@@ -1036,6 +1044,10 @@ xz.x86_64
 xz-libs.x86_64
 yajl.x86_64
 yamllint.noarch
+yt-dlp.noarch
+yt-dlp+default.noarch
+yt-dlp-bash-completion.noarch
+yt-dlp-zsh-completion.noarch
 yyjson.x86_64
 zenity.x86_64
 zfs-fuse.x86_64

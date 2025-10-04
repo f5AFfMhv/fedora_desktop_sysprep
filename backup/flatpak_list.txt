@@ -1,5 +1,4 @@
 app.zen_browser.zen
-ca.edestcroix.Recordbox
 cc.arduino.IDE2
 com.github.maoschanz.drawing
 com.github.tchx84.Flatseal

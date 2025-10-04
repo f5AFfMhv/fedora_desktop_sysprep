@@ -17,6 +17,7 @@ boto3
 botocore
 bracex
 Brotli
+certifi
 cffi
 charset-normalizer
 click
@@ -55,6 +56,7 @@ lxml
 MarkupSafe
 more-itertools
 multidict
+mutagen
 mypy_extensions
 netifaces
 nftables
@@ -79,6 +81,7 @@ pycairo
 pycares
 pycodestyle
 pycparser
+pycryptodomex
 pycups
 pygit2
 PyGObject
@@ -122,8 +125,10 @@ urllib3
 virtualenv
 waypaper
 wcmatch
+websockets
 wheel
 xkbregistry
 yamllint
 yarl
+yt-dlp
 zipp

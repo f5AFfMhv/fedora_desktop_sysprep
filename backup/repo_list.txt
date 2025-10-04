@@ -166,3 +166,17 @@ gpgcheck = 1
 gpgkey = https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
 name = SwayNotificationCenter and related packages
 
+[rpmfusion-free]
+baseurl = http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
+enabled = 1
+gpgcheck = 1
+gpgkey = https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
+name = RPM Fusion for Fedora $releasever - Free
+
+[rpmfusion-free-updates]
+baseurl = http://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/
+enabled = 1
+gpgcheck = 1
+gpgkey = https://download1.rpmfusion.org/free/fedora/RPM-GPG-KEY-rpmfusion-free-fedora-2020
+name = RPM Fusion for Fedora $releasever - Free - Updates
+
