@@ -175,6 +175,7 @@ rpms:
   - hyprlock
   - hypridle
   - hyprpicker
+  - hyprpolkitagent
   - xdg-user-dirs
   - xdg-desktop-portal-gtk
   - xdg-desktop-portal-hyprland
@@ -231,7 +232,6 @@ rpms:
   - nautilus # File manager
   - evince # Document viewer
   - baobab # Disk Usage Analyzer
-  # - mediawriter # Fedora Media Writer
   - loupe # Image viewer
   - lollypop # Music Player
   - snapshot # Camera viewer

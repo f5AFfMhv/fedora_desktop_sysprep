@@ -126,6 +126,18 @@
         - config
         - service
 
+    - name: Enable and start hyprpolkitagent for user {{ user }}
+      become: true
+      become_user: "{{ user }}"
+      ansible.builtin.systemd:
+        name: hyprpolkitagent.service
+        scope: user
+        enabled: true
+        state: started
+      tags:
+        - config
+        - service
+
     - name: Open firewall ports
       ansible.posix.firewalld:
         port: "{{ item }}"

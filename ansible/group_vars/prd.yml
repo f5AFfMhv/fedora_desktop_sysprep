@@ -52,4 +52,5 @@ flatpaks:
   - me.iepure.devtoolbox
   - it.mijorus.gearlever # Appimage manager
   - com.nextcloud.desktopclient.nextcloud
+  - org.fedoraproject.MediaWriter # Disk Imager
 
