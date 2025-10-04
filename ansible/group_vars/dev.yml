@@ -1,4 +1,5 @@
 ---
+firewall_ports: []
 cron_jobs:
   - name: Test job
     job: "echo test"

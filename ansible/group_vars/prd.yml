@@ -1,4 +1,7 @@
 ---
+firewall_ports:
+  - 22000/tcp # Syncthing
+
 cron_jobs:
   - name: Git backup
     job: "#cd {{ git_dir }}/fedora_desktop_sysprep && ./backup.sh"

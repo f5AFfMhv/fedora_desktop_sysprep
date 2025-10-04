@@ -126,6 +126,18 @@
         - config
         - service
 
+    - name: Open firewall ports
+      ansible.posix.firewalld:
+        port: "{{ item }}"
+        state: enabled
+        permanent: true
+        immediate: true
+        offline: true
+      with_items: "{{ firewall_ports }}"
+      tags: 
+        - config
+        - firewall
+
     - name: Create env vars in crontab
       ansible.builtin.cron:
         name: "{{ item.var }}"
