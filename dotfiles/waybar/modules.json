@@ -72,6 +72,15 @@
     "tooltip-format": "Tools"
   },
 
+  "custom/nowplaying": {
+    "format": " {}",
+    "exec": "playerctl metadata --format '{{ artist }} - {{ title }}'",
+    "interval": 5,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "tooltip": false
+  },
+
   // Cliphist
   "custom/cliphist": {
     "format": "",

@@ -68,7 +68,9 @@ boost-thread.x86_64
 brcmfmac-firmware.noarch
 breeze-icon-theme.noarch
 brlapi.x86_64
+btrfs-assistant.x86_64
 btrfs-progs.x86_64
+btrfsmaintenance.noarch
 c-ares.x86_64
 ca-certificates.noarch
 capstone.x86_64
@@ -378,6 +380,8 @@ libblockdev-smartmontools.x86_64
 libblockdev-swap.x86_64
 libblockdev-tools.x86_64
 libblockdev-utils.x86_64
+libbtrfs.x86_64
+libbtrfsutil.x86_64
 libburn.x86_64
 libcacard.x86_64
 libcddb.x86_64
@@ -918,6 +922,8 @@ selinux-policy-targeted.noarch
 slirp4netns.x86_64
 smartmontools.x86_64
 smartmontools-selinux.noarch
+snapper.x86_64
+snapper-libs.x86_64
 snapshot.x86_64
 solaar.noarch
 solaar-udev.noarch

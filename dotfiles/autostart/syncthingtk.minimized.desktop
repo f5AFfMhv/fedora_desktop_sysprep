@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Syncthing-minimized
+GenericName=Syncthing-minimized
+Comment=GUI for Syncthing, runs minimized
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=syncthing-gtk me.kozec.syncthingtk --minimized
+Type=Application
+Icon=me.kozec.syncthingtk
+Categories=Network;
+X-Flatpak-RenamedFrom=syncthing-gtk.desktop;
+X-Flatpak=me.kozec.syncthingtk

@@ -57,6 +57,7 @@
     // Modules Left
     "modules-left": [
         "hyprland/workspaces",
+        "custom/nowplaying",
         "custom/empty"
     ],
 

@@ -23,6 +23,10 @@ find ~ -type f -name '*.AppImage' -printf "%f\n" 2>/dev/null | sort -u > backup/
 pip list | awk '{print $1}' | sed '1d;2d' > backup/python_list.txt
 # User crontab
 crontab -l > backup/user_crontab.txt
+# Fstab
+cp /etc/fstab backup/fstab
+# Hosts
+cp /etc/hosts backup/hosts
 
 # Backup dotfiles
 DOTFILES="
@@ -33,10 +37,13 @@ p10k.zsh
 alias.zsh
 alacritty.toml
 gtkrc-2.0
+gtk-2.0
 gtk-3.0
 gtk-4.0
+user-dirs.dirs
 hypr
 ml4w
+nwg-look
 nwg-dock-hyprland
 qt6ct
 rofi
@@ -47,6 +54,8 @@ waypaper
 wlogout
 xsettingsd
 fastfetch
+autostart
+com.ml4w.hyprlandsettings
 "
 
 for dfile in $DOTFILES; do
