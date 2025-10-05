@@ -206,6 +206,7 @@ rpms:
   - vim-powerline
   - powerline
   - powerline-fonts
+  - snapper # BTRFS snapshots
   - lsd # LSDeluxe, a modern replacement for 'ls'
   - bat # Better cat
   - htop
@@ -230,6 +231,7 @@ rpms:
   - gnome-text-editor
   - gnome-calendar
   - gnome-font-viewer
+  - btrfs-assistant
   - nautilus # File manager
   - evince # Document viewer
   - baobab # Disk Usage Analyzer
