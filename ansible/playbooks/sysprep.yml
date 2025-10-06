@@ -146,7 +146,7 @@
         immediate: true
         offline: true
       with_items: "{{ firewall_ports }}"
-      tags: 
+      tags:
         - config
         - firewall
 
@@ -190,7 +190,7 @@
         state: directory
         owner: "{{ user }}"
         group: "{{ user }}"
-        recurse: True
+        recurse: true
       tags:
         - config
         - git
@@ -285,6 +285,9 @@
     - name: Create system fonts directory
       ansible.builtin.file:
         path: "/usr/local/share/fonts"
+        owner: root
+        group: root
+        mode: "0755"
         state: directory
       tags:
         - config
