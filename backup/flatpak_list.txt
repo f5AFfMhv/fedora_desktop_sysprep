@@ -7,7 +7,6 @@ com.ml4w.settings
 com.ml4w.sidebar
 com.nextcloud.desktopclient.nextcloud
 com.vscodium.codium
-dev.zed.Zed
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
 io.github.ungoogled_software.ungoogled_chromium

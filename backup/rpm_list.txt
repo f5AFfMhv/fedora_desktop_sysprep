@@ -78,6 +78,7 @@ chkconfig.x86_64
 chrony.x86_64
 cirrus-audio-firmware.noarch
 cliphist.x86_64
+cmake-filesystem.x86_64
 container-selinux.noarch
 containerd.io.x86_64
 coreutils.x86_64
@@ -345,8 +346,12 @@ kf6-kguiaddons.x86_64
 kf6-ki18n.x86_64
 kf6-kiconthemes.x86_64
 kf6-kimageformats.x86_64
+kf6-kirigami.x86_64
 kf6-kwidgetsaddons.x86_64
 kf6-kwindowsystem.x86_64
+kf6-qqc2-desktop-style.x86_64
+kf6-sonnet.x86_64
+kf6-sonnet-hunspell.x86_64
 kid3-common.x86_64
 krb5-libs.x86_64
 langtable.noarch
