@@ -41,21 +41,21 @@ _isInstalled() {
 # Confirm Start
 # ------------------------------------------------------
 
-sleep 1
-clear
-figlet -f smslant "Updates"
-echo
+# sleep 1
+# clear
+# figlet -f smslant "Updates"
+# echo
 
-if gum confirm "DO YOU WANT TO START THE UPDATE NOW?"; then
-    echo
-    echo ":: Update started..."
-elif [ $? -eq 130 ]; then
-    exit 130
-else
-    echo
-    echo ":: Update canceled."
-    exit
-fi
+# if gum confirm "DO YOU WANT TO START THE UPDATE NOW?"; then
+#     echo
+#     echo ":: Update started..."
+# elif [ $? -eq 130 ]; then
+#     exit 130
+# else
+#     echo
+#     echo ":: Update canceled."
+#     exit
+# fi
 
 # ----------------------------------------------------- 
 # Install update
@@ -68,7 +68,7 @@ if [[ $(_checkCommandExists "pacman") == 0 ]]; then
 
 # Fedora
 elif [[ $(_checkCommandExists "dnf") == 0 ]]; then
-    sudo dnf upgrade
+    sudo dnf upgrade -y
 else
     echo ":: ERROR - Platform not supported"
     echo "Press [ENTER] to close."
@@ -78,7 +78,7 @@ echo
 
 # Flatpak
 echo ":: Searching for Flatpak updates..."
-flatpak update
+flatpak update -y
 echo
 
 # Reload Waybar

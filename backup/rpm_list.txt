@@ -35,6 +35,7 @@ ansible-collection-community-docker.noarch
 ansible-collection-community-library_inventory_filtering_v1.noarch
 ansible-core.noarch
 appstream.x86_64
+appstream-data.noarch
 aquamarine.x86_64
 aribb25.x86_64
 assimp.x86_64
@@ -316,6 +317,7 @@ iwlwifi-mld-firmware.noarch
 iwlwifi-mvm-firmware.noarch
 javascriptcoregtk4.1.x86_64
 javascriptcoregtk6.0.x86_64
+json-glib.x86_64
 jxl-pixbuf-loader.x86_64
 kanshi.x86_64
 kdump-utils.x86_64
@@ -735,6 +737,7 @@ poppler-glib.x86_64
 poppler-utils.x86_64
 powerline.x86_64
 powerline-fonts.noarch
+procps-ng.x86_64
 protobuf.x86_64
 protobuf-c.x86_64
 protobuf-lite.x86_64
