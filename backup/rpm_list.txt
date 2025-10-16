@@ -292,6 +292,8 @@ hyprpolkitagent.x86_64
 hyprshot.noarch
 hyprutils.x86_64
 id3lib.x86_64
+inih.x86_64
+inih-cpp.x86_64
 iniparser.x86_64
 initscripts.x86_64
 initscripts-rename-device.x86_64
