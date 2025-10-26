@@ -409,6 +409,7 @@ libdrm.x86_64
 libdvbpsi.x86_64
 libebml.x86_64
 libeconf.x86_64
+libedit.x86_64
 libei.x86_64
 libertas-firmware.noarch
 libfdt.x86_64
