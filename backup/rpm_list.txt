@@ -646,6 +646,9 @@ passt.x86_64
 passt-selinux.noarch
 pciutils.x86_64
 pciutils-libs.x86_64
+pcre2.x86_64
+pcre2-syntax.noarch
+pcre2-utf16.x86_64
 perl-AutoLoader.noarch
 perl-B.x86_64
 perl-Carp.noarch
@@ -1065,8 +1068,6 @@ yajl.x86_64
 yamllint.noarch
 yt-dlp.noarch
 yt-dlp+default.noarch
-yt-dlp-bash-completion.noarch
-yt-dlp-zsh-completion.noarch
 yyjson.x86_64
 zenity.x86_64
 zfs-fuse.x86_64
