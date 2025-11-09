@@ -112,6 +112,7 @@ dejavu-serif-fonts.noarch
 device-mapper-multipath-libs.x86_64
 diffutils.x86_64
 djvulibre-libs.x86_64
+dnf-data.noarch
 dnf5.x86_64
 dnf5-plugins.x86_64
 dnsmasq.x86_64
@@ -402,6 +403,7 @@ libcurl.x86_64
 libdca.x86_64
 libdecor.x86_64
 libdeflate.x86_64
+libdnf.x86_64
 libdnf5.x86_64
 libdnf5-cli.x86_64
 libdnf5-plugin-expired-pgp-keys.x86_64
@@ -774,12 +776,14 @@ python3-certifi.noarch
 python3-click.noarch
 python3-cryptography.x86_64
 python3-devel.x86_64
+python3-dnf.noarch
 python3-evdev.x86_64
 python3-file-magic.noarch
 python3-filelock.noarch
 python3-firewall.noarch
 python3-frozenlist.x86_64
 python3-gstreamer1.x86_64
+python3-hawkey.x86_64
 python3-hid-parser.noarch
 python3-imageio.noarch
 python3-imageio-ffmpeg.noarch
@@ -789,6 +793,7 @@ python3-jsonschema.noarch
 python3-jsonschema-specifications.noarch
 python3-langtable.noarch
 python3-libcomps.x86_64
+python3-libdnf.x86_64
 python3-libdnf5.x86_64
 python3-libs.x86_64
 python3-libselinux.x86_64
