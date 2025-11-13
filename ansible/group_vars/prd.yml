@@ -53,4 +53,5 @@ flatpaks:
   - it.mijorus.gearlever # Appimage manager
   - com.nextcloud.desktopclient.nextcloud
   - org.fedoraproject.MediaWriter # Disk Imager
-
+  - com.bambulab.BambuStudio
+  - org.freecad.FreeCAD
