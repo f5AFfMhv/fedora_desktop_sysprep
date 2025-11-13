@@ -400,6 +400,7 @@ libcomps.x86_64
 libcpuid.x86_64
 libcupsfilters.x86_64
 libcurl.x86_64
+libdav1d.x86_64
 libdca.x86_64
 libdecor.x86_64
 libdeflate.x86_64
