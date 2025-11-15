@@ -16,8 +16,8 @@ it.mijorus.gearlever
 md.obsidian.Obsidian
 me.iepure.devtoolbox
 me.kozec.syncthingtk
-me.proton.Mail
 org.fedoraproject.MediaWriter
+org.freecad.FreeCAD
 org.kicad.KiCad
 org.mozilla.Thunderbird
 org.onlyoffice.desktopeditors

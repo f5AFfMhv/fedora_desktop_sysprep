@@ -245,6 +245,7 @@ grub2-tools.x86_64
 grub2-tools-efi.x86_64
 grub2-tools-extra.x86_64
 grub2-tools-minimal.x86_64
+gsettings-desktop-schemas.x86_64
 gspell.x86_64
 gssdp.x86_64
 gstreamer1.x86_64
@@ -476,6 +477,7 @@ librbd1.x86_64
 librdmacm.x86_64
 librepo.x86_64
 librsvg2.x86_64
+libsecret.x86_64
 libselinux.x86_64
 libselinux-utils.x86_64
 libsemanage.x86_64
