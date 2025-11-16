@@ -321,6 +321,7 @@ iwlwifi-mld-firmware.noarch
 iwlwifi-mvm-firmware.noarch
 javascriptcoregtk4.1.x86_64
 javascriptcoregtk6.0.x86_64
+jemalloc.x86_64
 json-glib.x86_64
 jxl-pixbuf-loader.x86_64
 kanshi.x86_64
@@ -928,6 +929,7 @@ rpcbind.x86_64
 rpi-imager.x86_64
 rsvg-pixbuf-loader.x86_64
 rsyslog.x86_64
+ruff.x86_64
 rutabaga-gfx-ffi.x86_64
 samba-client.x86_64
 samba-client-libs.x86_64
