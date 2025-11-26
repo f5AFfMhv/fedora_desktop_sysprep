@@ -172,6 +172,7 @@ fontawesome4-fonts.noarch
 fonts-filesystem.noarch
 fprintd.x86_64
 fprintd-pam.x86_64
+freeglut.x86_64
 fuse-libs.x86_64
 fuse-overlayfs.x86_64
 fuse-sshfs.x86_64
