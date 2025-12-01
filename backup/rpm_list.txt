@@ -274,6 +274,7 @@ gutenprint-cups.x86_64
 gutenprint-libs.x86_64
 gvfs.x86_64
 gvfs-client.x86_64
+gvfs-fuse.x86_64
 gvfs-smb.x86_64
 gvnc.x86_64
 hidapi.x86_64
@@ -295,6 +296,7 @@ hyprpolkitagent.x86_64
 hyprshot.noarch
 hyprutils.x86_64
 id3lib.x86_64
+imsprog.x86_64
 inih.x86_64
 inih-cpp.x86_64
 iniparser.x86_64
@@ -573,6 +575,7 @@ lua-libs.x86_64
 lzop.x86_64
 make.x86_64
 makedumpfile.x86_64
+man-pages.noarch
 matugen.x86_64
 mbedtls.x86_64
 mdadm.x86_64
@@ -995,6 +998,7 @@ texlive-lib.x86_64
 thrift.x86_64
 tinysparql.x86_64
 tiwilink-firmware.noarch
+tmux.x86_64
 tomlplusplus.x86_64
 tumbler.x86_64
 turbojpeg.x86_64
