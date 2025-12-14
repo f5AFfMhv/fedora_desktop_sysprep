@@ -1089,6 +1089,7 @@ xdg-desktop-portal.x86_64
 xdg-desktop-portal-hyprland.x86_64
 xen-libs.x86_64
 xen-licenses.x86_64
+xkbcomp.x86_64
 xl2tpd.x86_64
 xorg-x11-server-Xwayland.x86_64
 xorriso.x86_64
