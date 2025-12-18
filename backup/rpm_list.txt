@@ -135,6 +135,7 @@ docker-ce.x86_64
 docker-ce-cli.x86_64
 docker-ce-rootless-extras.x86_64
 docker-compose-plugin.x86_64
+double-conversion.x86_64
 dracut.x86_64
 dracut-config-rescue.x86_64
 dracut-live.x86_64
@@ -201,6 +202,7 @@ gdb.x86_64
 gdb-headless.x86_64
 gdk-pixbuf2.x86_64
 gdk-pixbuf2-modules.x86_64
+geoclue2.x86_64
 geoclue2-libs.x86_64
 geocode-glib.x86_64
 ghostscript.x86_64
@@ -293,6 +295,7 @@ gvfs-fuse.x86_64
 gvfs-smb.x86_64
 gvnc.x86_64
 hidapi.x86_64
+highway.x86_64
 htop.x86_64
 hwdata.noarch
 hwloc-libs.x86_64
@@ -410,6 +413,7 @@ libblockdev-smartmontools.x86_64
 libblockdev-swap.x86_64
 libblockdev-tools.x86_64
 libblockdev-utils.x86_64
+libbrotli.x86_64
 libbtrfs.x86_64
 libbtrfsutil.x86_64
 libburn.x86_64
@@ -603,6 +607,7 @@ mesa-libgbm.x86_64
 mesa-va-drivers.x86_64
 mesa-vulkan-drivers.x86_64
 microcode_ctl.x86_64
+minicom.x86_64
 mkpasswd.x86_64
 moreutils.x86_64
 mpdecimal.x86_64
@@ -797,6 +802,7 @@ python3-blockdev.x86_64
 python3-boto3.noarch
 python3-botocore.noarch
 python3-bracex.noarch
+python3-brotli.x86_64
 python3-certifi.noarch
 python3-click.noarch
 python3-cryptography.x86_64
