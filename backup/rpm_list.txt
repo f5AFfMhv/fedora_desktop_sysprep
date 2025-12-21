@@ -417,6 +417,7 @@ libbrotli.x86_64
 libbtrfs.x86_64
 libbtrfsutil.x86_64
 libburn.x86_64
+libbytesize.x86_64
 libcacard.x86_64
 libcddb.x86_64
 libcgroup.x86_64
@@ -803,6 +804,7 @@ python3-boto3.noarch
 python3-botocore.noarch
 python3-bracex.noarch
 python3-brotli.x86_64
+python3-bytesize.x86_64
 python3-certifi.noarch
 python3-click.noarch
 python3-cryptography.x86_64
@@ -1025,6 +1027,7 @@ tmux.x86_64
 tomlplusplus.x86_64
 tumbler.x86_64
 turbojpeg.x86_64
+tzdata.noarch
 udisks2.x86_64
 udisks2-iscsi.x86_64
 unbound-anchor.x86_64
