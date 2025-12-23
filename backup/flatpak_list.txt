@@ -8,6 +8,7 @@ com.ml4w.hyprlandsettings
 com.ml4w.settings
 com.ml4w.sidebar
 com.nextcloud.desktopclient.nextcloud
+com.valvesoftware.Steam
 com.vscodium.codium
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
