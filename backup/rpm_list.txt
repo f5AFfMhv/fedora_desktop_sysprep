@@ -461,6 +461,7 @@ libgit2.x86_64
 libglusterfs0.x86_64
 libgomp.x86_64
 libgs.x86_64
+libgsf.x86_64
 libgweather.x86_64
 libheif.x86_64
 libical-glib.x86_64
@@ -827,6 +828,8 @@ python3-file-magic.noarch
 python3-filelock.noarch
 python3-firewall.noarch
 python3-frozenlist.x86_64
+python3-gobject.x86_64
+python3-gobject-base.x86_64
 python3-gstreamer1.x86_64
 python3-hawkey.x86_64
 python3-hid-parser.noarch
