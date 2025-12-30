@@ -6,4 +6,5 @@ BASE_DIR="/home/mj/google/drive/jankunasmartynas/Programming/scripts"
 @reboot cd /home/mj/Documents/Others/Notes/Notes && ./sync_notes.sh
 #Ansible: SRV docker config sync
 @reboot /usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1
+#Ansible: Clear cliphist cache
 @reboot /usr/bin/cliphist wipe
