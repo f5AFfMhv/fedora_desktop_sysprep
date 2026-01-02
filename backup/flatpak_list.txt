@@ -1,7 +1,6 @@
 app.zen_browser.zen
 cc.arduino.IDE2
 com.bambulab.BambuStudio
-com.collabora.Office
 com.github.maoschanz.drawing
 com.github.tchx84.Flatseal
 com.ml4w.hyprlandsettings
