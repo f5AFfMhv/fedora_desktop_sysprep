@@ -242,6 +242,8 @@ gnome-text-editor.x86_64
 gnu-free-fonts-common.noarch
 gnu-free-sans-fonts.noarch
 gnulib-l10n.noarch
+gnupg2.x86_64
+gnupg2-smime.x86_64
 gnutls.x86_64
 gnutls-dane.x86_64
 gnutls-utils.x86_64
@@ -650,6 +652,7 @@ nss-tools.x86_64
 nss-util.x86_64
 ntfs-3g.x86_64
 ntfs-3g-libs.x86_64
+ntfs-3g-system-compression.x86_64
 ntfsprogs.x86_64
 numad.x86_64
 nvme-cli.x86_64
@@ -972,6 +975,7 @@ rofi-themes.noarch
 rofi-wayland.x86_64
 rpcbind.x86_64
 rpi-imager.x86_64
+rpm-sequoia.x86_64
 rsvg-pixbuf-loader.x86_64
 rsyslog.x86_64
 ruff.x86_64
