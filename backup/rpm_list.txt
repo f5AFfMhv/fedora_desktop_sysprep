@@ -501,6 +501,7 @@ libopenmpt.x86_64
 libphodav.x86_64
 libphonenumber.x86_64
 libpmem.x86_64
+libpng.x86_64
 libportal.x86_64
 libportal-gtk4.x86_64
 libproxy-bin.x86_64
