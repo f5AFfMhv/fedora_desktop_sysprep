@@ -520,6 +520,7 @@ libshaderc.x86_64
 libslirp.x86_64
 libsmartcols.x86_64
 libsmbclient.x86_64
+libsodium.x86_64
 libsolv.x86_64
 libsoup3.x86_64
 libspatialaudio.x86_64
