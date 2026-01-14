@@ -4,6 +4,8 @@ LibRaw.x86_64
 NetworkManager.x86_64
 NetworkManager-adsl.x86_64
 NetworkManager-bluetooth.x86_64
+NetworkManager-l2tp.x86_64
+NetworkManager-l2tp-gnome.x86_64
 NetworkManager-libnm.x86_64
 NetworkManager-openvpn.x86_64
 NetworkManager-openvpn-gnome.x86_64
