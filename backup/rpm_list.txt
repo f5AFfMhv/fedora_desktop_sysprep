@@ -996,6 +996,8 @@ seabios-bin.noarch
 seavgabios-bin.noarch
 selinux-policy.noarch
 selinux-policy-targeted.noarch
+setroubleshoot.x86_64
+setroubleshoot-server.x86_64
 slirp4netns.x86_64
 smartmontools.x86_64
 smartmontools-selinux.noarch
