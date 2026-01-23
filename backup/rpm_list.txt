@@ -125,6 +125,7 @@ dejavu-fonts-all.noarch
 dejavu-sans-fonts.noarch
 dejavu-sans-mono-fonts.noarch
 dejavu-serif-fonts.noarch
+desktop-backgrounds-compat.noarch
 device-mapper.x86_64
 device-mapper-event.x86_64
 device-mapper-event-libs.x86_64
@@ -500,6 +501,7 @@ libnvme.x86_64
 liboeffis.x86_64
 libopenjph.x86_64
 libopenmpt.x86_64
+libpcap.x86_64
 libphodav.x86_64
 libphonenumber.x86_64
 libpmem.x86_64
@@ -514,6 +516,7 @@ librbd1.x86_64
 librdmacm.x86_64
 librepo.x86_64
 librsvg2.x86_64
+libseat.x86_64
 libsecret.x86_64
 libselinux.x86_64
 libselinux-utils.x86_64
