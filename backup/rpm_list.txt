@@ -303,6 +303,8 @@ gvfs-client.x86_64
 gvfs-fuse.x86_64
 gvfs-smb.x86_64
 gvnc.x86_64
+harfbuzz.x86_64
+harfbuzz-icu.x86_64
 hidapi.x86_64
 highway.x86_64
 htop.x86_64
