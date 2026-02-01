@@ -20,6 +20,7 @@ me.kozec.syncthingtk
 org.fedoraproject.MediaWriter
 org.freecad.FreeCAD
 org.gnome.GHex
+org.gnome.SoundRecorder
 org.kicad.KiCad
 org.mozilla.Thunderbird
 org.onlyoffice.desktopeditors
