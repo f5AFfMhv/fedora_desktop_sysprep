@@ -1,1 +1,1 @@
-flatpak run com.github.maoschanz.drawing
+imv-dir
