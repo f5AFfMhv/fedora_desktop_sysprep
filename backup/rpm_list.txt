@@ -431,6 +431,8 @@ libbtrfsutil.x86_64
 libburn.x86_64
 libbytesize.x86_64
 libcacard.x86_64
+libcap-ng.x86_64
+libcap-ng-python3.x86_64
 libcddb.x86_64
 libcgroup.x86_64
 libcomps.x86_64
@@ -609,6 +611,7 @@ llhttp.x86_64
 llvm-filesystem.x86_64
 llvm-libs.x86_64
 lm_sensors.x86_64
+lmdb-libs.x86_64
 lollypop.noarch
 loupe.x86_64
 lsd.x86_64
@@ -686,6 +689,7 @@ openssl.x86_64
 openssl-libs.x86_64
 openvpn.x86_64
 openxr-libs.x86_64
+osinfo-db.noarch
 ostree-libs.x86_64
 p11-kit.x86_64
 p11-kit-server.x86_64
@@ -805,6 +809,9 @@ protobuf-c.x86_64
 protobuf-lite.x86_64
 publicsuffix-list-dafsa.noarch
 pugixml.x86_64
+pulseaudio-libs.x86_64
+pulseaudio-libs-glib2.x86_64
+pulseaudio-utils.x86_64
 python-pip-wheel.noarch
 python-unversioned-command.noarch
 python3.x86_64

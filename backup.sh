@@ -54,7 +54,6 @@ waypaper
 wlogout
 xsettingsd
 fastfetch
-autostart
 com.ml4w.hyprlandsettings
 "
 

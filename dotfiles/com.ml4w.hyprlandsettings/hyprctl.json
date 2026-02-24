@@ -13,10 +13,10 @@
     },
     {
         "key": "general:col.inactive_border",
-        "value": "0xfff1dfda"
+        "value": "0xff241f31"
     },
     {
         "key": "general:col.active_border",
-        "value": "0xff3281ea"
+        "value": "0xfff9f06b"
     }
 ]
