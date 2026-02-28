@@ -498,6 +498,7 @@ libmpcdec.x86_64
 libmpdclient.x86_64
 libmtp.x86_64
 libnbd.x86_64
+libnetfilter_conntrack.x86_64
 libnfs.x86_64
 libnfsidmap.x86_64
 libnotify.x86_64
