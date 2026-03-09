@@ -994,6 +994,7 @@ rpcbind.x86_64
 rpi-imager.x86_64
 rpm-sequoia.x86_64
 rsvg-pixbuf-loader.x86_64
+rsync.x86_64
 rsyslog.x86_64
 ruff.x86_64
 rutabaga-gfx-ffi.x86_64
