@@ -496,6 +496,7 @@ liblouisutdml-utils.x86_64
 libmad.x86_64
 libmanette.x86_64
 libmatroska.x86_64
+libmaxminddb.x86_64
 libmicrodns.x86_64
 libmodulemd.x86_64
 libmount.x86_64
@@ -1039,6 +1040,7 @@ sssd-kcm.x86_64
 sssd-krb5-common.x86_64
 sssd-nfs-idmap.x86_64
 sssd-proxy.x86_64
+stoken-libs.x86_64
 sudo.x86_64
 sudo-python-plugin.x86_64
 swaylock.x86_64
