@@ -610,6 +610,7 @@ libxdp.x86_64
 libxfce4util.x86_64
 libxmlb.x86_64
 libzip.x86_64
+lilv-libs.x86_64
 linux-firmware.noarch
 linux-firmware-whence.noarch
 lirc-libs.x86_64
@@ -662,6 +663,7 @@ nbdkit-ssh-plugin.x86_64
 ndctl.x86_64
 ndctl-libs.x86_64
 nfs-utils.x86_64
+nftables.x86_64
 nspr.x86_64
 nss.x86_64
 nss-softokn.x86_64
@@ -880,6 +882,7 @@ python3-multidict.x86_64
 python3-mutagen.noarch
 python3-mypy_extensions.noarch
 python3-netifaces.x86_64
+python3-nftables.x86_64
 python3-numpy.x86_64
 python3-numpy-f2py.x86_64
 python3-olefile.noarch
@@ -1016,6 +1019,7 @@ seabios-bin.noarch
 seavgabios-bin.noarch
 selinux-policy.noarch
 selinux-policy-targeted.noarch
+serd.x86_64
 setroubleshoot.x86_64
 setroubleshoot-server.x86_64
 slirp4netns.x86_64
@@ -1026,6 +1030,7 @@ snapper-libs.x86_64
 snapshot.x86_64
 solaar.noarch
 solaar-udev.noarch
+sord.x86_64
 sos.noarch
 spdlog.x86_64
 speexdsp.x86_64
@@ -1034,6 +1039,7 @@ spice-gtk3.x86_64
 spice-server.x86_64
 spirv-tools-libs.x86_64
 sqlite-libs.x86_64
+sratom.x86_64
 sssd-client.x86_64
 sssd-common.x86_64
 sssd-kcm.x86_64
@@ -1163,6 +1169,7 @@ yyjson.x86_64
 zenity.x86_64
 zfs-fuse.x86_64
 zimg.x86_64
+zix.x86_64
 zlib-ng.x86_64
 zlib-ng-compat.x86_64
 zoxide.x86_64
