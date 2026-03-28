@@ -16,6 +16,7 @@ NetworkManager-vpnc.x86_64
 NetworkManager-vpnc-gnome.x86_64
 NetworkManager-wifi.x86_64
 NetworkManager-wwan.x86_64
+OpenAudible.x86_64
 PackageKit.x86_64
 PackageKit-glib.x86_64
 PackageKit-gstreamer-plugin.x86_64
@@ -152,6 +153,7 @@ dracut-config-rescue.x86_64
 dracut-live.x86_64
 dracut-network.x86_64
 dracut-squash.x86_64
+dunst.x86_64
 editorconfig-libs.x86_64
 edk2-ovmf.noarch
 edk2-shell-x64.noarch
