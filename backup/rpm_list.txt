@@ -16,7 +16,6 @@ NetworkManager-vpnc.x86_64
 NetworkManager-vpnc-gnome.x86_64
 NetworkManager-wifi.x86_64
 NetworkManager-wwan.x86_64
-OpenAudible.x86_64
 PackageKit.x86_64
 PackageKit-glib.x86_64
 PackageKit-gstreamer-plugin.x86_64
