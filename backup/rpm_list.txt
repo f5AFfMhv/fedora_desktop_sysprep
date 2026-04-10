@@ -293,7 +293,9 @@ gstreamer1-plugins-good-qt.x86_64
 gstreamer1-plugins-good-qt6.x86_64
 gstreamer1-plugins-ugly-free.x86_64
 gtk-layer-shell.x86_64
+gtk-update-icon-cache.x86_64
 gtk-vnc2.x86_64
+gtk3.x86_64
 gtk4.x86_64
 gtk4-layer-shell.x86_64
 gtksourceview4.x86_64
