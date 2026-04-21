@@ -54,6 +54,7 @@ libdnf5
 libvirt-python
 lxml
 MarkupSafe
+mistune
 more-itertools
 multidict
 mutagen
@@ -66,6 +67,7 @@ nwg-wrapper
 olefile
 packaging
 pathspec
+pcbdraw
 pexpect
 pid
 pillow
@@ -77,6 +79,7 @@ productmd
 psutil
 ptyprocess
 pwquality
+pybars3
 pycairo
 pycares
 pycodestyle
@@ -86,6 +89,7 @@ pycups
 pygit2
 PyGObject
 pykickstart
+PyMeta3
 pyparted
 PySocks
 python-augeas
@@ -117,6 +121,8 @@ solaar
 sos
 soupsieve
 subprocess-tee
+svgpathtools
+svgwrite
 systemd-python
 tenacity
 toml
