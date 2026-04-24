@@ -7,8 +7,6 @@ ModemManager-glib.x86_64
 NetworkManager.x86_64
 NetworkManager-adsl.x86_64
 NetworkManager-bluetooth.x86_64
-NetworkManager-l2tp.x86_64
-NetworkManager-l2tp-gnome.x86_64
 NetworkManager-libnm.x86_64
 NetworkManager-libreswan.x86_64
 NetworkManager-libreswan-gnome.x86_64
@@ -100,6 +98,7 @@ avahi.x86_64
 avahi-glib.x86_64
 avahi-gobject.x86_64
 avahi-libs.x86_64
+awww.x86_64
 b43-fwcutter.x86_64
 b43-openfwwf.noarch
 baobab.x86_64
@@ -146,7 +145,6 @@ cairomm1.16.x86_64
 capstone.x86_64
 cdparanoia-libs.x86_64
 checkpolicy.x86_64
-chkconfig.x86_64
 chrony.x86_64
 cifs-utils.x86_64
 cifs-utils-info.x86_64
@@ -403,7 +401,6 @@ fribidi.x86_64
 fstrm.x86_64
 fuse.x86_64
 fuse-common.x86_64
-fuse-libs.x86_64
 fuse-overlayfs.x86_64
 fuse-sshfs.x86_64
 fuse3.x86_64
@@ -644,8 +641,8 @@ hyprcursor.x86_64
 hyprgraphics.x86_64
 hypridle.x86_64
 hyprland.x86_64
+hyprland-guiutils.x86_64
 hyprland-qt-support.x86_64
-hyprland-qtutils.x86_64
 hyprland-uwsm.x86_64
 hyprlang.x86_64
 hyprlock.x86_64
@@ -653,7 +650,9 @@ hyprpaper.x86_64
 hyprpicker.x86_64
 hyprpolkitagent.x86_64
 hyprshot.noarch
+hyprtoolkit.x86_64
 hyprutils.x86_64
+hyprwire.x86_64
 id3lib.x86_64
 igvm-libs.x86_64
 ilbc.x86_64
@@ -664,8 +663,6 @@ imv.x86_64
 inih.x86_64
 inih-cpp.x86_64
 iniparser.x86_64
-initscripts.x86_64
-initscripts-rename-device.x86_64
 initscripts-service.noarch
 inotify-tools.x86_64
 insync.x86_64
@@ -1276,6 +1273,7 @@ mt7xxx-firmware.noarch
 mtdev.x86_64
 mtools.x86_64
 mtr.x86_64
+muParser.x86_64
 mujs.x86_64
 nano.x86_64
 nano-default-editor.noarch
@@ -1753,6 +1751,7 @@ readline.x86_64
 realmd.x86_64
 realtek-firmware.noarch
 redhat-menus.noarch
+remove-retired-packages.noarch
 rest.x86_64
 rit-meera-new-fonts.noarch
 rit-rachana-fonts.noarch
@@ -1860,7 +1859,6 @@ swtpm.x86_64
 swtpm-libs.x86_64
 swtpm-selinux.noarch
 swtpm-tools.x86_64
-swww.x86_64
 symlinks.x86_64
 system-config-language.noarch
 system-config-printer.x86_64
@@ -2034,7 +2032,6 @@ xfsprogs.x86_64
 xhost.x86_64
 xkbcomp.x86_64
 xkeyboard-config.noarch
-xl2tpd.x86_64
 xml-common.noarch
 xmlrpc-c.x86_64
 xmlrpc-c-client.x86_64
@@ -2061,7 +2058,6 @@ yyjson.x86_64
 zchunk-libs.x86_64
 zenity.x86_64
 zeromq.x86_64
-zfs-fuse.x86_64
 zimg.x86_64
 zip.x86_64
 zix.x86_64
