@@ -80,10 +80,10 @@ rpm_repositories:
     desc: insync repo
     url: http://yum.insync.io/fedora/$releasever/
     gpgkey: https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
-  - name: copr.solopasha.hyprland
-    desc: Hyprland and related packages
-    url: https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-$releasever-$basearch/
-    gpgkey: https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/pubkey.gpg
+  - name: copr.lionheartp.Hyprland
+    desc: Copr repo for Hyprland owned by lionheartp
+    url: https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/fedora-$releasever-$basearch/
+    gpgkey: https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/pubkey.gpg
   - name: copr.erikreider.SwayNotificationCenter
     desc: SwayNotificationCenter and related packages
     url: https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
@@ -163,6 +163,7 @@ rpms:
   - pavucontrol
   - gvfs
   - fastfetch
+  - remove-retired-packages
   # Libraries
   - lame-libs
   - libgda
@@ -199,8 +200,7 @@ rpms:
   - dejavu-fonts-all
   - fontawesome-fonts
   - google-noto-emoji-fonts
-  - google-noto-sans-cjk-fonts
-    # Terminal tools
+  - google-noto-sans-cjk-fonts # Terminal tools
   - vim
   - vim-ansible
   - vim-powerline
