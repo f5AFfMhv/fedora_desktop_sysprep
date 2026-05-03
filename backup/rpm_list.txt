@@ -764,6 +764,7 @@ lcms2.x86_64
 ldns.x86_64
 leptonica.x86_64
 less.x86_64
+less-color.x86_64
 libICE.x86_64
 libSM.x86_64
 libX11.x86_64
@@ -1401,6 +1402,7 @@ perl-Error.noarch
 perl-Exporter.noarch
 perl-Fcntl.x86_64
 perl-File-Basename.noarch
+perl-File-Copy.noarch
 perl-File-Path.noarch
 perl-File-Temp.noarch
 perl-File-stat.noarch
@@ -1566,6 +1568,7 @@ python3-gobject-base.x86_64
 python3-gstreamer1.x86_64
 python3-hawkey.x86_64
 python3-hid-parser.noarch
+python3-html2text.noarch
 python3-humanize.noarch
 python3-i3ipc.noarch
 python3-idna.noarch

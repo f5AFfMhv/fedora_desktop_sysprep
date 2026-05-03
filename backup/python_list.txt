@@ -35,6 +35,7 @@ file-magic
 filelock
 frozenlist
 hid-parser
+html2text
 humanize
 i3ipc
 idna
