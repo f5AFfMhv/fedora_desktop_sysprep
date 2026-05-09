@@ -89,6 +89,7 @@ pykickstart
 pyparted
 PySocks
 python-augeas
+python-bugzilla
 python-dateutil
 python-meh
 python-xlib
