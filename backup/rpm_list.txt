@@ -192,6 +192,8 @@ clevis.x86_64
 clevis-luks.x86_64
 clevis-pin-tpm2.x86_64
 cliphist.x86_64
+cmake.x86_64
+cmake-data.noarch
 cmake-filesystem.x86_64
 cockpit-bridge.noarch
 cockpit-networkmanager.noarch
@@ -428,6 +430,10 @@ flexiblas-netlib.x86_64
 flexiblas-netlib64.x86_64
 flexiblas-openblas-openmp.x86_64
 flexiblas-openblas-openmp64.x86_64
+flexiblas-openblas-serial.x86_64
+flexiblas-openblas-serial64.x86_64
+flexiblas-openblas-threads.x86_64
+flexiblas-openblas-threads64.x86_64
 flite.x86_64
 fmt.x86_64
 fontawesome-6-brands-fonts.noarch
@@ -488,6 +494,7 @@ giflib.x86_64
 git.x86_64
 git-core.x86_64
 git-core-doc.noarch
+git-lfs.x86_64
 glib-networking.x86_64
 glib2.x86_64
 glibc.x86_64
@@ -497,6 +504,9 @@ glibc-devel.x86_64
 glibc-gconv-extra.x86_64
 glibmm2.4.x86_64
 glibmm2.68.x86_64
+glslang.x86_64
+glslang-devel.x86_64
+glslc.x86_64
 glusterfs.x86_64
 glusterfs-cli.x86_64
 glusterfs-client-xlators.x86_64
@@ -1432,8 +1442,17 @@ open-vm-tools-desktop.x86_64
 openal-soft.x86_64
 openapv-libs.x86_64
 openblas.x86_64
+openblas-devel.x86_64
 openblas-openmp.x86_64
 openblas-openmp64.x86_64
+openblas-openmp64_.x86_64
+openblas-serial.x86_64
+openblas-serial64.x86_64
+openblas-serial64_.x86_64
+openblas-srpm-macros.noarch
+openblas-threads.x86_64
+openblas-threads64.x86_64
+openblas-threads64_.x86_64
 opencl-filesystem.noarch
 openconnect.x86_64
 opencore-amr.x86_64
@@ -1909,6 +1928,7 @@ realtek-firmware.noarch
 redhat-menus.noarch
 remove-retired-packages.noarch
 rest.x86_64
+rhash.x86_64
 rit-meera-new-fonts.noarch
 rit-rachana-fonts.noarch
 rocal.x86_64
@@ -2030,6 +2050,9 @@ spice-gtk3.x86_64
 spice-server.x86_64
 spice-vdagent.x86_64
 spice-webdavd.x86_64
+spirv-headers-devel.noarch
+spirv-tools.x86_64
+spirv-tools-devel.x86_64
 spirv-tools-libs.x86_64
 sqlite-libs.x86_64
 squashfs-tools.x86_64
@@ -2180,7 +2203,10 @@ vpnc.x86_64
 vpnc-script.noarch
 vte-profile.x86_64
 vte291.x86_64
+vulkan-headers.noarch
 vulkan-loader.x86_64
+vulkan-loader-devel.x86_64
+vulkan-tools.x86_64
 vvenc-libs.x86_64
 wavpack.x86_64
 waybar.x86_64
