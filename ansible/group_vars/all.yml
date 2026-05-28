@@ -206,6 +206,7 @@ rpms:
   - vim-powerline
   - powerline
   - powerline-fonts
+  - less-color
   - snapper # BTRFS snapshots
   - lsd # LSDeluxe, a modern replacement for 'ls'
   - bat # Better cat
@@ -213,6 +214,7 @@ rpms:
   - radeontop
   - zoxide # Fast directory jumper
   - git
+  - git-lfs
   - fzf # Fuzzy finder
   - rsync
   - unzip

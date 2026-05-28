@@ -42,7 +42,6 @@ flatpaks:
   - org.kicad.KiCad # PCB design
   - org.onlyoffice.desktopeditors # Office suite
   - com.vscodium.codium # Code editor
-  - io.github.giantpinkrobots.flatsweep
   - org.mozilla.Thunderbird # Mail client
   - me.kozec.syncthingtk
   - md.obsidian.Obsidian # Notes
@@ -51,9 +50,7 @@ flatpaks:
   - com.github.maoschanz.drawing
   - io.github.ungoogled_software.ungoogled_chromium
   - io.missioncenter.MissionCenter # System monitor
-  - me.iepure.devtoolbox
   - it.mijorus.gearlever # Appimage manager
   - com.nextcloud.desktopclient.nextcloud
   - org.fedoraproject.MediaWriter # Disk Imager
-  - com.bambulab.BambuStudio
-  - org.freecad.FreeCAD
+  - com.orcaslicer.OrcaSlicer
