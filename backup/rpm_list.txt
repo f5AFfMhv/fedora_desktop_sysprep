@@ -1975,7 +1975,6 @@ rofi.x86_64
 rofi-themes.noarch
 rootfiles.noarch
 rpcbind.x86_64
-rpi-imager.x86_64
 rpm.x86_64
 rpm-build-libs.x86_64
 rpm-libs.x86_64
