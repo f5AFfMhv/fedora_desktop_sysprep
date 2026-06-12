@@ -458,7 +458,6 @@ fuse3.x86_64
 fuse3-libs.x86_64
 fwupd.x86_64
 fwupd-efi.x86_64
-fwupd-plugin-flashrom.x86_64
 fwupd-plugin-modem-manager.x86_64
 fwupd-plugin-uefi-capsule-data.x86_64
 fzf.x86_64
