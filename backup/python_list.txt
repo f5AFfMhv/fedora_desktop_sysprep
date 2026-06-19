@@ -54,6 +54,7 @@ libdnf5
 libvirt-python
 lxml
 MarkupSafe
+mercurial
 multidict
 mutagen
 mypy_extensions

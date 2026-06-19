@@ -81,6 +81,10 @@ ansible-core.noarch
 antiword.x86_64
 appstream.x86_64
 appstream-data.noarch
+apr.x86_64
+apr-util.x86_64
+apr-util-lmdb.x86_64
+apr-util-openssl.x86_64
 aqlprofile.x86_64
 aquamarine.x86_64
 aribb24.x86_64
@@ -550,7 +554,11 @@ gnupg2-wks.x86_64
 gnutls.x86_64
 gnutls-dane.x86_64
 gnutls-utils.x86_64
+go-filesystem.x86_64
 gobject-introspection.x86_64
+golang.x86_64
+golang-bin.x86_64
+golang-src.noarch
 google-droid-sans-fonts.noarch
 google-noto-color-emoji-fonts.noarch
 google-noto-emoji-fonts.noarch
@@ -1174,6 +1182,7 @@ libselinux.x86_64
 libselinux-utils.x86_64
 libsemanage.x86_64
 libsepol.x86_64
+libserf.x86_64
 libshaderc.x86_64
 libshout.x86_64
 libsigc++20.x86_64
@@ -1350,6 +1359,7 @@ mcelog.x86_64
 mdadm.x86_64
 mdevctl.x86_64
 memstrack.x86_64
+mercurial.x86_64
 mesa-dri-drivers.x86_64
 mesa-filesystem.x86_64
 mesa-libEGL.x86_64
@@ -2067,6 +2077,8 @@ sstp-client.x86_64
 startup-notification.x86_64
 stix-fonts.noarch
 stoken-libs.x86_64
+subversion.x86_64
+subversion-libs.x86_64
 sudo.x86_64
 sudo-python-plugin.x86_64
 svt-av1-libs.x86_64
