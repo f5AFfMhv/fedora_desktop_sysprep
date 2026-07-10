@@ -255,6 +255,7 @@ dbus-libs.x86_64
 dbus-tools.x86_64
 dbus-x11.x86_64
 dconf.x86_64
+ddcutil.x86_64
 default-editor.noarch
 default-fonts-am.noarch
 default-fonts-ar.noarch
@@ -621,6 +622,7 @@ gpgme.x86_64
 gpgmepp.x86_64
 gpm-libs.x86_64
 gpsd-libs.x86_64
+gpu-screen-recorder.x86_64
 graphene.x86_64
 graphite2.x86_64
 graphviz-libs.x86_64
@@ -736,6 +738,7 @@ hyprshot.noarch
 hyprtoolkit.x86_64
 hyprutils.x86_64
 hyprwire.x86_64
+i2c-tools.x86_64
 id3lib.x86_64
 igvm-libs.x86_64
 ilbc.x86_64
@@ -1031,6 +1034,7 @@ libgxps.x86_64
 libhandy.x86_64
 libheif.x86_64
 libheif-freeworld.x86_64
+libi2c.x86_64
 libibverbs.x86_64
 libical.x86_64
 libical-glib.x86_64
@@ -1140,6 +1144,7 @@ libproxy-bin.x86_64
 libpskc.x86_64
 libpsl.x86_64
 libpwquality.x86_64
+libqalculate.x86_64
 libqhull_r.x86_64
 libqmi.x86_64
 libqmi-utils.x86_64
@@ -1331,6 +1336,7 @@ loupe.x86_64
 low-memory-monitor.x86_64
 lpcnetfreedv.x86_64
 lrzsz.x86_64
+lsb_release.noarch
 lsd.x86_64
 lsof.x86_64
 lttng-ust.x86_64
@@ -1356,6 +1362,7 @@ mariadb-connector-c-config.noarch
 matugen.x86_64
 mbedtls.x86_64
 mcelog.x86_64
+md4c.x86_64
 mdadm.x86_64
 mdevctl.x86_64
 memstrack.x86_64
@@ -1423,6 +1430,7 @@ ngtcp2-crypto-ossl.x86_64
 nilfs-utils.x86_64
 nm-connection-editor.x86_64
 nmap-ncat.x86_64
+noctalia-git.x86_64
 npth.x86_64
 nspr.x86_64
 nss.x86_64
@@ -1643,6 +1651,7 @@ poppler-data.noarch
 poppler-glib.x86_64
 poppler-utils.x86_64
 popt.x86_64
+power-profiles-daemon.x86_64
 powerline.x86_64
 powerline-fonts.noarch
 ppp.x86_64
@@ -2286,6 +2295,7 @@ xorg-x11-xauth.x86_64
 xorg-x11-xinit.x86_64
 xorriso.x86_64
 xprop.x86_64
+xrandr.x86_64
 xrdb.x86_64
 xset.x86_64
 xvidcore.x86_64
