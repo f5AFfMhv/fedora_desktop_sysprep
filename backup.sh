@@ -35,12 +35,14 @@ zshenv
 vimrc
 p10k.zsh
 alias.zsh
+alacritty
 alacritty.toml
 gtkrc-2.0
 gtk-2.0
 gtk-3.0
 gtk-4.0
 user-dirs.dirs
+user-dirs.locale
 hypr
 ml4w
 nwg-look
