@@ -10,13 +10,5 @@
     {
         "key": "general:gaps_out",
         "value": 10.0
-    },
-    {
-        "key": "general:col.inactive_border",
-        "value": "0xff241f31"
-    },
-    {
-        "key": "general:col.active_border",
-        "value": "0xfff9f06b"
     }
 ]
