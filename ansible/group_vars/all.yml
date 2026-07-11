@@ -177,6 +177,7 @@ rpms:
   - hypridle
   - hyprpicker
   - hyprpolkitagent
+  - noctalia-git
   - xdg-user-dirs
   - xdg-desktop-portal-gtk
   - xdg-desktop-portal-hyprland
