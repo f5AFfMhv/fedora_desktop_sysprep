@@ -59,6 +59,7 @@ acl.x86_64
 adobe-mappings-cmap.noarch
 adobe-mappings-cmap-deprecated.noarch
 adobe-mappings-pdf.noarch
+adw-gtk3-theme.noarch
 adwaita-cursor-theme.noarch
 adwaita-icon-theme.noarch
 adwaita-icon-theme-legacy.noarch

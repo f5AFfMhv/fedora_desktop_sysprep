@@ -63,6 +63,7 @@ export PATH="$PATH:/home/mj/go/bin"
 
 # Export environment variables.
 export GPG_TTY=$TTY
+export EDITOR=/usr/bin/vim
 
 # Source additional local files if they exist.
 z4h source ~/.config/zsh/env.zsh
