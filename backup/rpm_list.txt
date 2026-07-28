@@ -34,6 +34,7 @@ SDL2_image.x86_64
 SDL3.x86_64
 SDL_image.x86_64
 SwayNotificationCenter.x86_64
+SwayNotificationCenter-zsh-completion.noarch
 aajohan-comfortaa-fonts.noarch
 aalib-libs.x86_64
 abattis-cantarell-fonts.noarch
@@ -984,6 +985,7 @@ libebur128.x86_64
 libeconf.x86_64
 libedit.x86_64
 libei.x86_64
+libeis.x86_64
 libepoxy.x86_64
 liberation-mono-fonts.noarch
 liberation-sans-fonts.noarch
@@ -1813,6 +1815,7 @@ python3-pycryptodomex.x86_64
 python3-pygit2.x86_64
 python3-pyparted.x86_64
 python3-pysocks.noarch
+python3-pytokens.noarch
 python3-pyudev.noarch
 python3-pyxdg.noarch
 python3-pyyaml.x86_64

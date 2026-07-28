@@ -94,6 +94,7 @@ python-bugzilla
 python-dateutil
 python-meh
 python-xlib
+pytokens
 pyudev
 pyxdg
 PyYAML
