@@ -729,13 +729,11 @@ hyprgraphics.x86_64
 hypridle.x86_64
 hyprland.x86_64
 hyprland-guiutils.x86_64
-hyprland-qt-support.x86_64
 hyprland-uwsm.x86_64
 hyprlang.x86_64
 hyprlock.x86_64
 hyprpaper.x86_64
 hyprpicker.x86_64
-hyprpolkitagent.x86_64
 hyprshot.noarch
 hyprtoolkit.x86_64
 hyprutils.x86_64
