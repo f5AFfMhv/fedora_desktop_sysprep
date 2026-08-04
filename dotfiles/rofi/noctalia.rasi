@@ -3,8 +3,8 @@
   bg-alt: #353231;
   fg: #f3f2f2;
   accent: #e49167;
-  accent-fg: #211915;
-  border: #6c6865;
+  accent-fg: #251d18;
+  border: #6c6866;
 }
 
 window {

@@ -6,7 +6,7 @@
 
 @define-color accent_color #e49167;
 @define-color accent_bg_color #e49167;
-@define-color accent_fg_color #211915;
+@define-color accent_fg_color #251d18;
 
 @define-color destructive_bg_color #fd4663;
 @define-color destructive_fg_color #251d18;
@@ -55,7 +55,7 @@
 :root {
     --accent-color: #e49167;
     --accent-bg-color: #e49167; 
-    --accent-fg-color: #211915;
+    --accent-fg-color: #251d18;
 
     --destructive-bg-color: #fd4663;
     --destructive-fg-color: #251d18;
