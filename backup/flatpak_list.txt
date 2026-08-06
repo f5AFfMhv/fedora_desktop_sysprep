@@ -18,3 +18,4 @@ org.fedoraproject.MediaWriter
 org.kicad.KiCad
 org.mozilla.thunderbird_esr
 org.onlyoffice.desktopeditors
+org.remmina.Remmina
