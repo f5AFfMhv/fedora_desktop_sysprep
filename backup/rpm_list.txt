@@ -1332,7 +1332,6 @@ lmdb-libs.x86_64
 localsearch.x86_64
 lockdev.x86_64
 logrotate.x86_64
-lollypop.noarch
 loupe.x86_64
 low-memory-monitor.x86_64
 lpcnetfreedv.x86_64
