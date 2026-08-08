@@ -238,7 +238,6 @@ rpms:
   - evince # Document viewer
   - baobab # Disk Usage Analyzer
   - loupe # Image viewer
-  - lollypop # Music Player
   - snapshot # Camera viewer
 
 uninstall_rpms:

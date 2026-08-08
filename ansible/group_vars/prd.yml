@@ -54,3 +54,4 @@ flatpaks:
   - com.nextcloud.desktopclient.nextcloud
   - org.fedoraproject.MediaWriter # Disk Imager
   - com.orcaslicer.OrcaSlicer
+  - org.kde.elisa # Music player
