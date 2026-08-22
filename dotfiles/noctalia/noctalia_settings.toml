@@ -1,0 +1,404 @@
+config_version = 13
+
+[bar.default]
+center = [ "clock", "control-center", "weather", "privacy", "status", "widget" ]
+end = [ "keyboard_layout", "battery", "volume", "tray", "settings", "session" ]
+font_family = "FiraCode Nerd Font"
+margin_ends = 5
+padding = 15
+scale = 1.1000000089406967
+start = [ "group:g1", "workspaces", "spacer_2", "media" ]
+thickness = 38
+widget_spacing = 12
+
+    [[bar.default.capsule_group]]
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "cpu", "ram" ]
+    opacity = 1.0
+    padding = 6.0
+
+[battery.device."/org/freedesktop/UPower/devices/battery_hid_dco2co26o37o48o0a_battery_3"]
+warning_threshold = 15
+
+[battery.device."/org/freedesktop/UPower/devices/battery_hidpp_battery_0"]
+warning_threshold = 15
+
+[battery.device."/org/freedesktop/UPower/devices/keyboard_dev_D7_54_3A_79_4E_D4"]
+warning_threshold = 15
+
+[calendar]
+enabled = true
+
+    [calendar.account.jankunasmartynas]
+    name = "jankunasmartynas"
+    type = "google"
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "wallpaper"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 672.0
+    box_width = 704.0
+    cx = 1280.0
+    cy = 720.0
+    output = "DP-9"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+
+[dock]
+auto_hide = true
+enabled = true
+launcher_position = "start"
+reserve_space = false
+show_instance_count = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+pre_action_fade_seconds = 0
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
+[location]
+address = "Ukmerge"
+
+[lockscreen]
+fingerprint = false
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@DP-9",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-9"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 1280.0
+    cy = 1321.0
+    output = "DP-9"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-9".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 128.0
+    box_width = 320.0
+    cx = 221.0
+    cy = 140.0
+    output = "DP-9"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 128.0
+    box_width = 320.0
+    cx = 221.0
+    cy = 624.0
+    output = "DP-9"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "media_player"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 128.0
+    box_width = 320.0
+    cx = 221.0
+    cy = 464.0
+    output = "DP-9"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 128.0
+    box_width = 320.0
+    cx = 221.0
+    cy = 304.0
+    output = "DP-9"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "weather"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 768.0
+    box_width = 912.0
+    cx = 1280.0
+    cy = 720.0
+    output = "DP-9"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background = false
+
+[nightlight]
+enabled = true
+
+[osd]
+offset_x = 0
+offset_y = 20
+position = "bottom_center"
+position_vertical = "bottom_center"
+
+    [osd.kinds]
+    media = false
+
+[plugin_settings."pozzoo/hassio"]
+entity_manager_open_near_click = true
+entity_manager_placement = "attached"
+ha_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIyMzgwODQ2MDUxMWM0NjU4OGY1Nzk1NzY2MDY5YTQ1NiIsImlhdCI6MTc4NTI0MzkwMCwiZXhwIjoyMTAwNjAzOTAwfQ.6yxKGPmv6L59LNFLd6TVvc6Q9ShLMK84Hp5mhxWbe6s"
+ha_url = "http://ha.home.lab:8123"
+
+[plugin_settings."yuuto/arch-updater"]
+aur_check_cmd = "dnf check-update 2>/dev/null | tail -n +2"
+aur_helper = "custom"
+auto_check_hours = 3
+check_arch_news = false
+check_reboot_needed = false
+show_download_size = false
+
+[plugins]
+enabled = []
+
+[shell]
+app_icon_color = "primary"
+external_ip_enabled = true
+font_family = "Noto Sans"
+polkit_agent = true
+ui_scale = 1.1000000089406967
+
+    [shell.panel]
+    clipboard_placement = "attached"
+    launcher_placement = "attached"
+    open_near_click_clipboard = true
+    session_placement = "floating"
+    session_position = "center"
+
+    [shell.screenshot]
+    directory = "/home/mj/Pictures/Screenshots"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "notify-send 'Noctalia' 'Custom session entry'"
+    countdown_seconds = 0.0
+    enabled = false
+    variant = "default"
+
+    [shell.shadow]
+    direction = "right"
+
+[theme]
+builtin = "Dracula"
+community_palette = "Atuel"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-monochrome"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "gtk3", "gtk4", "hyprland", "qt" ]
+    community_ids = [ "zen-browser", "obsidian", "vscode", "fastfetch", "hyprtoolkit", "bat" ]
+
+[wallpaper]
+directory = "/home/mj/Pictures/Images/wallpapers"
+transition = [ "fade" ]
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/mj/Pictures/Images/wallpapers/adwaita-l.jpg"
+
+    [wallpaper.last]
+    path = "/home/mj/Pictures/Images/wallpapers/adwaita-l.jpg"
+
+    [wallpaper.monitors.DP-9]
+    path = "/home/mj/Pictures/Images/wallpapers/adwaita-l.jpg"
+
+[widget.Updates]
+type = "custom_button"
+
+[widget.battery]
+device = "/org/freedesktop/UPower/devices/battery_hidpp_battery_0"
+
+[widget.bluetooth]
+hide_when_no_connected_device = true
+
+[widget.clock]
+enabled = true
+tooltip_format = "%A, %x"
+
+[widget.cpu]
+display = "text"
+glyph = "cpu"
+
+[widget.custom_button_2]
+type = "custom_button"
+
+[widget.lock_keys]
+hide_when_off = true
+show_num_lock = false
+
+[widget.media]
+hide_album_art = true
+hide_when_no_media = true
+title_scroll = "on_hover"
+
+[widget.network]
+show_label = false
+
+[widget.privacy]
+hide_inactive = true
+
+[widget.ram]
+display = "text"
+glyph = "book-2"
+stat = "ram_pct"
+
+[widget.spacer_2]
+interactive = false
+length = 250
+type = "spacer"
+
+[widget.status]
+color = "primary"
+icon_color = "primary"
+show_entity_count = true
+type = "pozzoo/hassio:status"
+
+[widget.sysmon]
+show_value = true
+visualization = "none"
+
+[widget.tray]
+drawer = true
+drawer_item_size = 32.0
+match_adjacent_spacing = true
+
+[widget.volume.actions]
+scroll_down = "volume-down 1%"
+scroll_up = "volume-up 1%"
+
+[widget.weather]
+show_condition = false
+
+[widget.widget]
+type = "yuuto/arch-updater:widget"
+
+[widget.workspaces]
+show_labels = false

@@ -8,8 +8,6 @@ home_dir: "/home/{{ user }}"
 git_dir: "{{ home_dir }}/github"
 dotfiles_dir: "{{ git_dir }}/fedora_desktop_sysprep/dotfiles"
 sddm_theme: sddm-astronaut-theme
-ml4w_flatpak_repo: https://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps.flatpakrepo
-ml4w_flatpak_gpg: https://mylinuxforwork.github.io/ml4w-flatpak-repo/ml4w-apps-public-key.asc
 
 allow_sudo:
   - /bin/kill
@@ -23,7 +21,6 @@ allow_sudo:
 font_dirs:
   - "{{ git_dir }}/sddm-astronaut-theme/Fonts"
   - "{{ git_dir }}/p10k-media"
-  - "{{ git_dir }}/ml4w/setup/fonts"
 
 dotfiles:
   - vimrc
@@ -36,15 +33,12 @@ dotfiles:
   - gtk-3.0
   - gtk-4.0
   - hypr
-  - ml4w
-  - nwg-dock-hyprland
   - qt6ct
-  - rofi
   - sidepad
-  - swaync
-  - waybar
-  - waypaper
-  - wlogout
+  # - swaync
+  # - waybar
+  # - waypaper
+  # - wlogout
   - xsettingsd
   - fastfetch
 
@@ -84,10 +78,6 @@ rpm_repositories:
     desc: Copr repo for Hyprland owned by lionheartp
     url: https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/fedora-$releasever-$basearch/
     gpgkey: https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/pubkey.gpg
-  - name: copr.erikreider.SwayNotificationCenter
-    desc: SwayNotificationCenter and related packages
-    url: https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
-    gpgkey: https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
   - name: rpmfusion-free
     desc: RPM Fusion for Fedora $releasever - Free
     url: http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/
@@ -102,7 +92,6 @@ flatpak_repositories:
     url: "https://dl.flathub.org/repo/flathub.flatpakrepo"
 
 python_packages:
-  - hyprshade
   - screeninfo
   - ansible
 
@@ -135,12 +124,9 @@ rpms:
   - ansible-collection-community-docker
   - docker-ce
   - docker-compose-plugin
-  - figlet
-  - gum
   # Networking
   - openssl
   - nm-connection-editor
-  - network-manager-applet
   - NetworkManager-tui
   - net-tools
   - telnet
@@ -157,43 +143,29 @@ rpms:
   - cups
   - flatpak
   - sddm
-  - blueman
   - ImageMagick
   - inotify-tools
   - pavucontrol
   - gvfs
   - fastfetch
   - remove-retired-packages
+  - blueman
   # Libraries
   - lame-libs
   - libgda
   - libgda-sqlite
   - libnotify
   - ffmpeg-libs
-  # Wayland + Hyprland + ML4W
+  # Wayland + Hyprland + noctalia
   - hyprland
-  - hyprpaper
-  - hyprlock
-  - hypridle
   - hyprpicker
   - noctalia-git
   - xdg-user-dirs
   - xdg-desktop-portal-gtk
   - xdg-desktop-portal-hyprland
-  - wlogout
-  - waypaper
-  - waybar
-  - rofi-wayland
-  - nwg-dock-hyprland
-  - nwg-look
-  - SwayNotificationCenter
-  - xclip
   - brightnessctl
   - tumbler
   - slurp
-  - cliphist
-  - grim
-  - grimblast
   - uwsm
   - papirus-icon-theme
   - papirus-icon-theme-dark
@@ -223,7 +195,6 @@ rpms:
   # GUI apps
   - virt-manager
   - insync # Google Drive client
-  - solaar # Logitech device manager
   - rpi-imager
   - cpu-x
   - alacritty
@@ -231,18 +202,20 @@ rpms:
   - gnome-calculator
   - gnome-software
   - gnome-text-editor
-  - gnome-calendar
   - gnome-font-viewer
   - btrfs-assistant
   - nautilus # File manager
   - evince # Document viewer
   - baobab # Disk Usage Analyzer
-  - loupe # Image viewer
   - snapshot # Camera viewer
+  - imv # simple image viewer
+  - nwg-look # GTK settings
 
 uninstall_rpms:
   - nvidia-gpu-firmware
   - totem
+  - lollypop
+  - loupe
   - unoconv
   - libreoffice-calc
   - libreoffice-core

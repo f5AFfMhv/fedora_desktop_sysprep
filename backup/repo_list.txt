@@ -152,26 +152,12 @@ gpgcheck = 1
 gpgkey = https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 name = insync repo
 
-[copr.solopasha.hyprland]
-baseurl = https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-$releasever-$basearch/
-enabled = 0
-gpgcheck = 1
-gpgkey = https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/pubkey.gpg
-name = Hyprland and related packages
-
 [copr.lionheartp.Hyprland]
 name=Copr repo for Hyprland owned by lionheartp
 baseurl=https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/fedora-$releasever-$basearch/
 gpgcheck=1
 gpgkey=https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/pubkey.gpg
 enabled=1
-
-[copr.erikreider.SwayNotificationCenter]
-baseurl = https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/fedora-$releasever-$basearch/
-enabled = 1
-gpgcheck = 1
-gpgkey = https://download.copr.fedorainfracloud.org/results/erikreider/SwayNotificationCenter/pubkey.gpg
-name = SwayNotificationCenter and related packages
 
 [rpmfusion-free]
 baseurl = http://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/

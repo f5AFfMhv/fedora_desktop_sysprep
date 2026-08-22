@@ -11,8 +11,6 @@ cron_env:
 git_repos:
   - repo: https://github.com/f5AFfMhv/fedora_desktop_sysprep.git
     dest: "{{ git_dir }}/fedora_desktop_sysprep"
-  - repo: https://github.com/mylinuxforwork/dotfiles.git
-    dest: "{{ git_dir }}/ml4w"
   - repo: https://github.com/Keyitdev/sddm-astronaut-theme.git
     dest: "{{ git_dir }}/{{ sddm_theme }}"
   - repo: https://github.com/romkatv/powerlevel10k-media.git
@@ -20,7 +18,4 @@ git_repos:
 
 flatpaks:
   - com.github.tchx84.Flatseal
-  - org.onlyoffice.desktopeditors
   - io.github.zen_browser.zen
-  - com.github.maoschanz.drawing
-  - io.missioncenter.MissionCenter

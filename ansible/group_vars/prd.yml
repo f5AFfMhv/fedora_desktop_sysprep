@@ -9,8 +9,6 @@ cron_jobs:
     job: "#cd /home/{{ user }}/Documents/Others/Notes/Notes && ./sync_notes.sh"
   - name: SRV docker config sync
     job: "#/usr/bin/rsync -az mj@docker.home.lab:/opt/docker-compose/ /opt/docker-compose/ > /dev/null 2>&1"
-  - name: Clear cliphist cache
-    job: "#/usr/bin/cliphist wipe"
 
 cron_env:
   - var: BASE_DIR
@@ -25,12 +23,6 @@ git_repos:
     dest: "{{ git_dir }}/zsh4humans"
   - repo: https://github.com/abertsch/Menlo-for-Powerline.git
     dest: "{{ git_dir }}/Menlo-for-Powerline"
-  - repo: https://github.com/sb-ocr/ocreeb-12.git
-    dest: "{{ git_dir }}/ocreeb-12"
-  - repo: https://github.com/comfyanonymous/ComfyUI.git
-    dest: "{{ git_dir }}/ComfyUI"
-  - repo: https://github.com/mylinuxforwork/dotfiles.git
-    dest: "{{ git_dir }}/ml4w"
   - repo: https://github.com/Keyitdev/sddm-astronaut-theme.git
     dest: "{{ git_dir }}/{{ sddm_theme }}"
   - repo: https://github.com/romkatv/powerlevel10k-media.git
@@ -42,11 +34,11 @@ flatpaks:
   - org.kicad.KiCad # PCB design
   - org.onlyoffice.desktopeditors # Office suite
   - com.vscodium.codium # Code editor
-  - org.mozilla.Thunderbird # Mail client
+  - org.mozilla.thunderbird_esr # Mail client
   - me.kozec.syncthingtk
   - md.obsidian.Obsidian # Notes
   - io.github.flattool.Warehouse # Flatpak manager
-  - io.github.zen_browser.zen # Internet browser
+  - app.zen_browser.zen # Internet browser
   - com.github.maoschanz.drawing
   - io.github.ungoogled_software.ungoogled_chromium
   - io.missioncenter.MissionCenter # System monitor
@@ -55,3 +47,4 @@ flatpaks:
   - org.fedoraproject.MediaWriter # Disk Imager
   - com.orcaslicer.OrcaSlicer
   - org.kde.elisa # Music player
+  - org.remmina.Remmina # Remote desktop client

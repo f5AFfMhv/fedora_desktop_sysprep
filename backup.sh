@@ -36,7 +36,6 @@ vimrc
 p10k.zsh
 alias.zsh
 alacritty
-alacritty.toml
 gtkrc-2.0
 gtk-2.0
 gtk-3.0
@@ -44,23 +43,16 @@ gtk-4.0
 user-dirs.dirs
 user-dirs.locale
 hypr
-ml4w
 nwg-look
-nwg-dock-hyprland
 qt6ct
-rofi
 sidepad
-swaync
-waybar
-waypaper
-wlogout
 xsettingsd
 fastfetch
-com.ml4w.hyprlandsettings
+noctalia
 "
 
 for dfile in $DOTFILES; do
-    cp -r -f ~/.config/${dfile} dotfiles/
+    cp -L -r -f ~/.config/${dfile} dotfiles/
 done
 
 # Push backup to repo

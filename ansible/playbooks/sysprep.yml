@@ -1,6 +1,6 @@
 - name: Provision Fedora Desktop
   gather_facts: true
-  hosts: prd
+  hosts: dev
   tasks:
     - name: Add rpm repositories
       ansible.builtin.yum_repository:
@@ -58,22 +58,6 @@
         - flatpak
         - install
 
-    - name: Add ML4W flathub repository and install flatpaks
-      ansible.builtin.shell: |
-        wget -P /tmp {{ ml4w_flatpak_gpg }}
-        flatpak remote-add --if-not-exists ml4w {{ ml4w_flatpak_repo }} \
-          --gpg-import=/tmp/ml4w-apps-public-key.asc
-        rm -f /tmp/ml4w-apps-public-key.asc
-        flatpak install --system --noninteractive ml4w \
-          com.ml4w.hyprlandsettings \
-          com.ml4w.settings \
-          com.ml4w.sidebar
-      register: output
-      changed_when: output.rc == 0
-      tags:
-        - flatpak
-        - install
-
     - name: Upgrade pip
       ansible.builtin.pip:
         name:
@@ -120,18 +104,6 @@
         state: "{{ item.state }}"
         enabled: "{{ item.enabled }}"
       with_items: "{{ services }}"
-      tags:
-        - config
-        - service
-
-    - name: Enable and start hyprpolkitagent for user {{ user }}
-      become: true
-      become_user: "{{ user }}"
-      ansible.builtin.systemd:
-        name: hyprpolkitagent.service
-        scope: user
-        enabled: true
-        state: started
       tags:
         - config
         - service

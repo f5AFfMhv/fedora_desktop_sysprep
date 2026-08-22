@@ -42,7 +42,6 @@ Ansible playbook will:
 - Deploy dotfiles.
 - Install fonts.
 - Configure SDDM.
-- Install prometheus node exporter.
 
 ## Backup
 
