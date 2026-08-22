@@ -17,7 +17,7 @@ hl.bind(mainMod .. " + " .. "B", hl.dsp.exec_cmd("flatpak run app.zen_browser.ze
 hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("nautilus"))
 
 -- Calculator
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "C", hl.dsp.exec_cmd("gnome-calculator"))
+hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("gnome-calculator"))
 
 -- Kill active window
 hl.bind(mainMod .. " + " .. "Q", hl.dsp.window.close())
