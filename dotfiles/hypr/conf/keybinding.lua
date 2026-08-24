@@ -115,19 +115,19 @@ hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
 
 -- Sidepad
 
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "right", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh"))
+-- hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "right", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh"))
 
--- Open Sidepad
+-- -- Open Sidepad
 
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "left", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh --hide"))
+-- hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "left", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh --hide"))
 
--- Close Sidepad
+-- -- Close Sidepad
 
-hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh --init"))
+hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("~/.config/sidepad/sidepad --init"))
 
--- Init Sidepad
+-- -- Init Sidepad
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh --select"))
+-- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh --select"))
 
 -- Scratchpad
 

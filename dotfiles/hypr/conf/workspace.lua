@@ -3,7 +3,7 @@
 -- ============================================================
 hl.workspace_rule({
     workspace = "special:thunderbird",
-    on_created_empty = "flatpak run org.mozilla.thunderbird_esr",
+    on_created_empty = "flatpak run org.mozilla.thunderbird_esr -mail",
 })
 
 hl.window_rule({
@@ -77,14 +77,14 @@ hl.workspace_rule({
 
 hl.window_rule({
     match = {
-        class = "chrome-memos.home.lab_-Default",
+        class = "chrome-memos.home.lab__-Default",
         workspace = "special:memos",
     },
 })
 
 hl.window_rule({
     match = {
-        class = "chrome-memos.home.lab_-Default",
+        class = "chrome-memos.home.lab__-Default",
     },
     float = true,
     size = { 1500, 850 },

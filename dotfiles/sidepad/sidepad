@@ -14,6 +14,8 @@ TARGET_WIDTH=500
 TARGET_WIDTH_MAX=1000
 TOP_GAP=76
 BOTTOM_GAP=91
+SIDEPAD_APP="flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://chatgpt.com"
+SIDEPAD_CLASS="chrome-chatgpt.com__-Default"
 
 # --- Script Variables ---
 HIDE_REQUESTED=0

@@ -231,7 +231,7 @@ hyprland_parser = "lua"
 enable_cargo = false
 
 [plugins]
-enabled = [ "kenn/keybind-cheatsheet", "tordex/system-updater" ]
+enabled = [ "tordex/system-updater", "kenn/keybind-cheatsheet" ]
 
 [shell]
 app_icon_color = "primary"
