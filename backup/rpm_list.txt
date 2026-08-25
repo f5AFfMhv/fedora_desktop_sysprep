@@ -1576,6 +1576,7 @@ perl-Time-HiRes.x86_64
 perl-Time-Local.noarch
 perl-TimeDate.noarch
 perl-URI.noarch
+perl-Unicode-Normalize.x86_64
 perl-base.noarch
 perl-constant.noarch
 perl-if.noarch
