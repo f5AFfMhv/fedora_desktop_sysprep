@@ -1115,6 +1115,7 @@ libpasswdqc.x86_64
 libpath_utils.x86_64
 libpcap.x86_64
 libpciaccess.x86_64
+libpfm.x86_64
 libphodav.x86_64
 libphonenumber.x86_64
 libpipeline.x86_64
