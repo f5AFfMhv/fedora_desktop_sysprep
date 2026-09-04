@@ -15,6 +15,7 @@ me.kozec.syncthingtk
 org.fedoraproject.MediaWriter
 org.kde.elisa
 org.kicad.KiCad
+org.localsend.localsend_app
 org.mozilla.thunderbird_esr
 org.onlyoffice.desktopeditors
 org.remmina.Remmina
