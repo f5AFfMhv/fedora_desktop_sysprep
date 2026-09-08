@@ -45,7 +45,6 @@ user-dirs.locale
 hypr
 nwg-look
 qt6ct
-sidepad
 xsettingsd
 fastfetch
 noctalia
