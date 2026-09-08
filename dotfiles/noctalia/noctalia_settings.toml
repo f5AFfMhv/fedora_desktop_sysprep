@@ -71,7 +71,7 @@ widget_order = [ "desktop-widget-0000000000000001" ]
 
 [dock]
 auto_hide = true
-enabled = true
+enabled = false
 launcher_position = "start"
 reserve_space = false
 show_instance_count = false
@@ -228,9 +228,10 @@ hyprland_parser = "lua"
 
 [plugin_settings."tordex/system-updater"]
 enable_cargo = false
+notify_on_updates = false
 
 [plugins]
-enabled = [ "tordex/system-updater", "kenn/keybind-cheatsheet" ]
+enabled = [ "tordex/system-updater" ]
 
 [shell]
 app_icon_color = "primary"

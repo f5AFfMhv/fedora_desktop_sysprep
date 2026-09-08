@@ -7,8 +7,17 @@
 
 -- Autostart
 hl.on("hyprland.start", function()
+    hl.exec_cmd("noctalia")
     hl.exec_cmd("flatpak run com.nextcloud.desktopclient.nextcloud --background")
     hl.exec_cmd("insync start")
     hl.exec_cmd("flatpak run me.kozec.syncthingtk --minimized")
-    hl.exec_cmd("noctalia")
+    hl.exec_cmd("flatpak run org.mozilla.thunderbird_esr -mail", {
+        workspace = "special:thunderbird silent"
+    })
+    hl.exec_cmd("flatpak run app.zen_browser.zen --private-window", {
+        workspace = "special:zen silent"
+    })
+    hl.exec_cmd("flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://chatgpt.com", {
+        workspace = "special:sidepad silent"
+    })
 end)

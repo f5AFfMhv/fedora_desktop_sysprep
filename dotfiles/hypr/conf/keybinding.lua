@@ -90,47 +90,45 @@ hl.bind(mainMod .. " + " .. "ALT" .. " + " .. "down", hl.dsp.window.swap({ direc
 hl.bind("ALT" .. " + " .. "Tab", hl.dsp.window.cycle_next())
 
 -- Actions
-
+-- Reload Hyprland configuration
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "R", hl.dsp.exec_cmd("hyprctl reload"))
 
--- Reload Hyprland configuration
 
 -- Noctalia
-
-hl.bind(mainMod .. " + " .. "D", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
-
 -- Aplication launcher
-
-hl.bind(mainMod .. " + " .. "V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
+hl.bind(mainMod .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
 
 -- Open clipboard manager
-
-hl.bind(mainMod .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center"))
+hl.bind(mainMod .. " + " .. "V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
 
 -- Open control center
-
-hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
+hl.bind(mainMod .. " + " .. "D", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center"))
 
 -- Screenshot
+hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
 
 -- Sidepad
+-- Show Sidepad
+hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "right",
+    hl.dsp.window.move({
+        workspace = "+0",
+        window = "class:^(chrome-chatgpt.com__-Default)$",
+    })
+)
 
--- hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "right", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh"))
+-- Hide Sidepad
+hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "left",
+    hl.dsp.window.move({
+        workspace = "special:sidepad",
+        window = "class:^(chrome-chatgpt.com__-Default)$",
+        follow = false
+    })
+)
 
--- -- Open Sidepad
+-- Init Sidepad
+hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://chatgpt.com"))
 
--- hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "left", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh --hide"))
-
--- -- Close Sidepad
-
-hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("~/.config/sidepad/sidepad --init"))
-
--- -- Init Sidepad
-
--- hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("~/.config/ml4w/scripts/sidepad.sh --select"))
-
--- Scratchpad
-
+-- Special workspaces
 hl.bind(mainMod .. " + " .. "ALT" .. " + " .. 1, hl.dsp.workspace.toggle_special("thunderbird"))
 
 hl.bind(mainMod .. " + " .. "ALT" .. " + " .. 2, hl.dsp.workspace.toggle_special("missioncenter"))

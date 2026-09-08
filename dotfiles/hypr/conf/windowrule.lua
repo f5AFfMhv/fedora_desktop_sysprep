@@ -170,3 +170,14 @@ hl.window_rule({
     },
     no_blur = true,
 })
+
+-- ChatGPT Sidepad
+hl.window_rule({
+    match = {
+        class = "^chrome-chatgpt.com__-Default$"
+    },
+    size = { 500, 1360 },
+    move = { 10, 45 },
+    float = true,
+    animation = slide
+})

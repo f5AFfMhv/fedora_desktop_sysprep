@@ -11,12 +11,29 @@
 hl.config({
     animations = {
         enabled = true,
-        -- Animation curves
-        -- use with .2s duration
-        -- Animation configs
-        -- animation = layers, 1, 2, md3_decel, slide
-        -- animation = workspaces, 1, 2.5, softAcDecel, slide
-        -- animation = workspaces, 1, 7, menu_decel, slidefade 15%
-        -- animation = specialWorkspace, 1, 3, md3_decel, slidefadevert 15%
-    },
+
+        {
+            name = "windows",
+            duration = 1,
+            speed = 5,
+            bezier = "default",
+            style = "slide",
+        },
+
+        {
+            name = "windowsIn",
+            duration = 1,
+            speed = 5,
+            bezier = "default",
+            style = "slide",
+        },
+
+        {
+            name = "windowsOut",
+            duration = 1,
+            speed = 5,
+            bezier = "default",
+            style = "slide",
+        },
+    }
 })
