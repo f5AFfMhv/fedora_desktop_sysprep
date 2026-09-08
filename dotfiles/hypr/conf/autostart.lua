@@ -17,7 +17,4 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("flatpak run app.zen_browser.zen --private-window", {
         workspace = "special:zen silent"
     })
-    hl.exec_cmd("flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://chatgpt.com", {
-        workspace = "special:sidepad silent"
-    })
 end)

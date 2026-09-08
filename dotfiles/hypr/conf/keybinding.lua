@@ -108,25 +108,7 @@ hl.bind(mainMod .. " + " .. "D", hl.dsp.exec_cmd("noctalia msg panel-toggle cont
 hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
 
 -- Sidepad
--- Show Sidepad
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "right",
-    hl.dsp.window.move({
-        workspace = "+0",
-        window = "class:^(chrome-chatgpt.com__-Default)$",
-    })
-)
-
--- Hide Sidepad
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "left",
-    hl.dsp.window.move({
-        workspace = "special:sidepad",
-        window = "class:^(chrome-chatgpt.com__-Default)$",
-        follow = false
-    })
-)
-
--- Init Sidepad
-hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://chatgpt.com"))
+hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("/home/mj/Programming/scripts/hyprland_sidepad.sh"))
 
 -- Special workspaces
 hl.bind(mainMod .. " + " .. "ALT" .. " + " .. 1, hl.dsp.workspace.toggle_special("thunderbird"))

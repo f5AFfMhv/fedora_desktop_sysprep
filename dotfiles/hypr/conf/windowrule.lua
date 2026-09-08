@@ -179,5 +179,5 @@ hl.window_rule({
     size = { 500, 1360 },
     move = { 10, 45 },
     float = true,
-    animation = slide
+    animation = slide,
 })
