@@ -963,6 +963,7 @@ libdnf5.x86_64
 libdnf5-cli.x86_64
 libdnf5-plugin-appstream.x86_64
 libdnf5-plugin-expired-pgp-keys.x86_64
+libdnf5-plugin-systemd-inhibit.x86_64
 libdovi.x86_64
 libdrm.x86_64
 libdvbpsi.x86_64
