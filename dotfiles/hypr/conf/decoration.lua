@@ -1,3 +1,3 @@
 ---@module 'hl'
 
-local decoration_selection = require("conf.decorations.rounding-all-blur")
+local decoration_selection = require("conf.decorations.default")

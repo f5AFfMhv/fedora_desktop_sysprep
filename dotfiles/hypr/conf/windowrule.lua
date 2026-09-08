@@ -177,7 +177,7 @@ hl.window_rule({
         class = "^chrome-chatgpt.com__-Default$"
     },
     size = { 500, 1360 },
-    move = { 10, 45 },
+    move = { 10, 50 },
     float = true,
     animation = slide,
 })
