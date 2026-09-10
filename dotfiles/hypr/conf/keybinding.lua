@@ -19,6 +19,15 @@ hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("nautilus"))
 -- Calculator
 hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("gnome-calculator"))
 
+-- Text editor
+hl.bind(mainMod .. " + " .. "P", hl.dsp.exec_cmd("gnome-text-editor"))
+
+-- VScode
+hl.bind(mainMod .. " + " .. "X", hl.dsp.exec_cmd("flatpak run com.vscodium.codium"))
+
+-- Obsidian
+hl.bind(mainMod .. " + " .. "O", hl.dsp.exec_cmd("flatpak run md.obsidian.Obsidian"))
+
 -- Kill active window
 hl.bind(mainMod .. " + " .. "Q", hl.dsp.window.close())
 
