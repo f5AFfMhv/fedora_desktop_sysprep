@@ -28,19 +28,19 @@ dotfiles:
   - alias.zsh
   - zshrc
   - zshenv
-  - alacritty.toml
   - gtkrc-2.0
+  - gtk-2.0
   - gtk-3.0
   - gtk-4.0
   - hypr
   - qt6ct
-  - sidepad
-  # - swaync
-  # - waybar
-  # - waypaper
-  # - wlogout
   - xsettingsd
   - fastfetch
+  - alacritty
+  - noctalia
+  - nwg-look
+  - user-dirs.dirs
+  - user-dirs.locale
 
 dotfile_symlinks:
   - vimrc
@@ -106,7 +106,6 @@ rpms:
   - python3-pip
   - python3-devel
   - python3-autopep8
-  - python3-toml
   - python3-pyyaml
   - python3-wheel
   - python3-gobject
@@ -158,6 +157,7 @@ rpms:
   - ffmpeg-libs
   # Wayland + Hyprland + noctalia
   - hyprland
+  - hyprland-guiutils
   - hyprpicker
   - noctalia-git
   - xdg-user-dirs

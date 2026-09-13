@@ -227,6 +227,15 @@
         - config
         - locale
 
+    - name: Set graphical target as default
+      ansible.builtin.systemd:
+        name: graphical.target
+        enabled: true
+      notify: Restart SDDM
+      tags:
+        - config
+        - sddm
+
     - name: Add SDDM configuration
       ansible.builtin.template:
         src: sddm.conf.j2
