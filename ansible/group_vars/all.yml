@@ -16,7 +16,6 @@ allow_sudo:
   - /usr/bin/systemctl
   - /usr/bin/mount
   - /usr/bin/sshfs
-  - /usr/bin/docker
 
 font_dirs:
   - "{{ git_dir }}/sddm-astronaut-theme/Fonts"
@@ -52,9 +51,6 @@ dotfile_symlinks:
   - gtkrc-2.0
 
 services:
-  - name: docker
-    state: started
-    enabled: true
   - name: systemd-networkd
     state: stopped
     enabled: false
@@ -66,10 +62,6 @@ services:
     enabled: true
 
 rpm_repositories:
-  - name: docker-ce-stable
-    desc: Docker CE Stable - $basearch
-    url: https://download.docker.com/linux/fedora/$releasever/$basearch/stable
-    gpgkey: https://download.docker.com/linux/fedora/gpg
   - name: insync
     desc: insync repo
     url: http://yum.insync.io/fedora/$releasever/
@@ -121,8 +113,9 @@ rpms:
   - ansible
   - ansible-core
   - ansible-collection-community-docker
-  - docker-ce
-  - docker-compose-plugin
+  - podman
+  - podman-docker
+  - podman-compose
   # Networking
   - openssl
   - nm-connection-editor
