@@ -65,6 +65,7 @@ pid
 pip
 platformdirs
 ply
+podman-compose
 powerline-status
 productmd
 propcache
@@ -85,6 +86,7 @@ PySocks
 python-augeas
 python-bugzilla
 python-dateutil
+python-dotenv
 python-meh
 python-xlib
 pytokens

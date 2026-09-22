@@ -138,13 +138,6 @@ gpgcheck=1
 metadata_expire=6h
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=False
-[docker-ce-stable]
-baseurl = https://download.docker.com/linux/fedora/$releasever/$basearch/stable
-enabled = 1
-gpgcheck = 1
-gpgkey = https://download.docker.com/linux/fedora/gpg
-name = Docker CE Stable - $basearch
-
 [insync]
 baseurl = http://yum.insync.io/fedora/$releasever/
 enabled = 1
