@@ -1031,6 +1031,7 @@ libgweather.x86_64
 libgxps.x86_64
 libhandy.x86_64
 libheif.x86_64
+libheif-ffmpeg.x86_64
 libheif-freeworld.x86_64
 libi2c.x86_64
 libibverbs.x86_64
@@ -2236,6 +2237,7 @@ vulkan-headers.noarch
 vulkan-loader.x86_64
 vulkan-loader-devel.x86_64
 vulkan-tools.x86_64
+vvdec-libs.x86_64
 vvenc-libs.x86_64
 wavpack.x86_64
 waybar.x86_64
