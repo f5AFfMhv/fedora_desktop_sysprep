@@ -92,6 +92,7 @@ aribb24.x86_64
 aribb25.x86_64
 armadillo.x86_64
 arpack.x86_64
+asdcplib.x86_64
 assimp.x86_64
 at.x86_64
 at-spi2-atk.x86_64
