@@ -181,6 +181,7 @@ bzip2.x86_64
 bzip2-libs.x86_64
 c-ares.x86_64
 ca-certificates.noarch
+cabextract.x86_64
 cairo.x86_64
 cairo-gobject.x86_64
 cairomm.x86_64
