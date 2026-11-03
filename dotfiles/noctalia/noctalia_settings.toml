@@ -38,13 +38,13 @@ type = "bluetooth"
 type = "caffeine"
 
 [[control_center.shortcuts]]
-type = "notification"
-
-[[control_center.shortcuts]]
 type = "power_profile"
 
 [[control_center.shortcuts]]
 type = "mic_mute"
+
+[[control_center.shortcuts]]
+type = "nightlight"
 
 [desktop_widgets]
 schema_version = 2
