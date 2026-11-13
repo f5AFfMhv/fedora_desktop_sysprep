@@ -11,6 +11,7 @@ attrs
 autopep8
 beautifulsoup4
 black
+blinker
 blivet
 blivet-gui
 boto3
@@ -25,6 +26,7 @@ cockpit
 crypt_r
 cryptography
 cupshelpers
+curl_cffi
 dasbus
 dbus_next
 dbus-python
@@ -32,6 +34,7 @@ distro
 dnf
 file-magic
 filelock
+Flask
 frozenlist
 html2text
 humanize
@@ -40,6 +43,7 @@ i3ipc
 idna
 importlib_metadata
 iso639
+itsdangerous
 Jinja2
 jmespath
 jsonschema
@@ -59,7 +63,9 @@ netifaces
 nftables
 numpy
 packaging
+pandas
 pathspec
+peewee
 pexpect
 pid
 pip
@@ -69,6 +75,7 @@ podman-compose
 powerline-status
 productmd
 propcache
+protobuf
 psutil
 ptyprocess
 pwquality
@@ -90,6 +97,7 @@ python-dotenv
 python-meh
 python-xlib
 pytokens
+pytz
 pyudev
 pyxdg
 PyYAML
@@ -120,9 +128,11 @@ typing_extensions
 urllib3
 wcmatch
 websockets
+Werkzeug
 wheel
 xkbregistry
 yamllint
 yarl
+yfinance
 yt-dlp
 zipp
