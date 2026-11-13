@@ -27,19 +27,19 @@
 @define-color headerbar_fg_color #f3f2f2;
 @define-color headerbar_backdrop_color @window_bg_color;
 
-@define-color popover_bg_color #372f30;
+@define-color popover_bg_color #2c2626;
 @define-color popover_fg_color #f3f2f2;
 
-@define-color card_bg_color #372f30;
+@define-color card_bg_color #2c2626;
 @define-color card_fg_color #f3f2f2;
 
 @define-color dialog_bg_color #211c1d;
 @define-color dialog_fg_color #f3f2f2;
 
-@define-color overview_bg_color #372f30;
+@define-color overview_bg_color #2c2626;
 @define-color overview_fg_color #f3f2f2;
 
-@define-color sidebar_bg_color #372f30;
+@define-color sidebar_bg_color #2c2626;
 @define-color sidebar_fg_color #f3f2f2;
 @define-color sidebar_backdrop_color @window_bg_color;
 @define-color sidebar_border_color @window_bg_color;
@@ -81,19 +81,19 @@
     --headerbar-fg-color: #f3f2f2;
     --headerbar-backdrop-color: @window_bg_color;
 
-    --popover-bg-color: #372f30;
+    --popover-bg-color: #2c2626;
     --popover-fg-color: #f3f2f2;
 
-    --card-bg-color: #372f30;
+    --card-bg-color: #2c2626;
     --card-fg-color: #f3f2f2;
 
     --dialog-bg-color: #211c1d;
     --dialog-fg-color: #f3f2f2;
 
-    --overview-bg-color: #372f30;
+    --overview-bg-color: #2c2626;
     --overview-fg-color: #f3f2f2;
 
-    --sidebar-bg-color: #372f30;
+    --sidebar-bg-color: #2c2626;
     --sidebar-fg-color: #f3f2f2;
     --sidebar-backdrop-color: @window_bg_color;
     --sidebar-border-color: @window_bg_color;
