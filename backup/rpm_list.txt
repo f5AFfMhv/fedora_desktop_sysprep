@@ -73,6 +73,7 @@ amd-gpu-firmware.noarch
 amd-ucode-firmware.noarch
 amdsmi.x86_64
 aml.x86_64
+android-tools.x86_64
 ansible.noarch
 ansible-collection-community-docker.noarch
 ansible-collection-community-library_inventory_filtering_v1.noarch
@@ -187,6 +188,7 @@ capstone.x86_64
 catatonit.x86_64
 cdparanoia-libs.x86_64
 cfitsio.x86_64
+chatgpt.x86_64
 checkpolicy.x86_64
 chrony.x86_64
 cifs-utils.x86_64
@@ -443,8 +445,6 @@ flexiblas-openblas-threads.x86_64
 flexiblas-openblas-threads64.x86_64
 flite.x86_64
 fmt.x86_64
-fontawesome-6-brands-fonts.noarch
-fontawesome-6-free-fonts.noarch
 fontawesome-7-brands-fonts.noarch
 fontawesome-7-free-fonts.noarch
 fontawesome4-fonts.noarch
@@ -1315,7 +1315,6 @@ libzen.x86_64
 libzip.x86_64
 libzstd.x86_64
 lilv-libs.x86_64
-linux-atm-libs.x86_64
 linux-firmware.noarch
 linux-firmware-whence.noarch
 lirc-libs.x86_64
@@ -2003,7 +2002,6 @@ samba-common.noarch
 samba-core-libs.x86_64
 samba-ndr-libs.x86_64
 satyr.x86_64
-schroedinger.x86_64
 scrub.x86_64
 sdbus-cpp.x86_64
 sddm.x86_64
