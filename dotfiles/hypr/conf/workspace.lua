@@ -1,10 +1,7 @@
 -- ============================================================
 -- Thunderbird
 -- ============================================================
-hl.workspace_rule({
-    workspace = "special:thunderbird",
-    on_created_empty = "flatpak run org.mozilla.thunderbird_esr -mail",
-})
+-- special:thunderbird: launched on creation (see on_created_empty handler at the bottom)
 
 hl.window_rule({
     match = {
@@ -24,10 +21,7 @@ hl.window_rule({
 -- ============================================================
 -- Mission Center
 -- ============================================================
-hl.workspace_rule({
-    workspace = "special:missioncenter",
-    on_created_empty = "flatpak run io.missioncenter.MissionCenter",
-})
+-- special:missioncenter: launched on creation (see on_created_empty handler at the bottom)
 
 hl.window_rule({
     match = {
@@ -47,10 +41,7 @@ hl.window_rule({
 -- ============================================================
 -- Elisa - music player
 -- ============================================================
-hl.workspace_rule({
-    workspace = "special:elisa",
-    on_created_empty = "flatpak run org.kde.elisa",
-})
+-- special:elisa: launched on creation (see on_created_empty handler at the bottom)
 
 hl.window_rule({
     match = {
@@ -70,10 +61,7 @@ hl.window_rule({
 -- ============================================================
 -- Memos
 -- ============================================================
-hl.workspace_rule({
-    workspace = "special:memos",
-    on_created_empty = "flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://memos.home.lab",
-})
+-- special:memos: launched on creation (see on_created_empty handler at the bottom)
 
 hl.window_rule({
     match = {
@@ -94,10 +82,7 @@ hl.window_rule({
 -- ============================================================
 -- Terminal 1
 -- ============================================================
-hl.workspace_rule({
-    workspace = "special:terminal1",
-    on_created_empty = "alacritty --class dotfiles-floating",
-})
+-- special:terminal1: launched on creation (see on_created_empty handler at the bottom)
 
 
 
@@ -105,30 +90,21 @@ hl.workspace_rule({
 -- Terminal 2
 -- ============================================================
 
-hl.workspace_rule({
-    workspace = "special:terminal2",
-    on_created_empty = "alacritty --class dotfiles-floating",
-})
+-- special:terminal2: launched on creation (see on_created_empty handler at the bottom)
 
 
 -- ============================================================
 -- Terminal 3
 -- ============================================================
 
-hl.workspace_rule({
-    workspace = "special:terminal3",
-    on_created_empty = "alacritty --class dotfiles-floating",
-})
+-- special:terminal3: launched on creation (see on_created_empty handler at the bottom)
 
 
 -- ============================================================
 -- Updates
 -- ============================================================
 
-hl.workspace_rule({
-    workspace = "special:updates",
-    on_created_empty = "alacritty --class dotfiles-floating -e ~/Programming/scripts/fedora_update.sh --update",
-})
+-- special:updates: launched on creation (see on_created_empty handler at the bottom)
 
 
 -- ============================================================
@@ -158,3 +134,25 @@ hl.workspace_rule({
     monitor = "DP-9",
     persistent = true,
 })
+
+-- ============================================================
+-- Launch apps when special workspaces are created empty
+-- (replaces the deprecated on_created_empty workspace rule)
+-- ============================================================
+local on_created_empty = {
+    ["special:thunderbird"] = "flatpak run org.mozilla.thunderbird_esr -mail",
+    ["special:missioncenter"] = "flatpak run io.missioncenter.MissionCenter",
+    ["special:elisa"] = "flatpak run org.kde.elisa",
+    ["special:memos"] = "flatpak run io.github.ungoogled_software.ungoogled_chromium --app=https://memos.home.lab",
+    ["special:terminal1"] = "alacritty --class dotfiles-floating",
+    ["special:terminal2"] = "alacritty --class dotfiles-floating",
+    ["special:terminal3"] = "alacritty --class dotfiles-floating",
+    ["special:updates"] = "alacritty --class dotfiles-floating -e ~/Projects/scripts/fedora_update.sh --update",
+}
+
+hl.on("workspace.created", function(ws)
+    local cmd = on_created_empty[ws.name]
+    if cmd and ws.is_empty then
+        hl.exec_cmd(cmd)
+    end
+end)

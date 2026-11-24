@@ -255,6 +255,9 @@ cyrus-sasl-lib.x86_64
 cyrus-sasl-plain.x86_64
 daala-libs.x86_64
 daxctl-libs.x86_64
+dbip-lite-asn.noarch
+dbip-lite-city.noarch
+dbip-lite-country.noarch
 dbus.x86_64
 dbus-broker.x86_64
 dbus-common.noarch
@@ -535,6 +538,8 @@ gnome-desktop3.x86_64
 gnome-desktop4.x86_64
 gnome-disk-utility.x86_64
 gnome-font-viewer.x86_64
+gnome-keyring.x86_64
+gnome-keyring-pam.x86_64
 gnome-menus.x86_64
 gnome-online-accounts-libs.x86_64
 gnome-software.x86_64
