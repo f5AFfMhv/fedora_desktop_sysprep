@@ -124,6 +124,8 @@ rpms:
   - telnet
   - iperf
   # System tools
+  - gnome-keyring
+  - gnome-keyring-pam
   - zsh
   - crontabs
   - moreutils
