@@ -78,35 +78,6 @@ hl.window_rule({
     size = { 1500, 850 },
 })
 
-
--- ============================================================
--- Terminal 1
--- ============================================================
--- special:terminal1: launched on creation (see on_created_empty handler at the bottom)
-
-
-
--- ============================================================
--- Terminal 2
--- ============================================================
-
--- special:terminal2: launched on creation (see on_created_empty handler at the bottom)
-
-
--- ============================================================
--- Terminal 3
--- ============================================================
-
--- special:terminal3: launched on creation (see on_created_empty handler at the bottom)
-
-
--- ============================================================
--- Updates
--- ============================================================
-
--- special:updates: launched on creation (see on_created_empty handler at the bottom)
-
-
 -- ============================================================
 -- Noctalia persistent workspaces
 -- ============================================================

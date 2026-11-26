@@ -117,7 +117,7 @@ hl.bind(mainMod .. " + " .. "D", hl.dsp.exec_cmd("noctalia msg panel-toggle cont
 hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
 
 -- Sidepad
-hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("/home/mj/Programming/scripts/hyprland_sidepad.sh"))
+hl.bind(mainMod .. " + " .. "S", hl.dsp.exec_cmd("/home/mj/Projects/scripts/hyprland_sidepad.sh"))
 
 -- Special workspaces
 hl.bind(mainMod .. " + " .. "ALT" .. " + " .. 1, hl.dsp.workspace.toggle_special("thunderbird"))

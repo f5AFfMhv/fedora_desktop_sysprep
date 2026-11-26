@@ -129,18 +129,6 @@ hl.window_rule({
 })
 
 
--- Chrome GPT
-hl.window_rule({
-    match = {
-        class = "(chrome-chatgpt.com__-Default)",
-    },
-    float = false,
-    size = { 1250, 700 },
-    center = false,
-    pin = false,
-})
-
-
 -- Float and center file pickers
 hl.window_rule({
     match = {
@@ -171,13 +159,12 @@ hl.window_rule({
     no_blur = true,
 })
 
--- ChatGPT Sidepad
+-- ChatGPT Sidepad (toggled with SUPER + S, see ~/Projects/scripts/hyprland_sidepad.sh)
+-- Tiled on the left edge, 500 px wide; the script sets position and width.
 hl.window_rule({
     match = {
-        class = "^chrome-chatgpt.com__-Default$"
+        class = "^Chatgpt$"
     },
-    size = { 500, 1360 },
-    move = { 10, 50 },
-    float = true,
-    animation = slide,
+    tile = true,
+    animation = "slide left",
 })
